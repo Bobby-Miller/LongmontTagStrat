@@ -1,0 +1,4922 @@
+{
+    "[Longmont]_types_/": [
+        {
+            "name": "ALLEN_BRADLEY/PIG_LAUNCHER_CLX",
+            "typeID": "LONGMONT_REGIONAL_BASE",
+            "tags": [
+                {
+                    "name": "CURRENT_HOUR",
+                    "valueSource": "opc",
+                    "LongID": "",
+                    "Tag_Description": "",
+                    "Safety": "",
+                    "PI_Tag": false,
+                    "DOT": false,
+                    "Units": "",
+                    "opcItemPath": "[{Topic}]{topic}.AUTO_LAUNCH_HOURS<I1>",
+                    "historyProvider": "HistDB_Lancaster"
+                },
+                {
+                    "name": "CURRENT_MINUTE",
+                    "valueSource": "opc",
+                    "LongID": "",
+                    "Tag_Description": "",
+                    "Safety": "",
+                    "PI_Tag": false,
+                    "DOT": false,
+                    "Units": "",
+                    "opcItemPath": "[{Topic}]{topic}.AUTO_LAUNCH_MINUTES<I1>",
+                    "historyProvider": "HistDB_Lancaster"
+                },
+                {
+                    "name": "TIMER",
+                    "valueSource": "opc",
+                    "LongID": "",
+                    "Tag_Description": "",
+                    "Safety": "",
+                    "PI_Tag": false,
+                    "DOT": false,
+                    "Units": "",
+                    "opcItemPath": "[{Topic}]{topic}.LAUNCH_TIMER_HOURS_HMI<I1>",
+                    "historyProvider": "HistDB_Lancaster"
+                },
+                {
+                    "name": "EMPTY_BARREL",
+                    "valueSource": "opc",
+                    "LongID": "",
+                    "Tag_Description": "",
+                    "Safety": "",
+                    "PI_Tag": false,
+                    "DOT": false,
+                    "Units": "",
+                    "opcItemPath": "[{Topic}]{topic}.NO_PIGS_AD.InAlarm<I1>",
+                    "historyProvider": "HistDB_Lancaster"
+                },
+                {
+                    "name": "ESD_SHUTDOWN",
+                    "valueSource": "opc",
+                    "LongID": "",
+                    "Tag_Description": "",
+                    "Safety": "",
+                    "PI_Tag": false,
+                    "DOT": false,
+                    "Units": "",
+                    "opcItemPath": "[{Topic}]{topic}.MESD_1_AD.InAlarm<I1>",
+                    "historyProvider": "HistDB_Lancaster"
+                },
+                {
+                    "name": "NUM_PIGS_IN_BARREL_SP",
+                    "valueSource": "opc",
+                    "LongID": "",
+                    "Tag_Description": "",
+                    "Safety": "",
+                    "PI_Tag": false,
+                    "DOT": false,
+                    "Units": "",
+                    "opcItemPath": "[{Topic}]{topic}.PIG_COUNT<I1>",
+                    "historyProvider": "HistDB_Lancaster"
+                },
+                {
+                    "name": "AUTO_MAN",
+                    "valueSource": "opc",
+                    "LongID": "",
+                    "Tag_Description": "",
+                    "Safety": "",
+                    "PI_Tag": false,
+                    "DOT": false,
+                    "Units": "",
+                    "opcItemPath": "[{Topic}]{topic}.HMI_AUTO<I1>",
+                    "historyProvider": "HistDB_Lancaster"
+                },
+                {
+                    "name": "RESET",
+                    "valueSource": "opc",
+                    "LongID": "",
+                    "Tag_Description": "",
+                    "Safety": "",
+                    "PI_Tag": false,
+                    "DOT": false,
+                    "Units": "",
+                    "opcItemPath": "[{Topic}]{topic}.HMI_RESET<I1>",
+                    "historyProvider": "HistDB_Lancaster"
+                },
+                {
+                    "name": "LAUNCH_FAIL",
+                    "valueSource": "opc",
+                    "LongID": "",
+                    "Tag_Description": "",
+                    "Safety": "",
+                    "PI_Tag": false,
+                    "DOT": false,
+                    "Units": "",
+                    "opcItemPath": "[{Topic}]{topic}.FAILED_LAUNCH_AD.InAlarm<I1>",
+                    "historyProvider": "HistDB_Lancaster"
+                },
+                {
+                    "name": "FLOW_INHIBIT_STATUS",
+                    "valueSource": "opc",
+                    "LongID": "",
+                    "Tag_Description": "",
+                    "Safety": "",
+                    "PI_Tag": false,
+                    "DOT": false,
+                    "Units": "",
+                    "opcItemPath": "[{Topic}]{topic}.PIG_INHIBIT<I1>",
+                    "historyProvider": "HistDB_Lancaster"
+                },
+                {
+                    "name": "NUM_PIGS_REMAINING",
+                    "valueSource": "opc",
+                    "LongID": "",
+                    "Tag_Description": "",
+                    "Safety": "",
+                    "PI_Tag": false,
+                    "DOT": false,
+                    "Units": "",
+                    "opcItemPath": "[{Topic}]{topic}.PIGS_LAUNCHED<I1>",
+                    "historyProvider": "HistDB_Lancaster"
+                },
+                {
+                    "name": "PERMISSIVE",
+                    "valueSource": "opc",
+                    "LongID": "",
+                    "Tag_Description": "",
+                    "Safety": "",
+                    "PI_Tag": false,
+                    "DOT": false,
+                    "Units": "",
+                    "opcItemPath": "[{Topic}]{topic}.LAUNCHING<I1>",
+                    "historyProvider": "HistDB_Lancaster"
+                },
+                {
+                    "name": "STATUS",
+                    "valueSource": "opc",
+                    "LongID": "",
+                    "Tag_Description": "",
+                    "Safety": "",
+                    "PI_Tag": false,
+                    "DOT": false,
+                    "Units": "",
+                    "opcItemPath": "[{Topic}]{topic}.LAUNCH_READY<I1>",
+                    "historyProvider": "HistDB_Lancaster"
+                },
+                {
+                    "name": "VALVE_POSITION",
+                    "valueSource": "opc",
+                    "LongID": "",
+                    "Tag_Description": "",
+                    "Safety": "",
+                    "PI_Tag": false,
+                    "DOT": false,
+                    "Units": "",
+                    "opcItemPath": "[{Topic}]{topic}.PADDLE_POSITION<I1>",
+                    "historyProvider": "HistDB_Lancaster"
+                },
+                {
+                    "name": "INHIBIT",
+                    "valueSource": "opc",
+                    "LongID": "",
+                    "Tag_Description": "",
+                    "Safety": "",
+                    "PI_Tag": false,
+                    "DOT": false,
+                    "Units": "",
+                    "opcItemPath": {
+                        "bindType": "parameter",
+                        "binding": "[{Topic}]{_t_INHIBIT}"
+                    },
+                    "historyProvider": "HistDB_Lancaster"
+                },
+                {
+                    "name": "VALVE_STATUS",
+                    "valueSource": "opc",
+                    "LongID": "",
+                    "Tag_Description": "",
+                    "Safety": "",
+                    "PI_Tag": false,
+                    "DOT": false,
+                    "Units": "",
+                    "opcItemPath": {
+                        "bindType": "parameter",
+                        "binding": "[{Topic}]{_t_VALVE_STATUS}"
+                    },
+                    "historyProvider": "HistDB_Lancaster"
+                }
+            ],
+            "parameters": {
+                "_t_INHIBIT": {
+                    "dataType": "String",
+                    "value": {
+                        "bindType": "parameter",
+                        "binding": "[{Topic}]_t_INHIBIT"
+                    }
+                },
+                "_t_VALVE_STATUS": {
+                    "dataType": "String",
+                    "value": {
+                        "bindType": "parameter",
+                        "binding": "[{Topic}]_t_VALVE_STATUS"
+                    }
+                }
+            },
+            "tagType": "UdtType"
+        },
+        {
+            "name": "TOTALFLOWG4/METER_OIL_ALARM",
+            "typeID": "LONGMONT_REGIONAL_BASE",
+            "tags": [
+                {
+                    "name": "RESET_BSW_OVER_RANGE_ALARM",
+                    "valueSource": "opc",
+                    "LongID": "",
+                    "Tag_Description": "",
+                    "Safety": "",
+                    "PI_Tag": false,
+                    "DOT": false,
+                    "Units": "",
+                    "opcItemPath": "[{Topic}]{topic}.9:12:8:UI1<I1>",
+                    "historyProvider": "HistDB_Lancaster"
+                },
+                {
+                    "name": "CURRENT_BSW",
+                    "valueSource": "opc",
+                    "LongID": "",
+                    "Tag_Description": "",
+                    "Safety": "",
+                    "PI_Tag": false,
+                    "DOT": false,
+                    "Units": "",
+                    "opcItemPath": "[{Topic}]{topic}.9:12:7:R4<I1>",
+                    "historyProvider": "HistDB_Lancaster"
+                },
+                {
+                    "name": "CURRENT_AIR_PSI",
+                    "valueSource": "opc",
+                    "LongID": "",
+                    "Tag_Description": "",
+                    "Safety": "",
+                    "PI_Tag": false,
+                    "DOT": false,
+                    "Units": "",
+                    "opcItemPath": "[{Topic}]{topic}.9:12:10:R4<I1>",
+                    "historyProvider": "HistDB_Lancaster"
+                },
+                {
+                    "name": "CURRENT_OIL_TEMP",
+                    "valueSource": "opc",
+                    "LongID": "",
+                    "Tag_Description": "",
+                    "Safety": "",
+                    "PI_Tag": false,
+                    "DOT": false,
+                    "Units": "",
+                    "opcItemPath": "[{Topic}]{topic}.9:12:12:R4<I1>",
+                    "historyProvider": "HistDB_Lancaster"
+                },
+                {
+                    "name": "OIL_TEMP_HIHI_SETPOINT",
+                    "valueSource": "opc",
+                    "LongID": "",
+                    "Tag_Description": "",
+                    "Safety": "",
+                    "PI_Tag": false,
+                    "DOT": false,
+                    "Units": "",
+                    "opcItemPath": "[{Topic}]{topic}.9:12:14:R4<I1>",
+                    "historyProvider": "HistDB_Lancaster"
+                },
+                {
+                    "name": "CURRENT_PIPELINE_PSI",
+                    "valueSource": "opc",
+                    "LongID": "",
+                    "Tag_Description": "",
+                    "Safety": "",
+                    "PI_Tag": false,
+                    "DOT": false,
+                    "Units": "",
+                    "opcItemPath": "[{Topic}]{topic}.9:12:16:R4<I1>",
+                    "historyProvider": "HistDB_Lancaster"
+                },
+                {
+                    "name": "CURRENT_FLOW_RATE",
+                    "valueSource": "opc",
+                    "LongID": "",
+                    "Tag_Description": "",
+                    "Safety": "",
+                    "PI_Tag": false,
+                    "DOT": false,
+                    "Units": "",
+                    "opcItemPath": "[{Topic}]{topic}.9:6:33:R4<I1>",
+                    "historyProvider": "HistDB_Lancaster"
+                },
+                {
+                    "name": "SUMP_SWITCH",
+                    "valueSource": "opc",
+                    "LongID": "",
+                    "Tag_Description": "",
+                    "Safety": "",
+                    "PI_Tag": false,
+                    "DOT": false,
+                    "Units": "",
+                    "opcItemPath": "[{Topic}]{topic}.9:12:18:UI1<I1>",
+                    "historyProvider": "HistDB_Lancaster"
+                },
+                {
+                    "name": "CURRENT_ROC_VOLTAGE",
+                    "valueSource": "opc",
+                    "LongID": "",
+                    "Tag_Description": "",
+                    "Safety": "",
+                    "PI_Tag": false,
+                    "DOT": false,
+                    "Units": "",
+                    "opcItemPath": "[{Topic}]{topic}.9:12:20:R4<I1>",
+                    "historyProvider": "HistDB_Lancaster"
+                },
+                {
+                    "name": "CURRENT_HEARTBEAT",
+                    "valueSource": "opc",
+                    "LongID": "",
+                    "Tag_Description": "",
+                    "Safety": "",
+                    "PI_Tag": false,
+                    "DOT": false,
+                    "Units": "",
+                    "opcItemPath": "[{Topic}]{topic}.9:12:22:R4<I1>",
+                    "historyProvider": "HistDB_Lancaster"
+                },
+                {
+                    "name": "ESD_VALVE_STATUS",
+                    "valueSource": "opc",
+                    "LongID": "",
+                    "Tag_Description": "",
+                    "Safety": "",
+                    "PI_Tag": false,
+                    "DOT": false,
+                    "Units": "",
+                    "opcItemPath": "[{Topic}]{topic}.9:12:23:UI1<I1>",
+                    "historyProvider": "HistDB_Lancaster"
+                },
+                {
+                    "name": "MEASUREMENT_PERMISSIVE",
+                    "valueSource": "opc",
+                    "LongID": "",
+                    "Tag_Description": "",
+                    "Safety": "",
+                    "PI_Tag": false,
+                    "DOT": false,
+                    "Units": "",
+                    "opcItemPath": "[{Topic}]{topic}.9:12:24:UI1<I1>",
+                    "historyProvider": "HistDB_Lancaster"
+                },
+                {
+                    "name": "WES_IOC_LOTO_PERMISSIVE",
+                    "valueSource": "opc",
+                    "LongID": "",
+                    "Tag_Description": "",
+                    "Safety": "",
+                    "PI_Tag": false,
+                    "DOT": false,
+                    "Units": "",
+                    "opcItemPath": "[{Topic}]{topic}.9:12:25:UI1<I1>",
+                    "historyProvider": "HistDB_Lancaster"
+                },
+                {
+                    "name": "LEL_HI",
+                    "valueSource": "opc",
+                    "LongID": "",
+                    "Tag_Description": "",
+                    "Safety": "",
+                    "PI_Tag": false,
+                    "DOT": false,
+                    "Units": "",
+                    "opcItemPath": "[{Topic}]{topic}.9:12:28:UI1<I1>",
+                    "historyProvider": "HistDB_Lancaster"
+                },
+                {
+                    "name": "CURRENT_MEASUREMENT_LEL",
+                    "valueSource": "opc",
+                    "LongID": "",
+                    "Tag_Description": "",
+                    "Safety": "",
+                    "PI_Tag": false,
+                    "DOT": false,
+                    "Units": "",
+                    "opcItemPath": "[{Topic}]{topic}.9:12:29:R4<I1>",
+                    "historyProvider": "HistDB_Lancaster"
+                },
+                {
+                    "name": "ESD_VALVE_CURRENT_STATE",
+                    "valueSource": "opc",
+                    "LongID": "",
+                    "Tag_Description": "",
+                    "Safety": "",
+                    "PI_Tag": false,
+                    "DOT": false,
+                    "Units": "",
+                    "opcItemPath": "[{Topic}]{topic}.9:12:31:UI1<I1>",
+                    "historyProvider": "HistDB_Lancaster"
+                },
+                {
+                    "name": "LIVE_BSW_READING_MAIN",
+                    "valueSource": "opc",
+                    "LongID": "",
+                    "Tag_Description": "",
+                    "Safety": "",
+                    "PI_Tag": false,
+                    "DOT": false,
+                    "Units": "",
+                    "opcItemPath": "[{Topic}]{topic}.9:12:33:R4<I1>",
+                    "historyProvider": "HistDB_Lancaster"
+                },
+                {
+                    "name": "LIVE_DENSITY_READING",
+                    "valueSource": "opc",
+                    "LongID": "",
+                    "Tag_Description": "",
+                    "Safety": "",
+                    "PI_Tag": false,
+                    "DOT": false,
+                    "Units": "",
+                    "opcItemPath": "[{Topic}]{topic}.9:12:35:R4<I1>",
+                    "historyProvider": "HistDB_Lancaster"
+                },
+                {
+                    "name": "PRODUCTION_PERMISSIVE",
+                    "valueSource": "opc",
+                    "LongID": "",
+                    "Tag_Description": "",
+                    "Safety": "",
+                    "PI_Tag": false,
+                    "DOT": false,
+                    "Units": "",
+                    "opcItemPath": "[{Topic}]{topic}.9:12:50:UI1<I1>",
+                    "historyProvider": "HistDB_Lancaster"
+                },
+                {
+                    "name": "PRODUCTION_LEL",
+                    "valueSource": "opc",
+                    "LongID": "",
+                    "Tag_Description": "",
+                    "Safety": "",
+                    "PI_Tag": false,
+                    "DOT": false,
+                    "Units": "",
+                    "opcItemPath": "[{Topic}]{topic}.9:12:51:R4<I1>",
+                    "historyProvider": "HistDB_Lancaster"
+                },
+                {
+                    "name": "MAIN_LACT_RUN_STATUS",
+                    "valueSource": "opc",
+                    "LongID": "",
+                    "Tag_Description": "",
+                    "Safety": "",
+                    "PI_Tag": false,
+                    "DOT": false,
+                    "Units": "",
+                    "opcItemPath": "[{Topic}]{topic}.9:12:52:UI1<I1>",
+                    "historyProvider": "HistDB_Lancaster"
+                },
+                {
+                    "name": "CORIOLIS_PRESSURE",
+                    "valueSource": "opc",
+                    "LongID": "",
+                    "Tag_Description": "",
+                    "Safety": "",
+                    "PI_Tag": false,
+                    "DOT": false,
+                    "Units": "",
+                    "opcItemPath": "[{Topic}]{topic}.9:12:1:R4<I1>",
+                    "historyProvider": "HistDB_Lancaster"
+                },
+                {
+                    "name": "DIVERT_VALVE_STATUS",
+                    "valueSource": "opc",
+                    "LongID": "",
+                    "Tag_Description": "",
+                    "Safety": "",
+                    "PI_Tag": false,
+                    "DOT": false,
+                    "Units": "",
+                    "opcItemPath": "[{Topic}]{topic}.9:12:53:UI1<I1>",
+                    "historyProvider": "HistDB_Lancaster"
+                },
+                {
+                    "name": "PROD_MAIN_LACT_BSW",
+                    "valueSource": "opc",
+                    "LongID": "",
+                    "Tag_Description": "",
+                    "Safety": "",
+                    "PI_Tag": false,
+                    "DOT": false,
+                    "Units": "",
+                    "opcItemPath": "[{Topic}]{topic}.9:12:54:R4<I1>",
+                    "historyProvider": "HistDB_Lancaster"
+                },
+                {
+                    "name": "BULK_TANK_PRESSURE",
+                    "valueSource": "opc",
+                    "LongID": "",
+                    "Tag_Description": "",
+                    "Safety": "",
+                    "PI_Tag": false,
+                    "DOT": false,
+                    "Units": "",
+                    "opcItemPath": "[{Topic}]{topic}.9:12:2:R4<I1>",
+                    "historyProvider": "HistDB_Lancaster"
+                },
+                {
+                    "name": "NUM_BSW_SHUTDOWNS_TODAY",
+                    "valueSource": "opc",
+                    "LongID": "",
+                    "Tag_Description": "",
+                    "Safety": "",
+                    "PI_Tag": false,
+                    "DOT": false,
+                    "Units": "",
+                    "opcItemPath": "[{Topic}]{topic}.9:12:38:UI1<I1>",
+                    "historyProvider": "HistDB_Lancaster"
+                },
+                {
+                    "name": "BSW_5_MIN_BYPASS_ENABLE",
+                    "valueSource": "opc",
+                    "LongID": "",
+                    "Tag_Description": "",
+                    "Safety": "",
+                    "PI_Tag": false,
+                    "DOT": false,
+                    "Units": "",
+                    "opcItemPath": "[{Topic}]{topic}.9:12:39:UI1<I1>",
+                    "historyProvider": "HistDB_Lancaster"
+                },
+                {
+                    "name": "BSW_HH",
+                    "valueSource": "opc",
+                    "LongID": "",
+                    "Tag_Description": "",
+                    "Safety": "",
+                    "PI_Tag": false,
+                    "DOT": false,
+                    "Units": "",
+                    "opcItemPath": "[{Topic}]{topic}.9:12:32:UI1<I1>",
+                    "historyProvider": "HistDB_Lancaster"
+                },
+                {
+                    "name": "RESET_ALL_ALARMS",
+                    "valueSource": "opc",
+                    "LongID": "",
+                    "Tag_Description": "",
+                    "Safety": "",
+                    "PI_Tag": false,
+                    "DOT": false,
+                    "Units": "",
+                    "opcItemPath": "[{Topic}]{topic}.9:12:36:UI1<I1>",
+                    "historyProvider": "HistDB_Lancaster"
+                },
+                {
+                    "name": "CURRENT_DRIVE_GAIN",
+                    "valueSource": "opc",
+                    "LongID": "",
+                    "Tag_Description": "",
+                    "Safety": "",
+                    "PI_Tag": false,
+                    "DOT": false,
+                    "Units": "",
+                    "opcItemPath": "[{Topic}]{topic}.9:12:5:R4<I1>",
+                    "historyProvider": "HistDB_Lancaster"
+                },
+                {
+                    "name": "BSW_TOTAL",
+                    "valueSource": "opc",
+                    "LongID": "",
+                    "Tag_Description": "",
+                    "Safety": "",
+                    "PI_Tag": false,
+                    "DOT": false,
+                    "Units": "",
+                    "opcItemPath": "[{Topic}]{topic}.9:12:6:R4<I1>",
+                    "historyProvider": "HistDB_Lancaster"
+                },
+                {
+                    "name": "HOT_POCKET_ALARM",
+                    "valueSource": "opc",
+                    "LongID": "",
+                    "Tag_Description": "",
+                    "Safety": "",
+                    "PI_Tag": false,
+                    "DOT": false,
+                    "Units": "",
+                    "opcItemPath": {
+                        "bindType": "parameter",
+                        "binding": "[{Topic}]{_t_HOT_POCKET_ALARM}"
+                    },
+                    "historyProvider": "HistDB_Lancaster"
+                }
+            ],
+            "parameters": {
+                "_t_HOT_POCKET_ALARM": {
+                    "dataType": "String",
+                    "value": {
+                        "bindType": "parameter",
+                        "binding": "[{Topic}]_t_HOT_POCKET_ALARM"
+                    }
+                }
+            },
+            "tagType": "UdtType"
+        },
+        {
+            "name": "TOTALFLOWG4/METER_OIL_STD",
+            "typeID": "TOTALFLOWG4/METER_OIL",
+            "tags": [
+                {
+                    "name": "DRIVE_GAIN",
+                    "valueSource": "opc",
+                    "LongID": "",
+                    "Tag_Description": "",
+                    "Safety": "",
+                    "PI_Tag": false,
+                    "DOT": false,
+                    "Units": "",
+                    "opcItemPath": "[{Topic}]{topic}.9:12:5:R4<I1>",
+                    "historyProvider": "HistDB_Lancaster"
+                },
+                {
+                    "name": "RATE",
+                    "valueSource": "opc",
+                    "LongID": "",
+                    "Tag_Description": "",
+                    "Safety": "",
+                    "PI_Tag": false,
+                    "DOT": false,
+                    "Units": "",
+                    "opcItemPath": "[{Topic}]{topic}.9:6:32:R4<I1>",
+                    "historyProvider": "HistDB_Lancaster"
+                },
+                {
+                    "name": "DENSITY",
+                    "valueSource": "opc",
+                    "LongID": "",
+                    "Tag_Description": "",
+                    "Safety": "",
+                    "PI_Tag": false,
+                    "DOT": false,
+                    "Units": "",
+                    "opcItemPath": "[{Topic}]{topic}.9:12:35:R4<I1>",
+                    "historyProvider": "HistDB_Lancaster"
+                },
+                {
+                    "name": "RATE_GSV",
+                    "valueSource": "opc",
+                    "LongID": "",
+                    "Tag_Description": "",
+                    "Safety": "",
+                    "PI_Tag": false,
+                    "DOT": false,
+                    "Units": "",
+                    "opcItemPath": "[{Topic}]{topic}.9:6:33:R4<I1>",
+                    "historyProvider": "HistDB_Lancaster"
+                },
+                {
+                    "name": "VOLUME_MONTH_GSV",
+                    "valueSource": "opc",
+                    "LongID": "",
+                    "Tag_Description": "",
+                    "Safety": "",
+                    "PI_Tag": false,
+                    "DOT": false,
+                    "Units": "",
+                    "opcItemPath": "[{Topic}]{topic}.9:6:48:R4<I1>",
+                    "historyProvider": "HistDB_Lancaster"
+                },
+                {
+                    "name": "VOLUME_MONTHP_GSV",
+                    "valueSource": "opc",
+                    "LongID": "",
+                    "Tag_Description": "",
+                    "Safety": "",
+                    "PI_Tag": false,
+                    "DOT": false,
+                    "Units": "",
+                    "opcItemPath": "[{Topic}]{topic}.9:6:52:R4<I1>",
+                    "historyProvider": "HistDB_Lancaster"
+                },
+                {
+                    "name": "VOLUME_YESTERDAY_GSV",
+                    "valueSource": "opc",
+                    "LongID": "",
+                    "Tag_Description": "",
+                    "Safety": "",
+                    "PI_Tag": false,
+                    "DOT": false,
+                    "Units": "",
+                    "opcItemPath": "[{Topic}]{topic}.9:6:43:R4<I1>",
+                    "historyProvider": "HistDB_Lancaster"
+                },
+                {
+                    "name": "VOLUME_MONTH",
+                    "valueSource": "opc",
+                    "LongID": "",
+                    "Tag_Description": "",
+                    "Safety": "",
+                    "PI_Tag": false,
+                    "DOT": false,
+                    "Units": "",
+                    "opcItemPath": "[{Topic}]{topic}.9:6:47:R4<I1>",
+                    "historyProvider": "HistDB_Lancaster"
+                },
+                {
+                    "name": "VOLUME_MONTHP",
+                    "valueSource": "opc",
+                    "LongID": "",
+                    "Tag_Description": "",
+                    "Safety": "",
+                    "PI_Tag": false,
+                    "DOT": false,
+                    "Units": "",
+                    "opcItemPath": "[{Topic}]{topic}.9:6:51:R4<I1>",
+                    "historyProvider": "HistDB_Lancaster"
+                },
+                {
+                    "name": "VOLUME_YESTERDAY",
+                    "valueSource": "opc",
+                    "LongID": "",
+                    "Tag_Description": "",
+                    "Safety": "",
+                    "PI_Tag": false,
+                    "DOT": false,
+                    "Units": "",
+                    "opcItemPath": "[{Topic}]{topic}.9:6:42:R4<I1>",
+                    "historyProvider": "HistDB_Lancaster"
+                },
+                {
+                    "name": "DISCHARGE_PRESSURE",
+                    "valueSource": "opc",
+                    "LongID": "",
+                    "Tag_Description": "",
+                    "Safety": "",
+                    "PI_Tag": false,
+                    "DOT": false,
+                    "Units": "",
+                    "opcItemPath": "[{Topic}]{topic}.9:12:16:R4<I1>",
+                    "historyProvider": "HistDB_Lancaster"
+                },
+                {
+                    "name": "PRESSURE",
+                    "valueSource": "opc",
+                    "LongID": "",
+                    "Tag_Description": "",
+                    "Safety": "",
+                    "PI_Tag": false,
+                    "DOT": false,
+                    "Units": "",
+                    "opcItemPath": "[{Topic}]{topic}.9:12:1:R4<I1>",
+                    "historyProvider": "HistDB_Lancaster"
+                },
+                {
+                    "name": "SHRINK",
+                    "valueSource": "opc",
+                    "LongID": "",
+                    "Tag_Description": "",
+                    "Safety": "",
+                    "PI_Tag": false,
+                    "DOT": false,
+                    "Units": "",
+                    "opcItemPath": "[{Topic}]{topic}.9:11:97:R4<I1>",
+                    "historyProvider": "HistDB_Lancaster"
+                },
+                {
+                    "name": "TEMPERATURE",
+                    "valueSource": "opc",
+                    "LongID": "",
+                    "Tag_Description": "",
+                    "Safety": "",
+                    "PI_Tag": false,
+                    "DOT": false,
+                    "Units": "",
+                    "opcItemPath": "[{Topic}]{topic}.9:12:12:R4<I1>",
+                    "historyProvider": "HistDB_Lancaster"
+                },
+                {
+                    "name": "PERMISSIVE",
+                    "valueSource": "opc",
+                    "LongID": "",
+                    "Tag_Description": "",
+                    "Safety": "",
+                    "PI_Tag": false,
+                    "DOT": false,
+                    "Units": "",
+                    "opcItemPath": "[{Topic}]{topic}.9:12:24:UI1<I1>",
+                    "historyProvider": "HistDB_Lancaster"
+                }
+            ],
+            "parameters": {},
+            "tagType": "UdtType"
+        },
+        {
+            "name": "TOTALFLOWG4/METER_OIL_SHUTDOWN",
+            "typeID": "LONGMONT_REGIONAL_BASE",
+            "tags": [
+                {
+                    "name": "REASON_01",
+                    "valueSource": "opc",
+                    "LongID": "",
+                    "Tag_Description": "",
+                    "Safety": "",
+                    "PI_Tag": false,
+                    "DOT": false,
+                    "Units": "",
+                    "opcItemPath": "[{Topic}]{topic}.50:8:0:String<I1>",
+                    "historyProvider": "HistDB_Lancaster"
+                },
+                {
+                    "name": "REASON_02",
+                    "valueSource": "opc",
+                    "LongID": "",
+                    "Tag_Description": "",
+                    "Safety": "",
+                    "PI_Tag": false,
+                    "DOT": false,
+                    "Units": "",
+                    "opcItemPath": "[{Topic}]{topic}.50:8:1:String<I1>",
+                    "historyProvider": "HistDB_Lancaster"
+                },
+                {
+                    "name": "REASON_03",
+                    "valueSource": "opc",
+                    "LongID": "",
+                    "Tag_Description": "",
+                    "Safety": "",
+                    "PI_Tag": false,
+                    "DOT": false,
+                    "Units": "",
+                    "opcItemPath": "[{Topic}]{topic}.50:8:2:String<I1>",
+                    "historyProvider": "HistDB_Lancaster"
+                },
+                {
+                    "name": "REASON_04",
+                    "valueSource": "opc",
+                    "LongID": "",
+                    "Tag_Description": "",
+                    "Safety": "",
+                    "PI_Tag": false,
+                    "DOT": false,
+                    "Units": "",
+                    "opcItemPath": "[{Topic}]{topic}.50:8:3:String<I1>",
+                    "historyProvider": "HistDB_Lancaster"
+                },
+                {
+                    "name": "REASON_05",
+                    "valueSource": "opc",
+                    "LongID": "",
+                    "Tag_Description": "",
+                    "Safety": "",
+                    "PI_Tag": false,
+                    "DOT": false,
+                    "Units": "",
+                    "opcItemPath": "[{Topic}]{topic}.50:8:4:String<I1>",
+                    "historyProvider": "HistDB_Lancaster"
+                },
+                {
+                    "name": "REASON_06",
+                    "valueSource": "opc",
+                    "LongID": "",
+                    "Tag_Description": "",
+                    "Safety": "",
+                    "PI_Tag": false,
+                    "DOT": false,
+                    "Units": "",
+                    "opcItemPath": "[{Topic}]{topic}.50:8:5:String<I1>",
+                    "historyProvider": "HistDB_Lancaster"
+                },
+                {
+                    "name": "REASON_07",
+                    "valueSource": "opc",
+                    "LongID": "",
+                    "Tag_Description": "",
+                    "Safety": "",
+                    "PI_Tag": false,
+                    "DOT": false,
+                    "Units": "",
+                    "opcItemPath": "[{Topic}]{topic}.50:8:6:String<I1>",
+                    "historyProvider": "HistDB_Lancaster"
+                },
+                {
+                    "name": "REASON_08",
+                    "valueSource": "opc",
+                    "LongID": "",
+                    "Tag_Description": "",
+                    "Safety": "",
+                    "PI_Tag": false,
+                    "DOT": false,
+                    "Units": "",
+                    "opcItemPath": "[{Topic}]{topic}.50:8:7:String<I1>",
+                    "historyProvider": "HistDB_Lancaster"
+                },
+                {
+                    "name": "REASON_09",
+                    "valueSource": "opc",
+                    "LongID": "",
+                    "Tag_Description": "",
+                    "Safety": "",
+                    "PI_Tag": false,
+                    "DOT": false,
+                    "Units": "",
+                    "opcItemPath": "[{Topic}]{topic}.50:8:8:String<I1>",
+                    "historyProvider": "HistDB_Lancaster"
+                },
+                {
+                    "name": "REASON_10",
+                    "valueSource": "opc",
+                    "LongID": "",
+                    "Tag_Description": "",
+                    "Safety": "",
+                    "PI_Tag": false,
+                    "DOT": false,
+                    "Units": "",
+                    "opcItemPath": "[{Topic}]{topic}.50:8:9:String<I1>",
+                    "historyProvider": "HistDB_Lancaster"
+                },
+                {
+                    "name": "REASON_11",
+                    "valueSource": "opc",
+                    "LongID": "",
+                    "Tag_Description": "",
+                    "Safety": "",
+                    "PI_Tag": false,
+                    "DOT": false,
+                    "Units": "",
+                    "opcItemPath": "[{Topic}]{topic}.50:8:10:String<I1>",
+                    "historyProvider": "HistDB_Lancaster"
+                },
+                {
+                    "name": "REASON_12",
+                    "valueSource": "opc",
+                    "LongID": "",
+                    "Tag_Description": "",
+                    "Safety": "",
+                    "PI_Tag": false,
+                    "DOT": false,
+                    "Units": "",
+                    "opcItemPath": "[{Topic}]{topic}.50:8:11:String<I1>",
+                    "historyProvider": "HistDB_Lancaster"
+                },
+                {
+                    "name": "REASON_13",
+                    "valueSource": "opc",
+                    "LongID": "",
+                    "Tag_Description": "",
+                    "Safety": "",
+                    "PI_Tag": false,
+                    "DOT": false,
+                    "Units": "",
+                    "opcItemPath": "[{Topic}]{topic}.50:8:12:String<I1>",
+                    "historyProvider": "HistDB_Lancaster"
+                },
+                {
+                    "name": "REASON_14",
+                    "valueSource": "opc",
+                    "LongID": "",
+                    "Tag_Description": "",
+                    "Safety": "",
+                    "PI_Tag": false,
+                    "DOT": false,
+                    "Units": "",
+                    "opcItemPath": "[{Topic}]{topic}.50:8:13:String<I1>",
+                    "historyProvider": "HistDB_Lancaster"
+                },
+                {
+                    "name": "REASON_15",
+                    "valueSource": "opc",
+                    "LongID": "",
+                    "Tag_Description": "",
+                    "Safety": "",
+                    "PI_Tag": false,
+                    "DOT": false,
+                    "Units": "",
+                    "opcItemPath": "[{Topic}]{topic}.50:8:14:String<I1>",
+                    "historyProvider": "HistDB_Lancaster"
+                },
+                {
+                    "name": "REASON_16",
+                    "valueSource": "opc",
+                    "LongID": "",
+                    "Tag_Description": "",
+                    "Safety": "",
+                    "PI_Tag": false,
+                    "DOT": false,
+                    "Units": "",
+                    "opcItemPath": "[{Topic}]{topic}.50:8:15:String<I1>",
+                    "historyProvider": "HistDB_Lancaster"
+                },
+                {
+                    "name": "REASON_17",
+                    "valueSource": "opc",
+                    "LongID": "",
+                    "Tag_Description": "",
+                    "Safety": "",
+                    "PI_Tag": false,
+                    "DOT": false,
+                    "Units": "",
+                    "opcItemPath": "[{Topic}]{topic}.50:8:16:String<I1>",
+                    "historyProvider": "HistDB_Lancaster"
+                },
+                {
+                    "name": "REASON_18",
+                    "valueSource": "opc",
+                    "LongID": "",
+                    "Tag_Description": "",
+                    "Safety": "",
+                    "PI_Tag": false,
+                    "DOT": false,
+                    "Units": "",
+                    "opcItemPath": "[{Topic}]{topic}.50:8:17:String<I1>",
+                    "historyProvider": "HistDB_Lancaster"
+                },
+                {
+                    "name": "REASON_19",
+                    "valueSource": "opc",
+                    "LongID": "",
+                    "Tag_Description": "",
+                    "Safety": "",
+                    "PI_Tag": false,
+                    "DOT": false,
+                    "Units": "",
+                    "opcItemPath": "[{Topic}]{topic}.50:8:18:String<I1>",
+                    "historyProvider": "HistDB_Lancaster"
+                },
+                {
+                    "name": "REASON_20",
+                    "valueSource": "opc",
+                    "LongID": "",
+                    "Tag_Description": "",
+                    "Safety": "",
+                    "PI_Tag": false,
+                    "DOT": false,
+                    "Units": "",
+                    "opcItemPath": "[{Topic}]{topic}.50:8:19:String<I1>",
+                    "historyProvider": "HistDB_Lancaster"
+                },
+                {
+                    "name": "REASON_21",
+                    "valueSource": "opc",
+                    "LongID": "",
+                    "Tag_Description": "",
+                    "Safety": "",
+                    "PI_Tag": false,
+                    "DOT": false,
+                    "Units": "",
+                    "opcItemPath": "[{Topic}]{topic}.50:8:20:String<I1>",
+                    "historyProvider": "HistDB_Lancaster"
+                },
+                {
+                    "name": "REASON_FIRST_IN",
+                    "valueSource": "opc",
+                    "LongID": "",
+                    "Tag_Description": "",
+                    "Safety": "",
+                    "PI_Tag": false,
+                    "DOT": false,
+                    "Units": "",
+                    "opcItemPath": "[{Topic}]{topic}.50:8:0:String<I1>",
+                    "historyProvider": "HistDB_Lancaster"
+                }
+            ],
+            "parameters": {},
+            "tagType": "UdtType"
+        },
+        {
+            "name": "TOTALFLOWG4/METER_OIL_SAMPLER",
+            "typeID": "LONGMONT_REGIONAL_BASE",
+            "tags": [
+                {
+                    "name": "YZ_SAMPLER_MAX_FILL_VOL_GAL",
+                    "valueSource": "opc",
+                    "LongID": "",
+                    "Tag_Description": "",
+                    "Safety": "",
+                    "PI_Tag": false,
+                    "DOT": false,
+                    "Units": "",
+                    "opcItemPath": "[{Topic}]{topic}.9:12:61:R4<I1>",
+                    "historyProvider": "HistDB_Lancaster"
+                },
+                {
+                    "name": "YZ_SAMPLER_MAX_FILL_VOL_CC",
+                    "valueSource": "opc",
+                    "LongID": "",
+                    "Tag_Description": "",
+                    "Safety": "",
+                    "PI_Tag": false,
+                    "DOT": false,
+                    "Units": "",
+                    "opcItemPath": "[{Topic}]{topic}.9:12:62:R4<I1>",
+                    "historyProvider": "HistDB_Lancaster"
+                },
+                {
+                    "name": "DESIRED_YZ_SAMPLER_FILL",
+                    "valueSource": "opc",
+                    "LongID": "",
+                    "Tag_Description": "",
+                    "Safety": "",
+                    "PI_Tag": false,
+                    "DOT": false,
+                    "Units": "",
+                    "opcItemPath": "[{Topic}]{topic}.9:12:63:R4<I1>",
+                    "historyProvider": "HistDB_Lancaster"
+                },
+                {
+                    "name": "BARRELS_PER_DAY",
+                    "valueSource": "opc",
+                    "LongID": "",
+                    "Tag_Description": "",
+                    "Safety": "",
+                    "PI_Tag": false,
+                    "DOT": false,
+                    "Units": "",
+                    "opcItemPath": "[{Topic}]{topic}.9:12:64:R4<I1>",
+                    "historyProvider": "HistDB_Lancaster"
+                },
+                {
+                    "name": "NUM_SAMPLING_DAYS_IN_MONTH",
+                    "valueSource": "opc",
+                    "LongID": "",
+                    "Tag_Description": "",
+                    "Safety": "",
+                    "PI_Tag": false,
+                    "DOT": false,
+                    "Units": "",
+                    "opcItemPath": "[{Topic}]{topic}.9:12:65:UI1<I1>",
+                    "historyProvider": "HistDB_Lancaster"
+                },
+                {
+                    "name": "BITE_SIZE_PER_PULSE",
+                    "valueSource": "opc",
+                    "LongID": "",
+                    "Tag_Description": "",
+                    "Safety": "",
+                    "PI_Tag": false,
+                    "DOT": false,
+                    "Units": "",
+                    "opcItemPath": "[{Topic}]{topic}.9:12:66:R4<I1>",
+                    "historyProvider": "HistDB_Lancaster"
+                },
+                {
+                    "name": "SAMPLE_BITE_DURATION",
+                    "valueSource": "opc",
+                    "LongID": "",
+                    "Tag_Description": "",
+                    "Safety": "",
+                    "PI_Tag": false,
+                    "DOT": false,
+                    "Units": "",
+                    "opcItemPath": "[{Topic}]{topic}.9:12:67:R4<I1>",
+                    "historyProvider": "HistDB_Lancaster"
+                },
+                {
+                    "name": "REQUIRED_CC_PER_DAY",
+                    "valueSource": "opc",
+                    "LongID": "",
+                    "Tag_Description": "",
+                    "Safety": "",
+                    "PI_Tag": false,
+                    "DOT": false,
+                    "Units": "",
+                    "opcItemPath": "[{Topic}]{topic}.9:12:68:R4<I1>",
+                    "historyProvider": "HistDB_Lancaster"
+                },
+                {
+                    "name": "PUMP_STROKES_PER_DAY",
+                    "valueSource": "opc",
+                    "LongID": "",
+                    "Tag_Description": "",
+                    "Safety": "",
+                    "PI_Tag": false,
+                    "DOT": false,
+                    "Units": "",
+                    "opcItemPath": "[{Topic}]{topic}.9:0:14:R4<I1>",
+                    "historyProvider": "HistDB_Lancaster"
+                },
+                {
+                    "name": "SAMPLE_BITE_FREQUENCY",
+                    "valueSource": "opc",
+                    "LongID": "",
+                    "Tag_Description": "",
+                    "Safety": "",
+                    "PI_Tag": false,
+                    "DOT": false,
+                    "Units": "",
+                    "opcItemPath": "[{Topic}]{topic}.9:12:69:R4<I1>",
+                    "historyProvider": "HistDB_Lancaster"
+                },
+                {
+                    "name": "YZ_SAMPLER_N2_LEAK",
+                    "valueSource": "opc",
+                    "LongID": "",
+                    "Tag_Description": "",
+                    "Safety": "",
+                    "PI_Tag": false,
+                    "DOT": false,
+                    "Units": "",
+                    "opcItemPath": "[{Topic}]{topic}.9:12:70:UI1<I1>",
+                    "historyProvider": "HistDB_Lancaster"
+                },
+                {
+                    "name": "YZ_SAMPLER_OVER_50",
+                    "valueSource": "opc",
+                    "LongID": "",
+                    "Tag_Description": "",
+                    "Safety": "",
+                    "PI_Tag": false,
+                    "DOT": false,
+                    "Units": "",
+                    "opcItemPath": "[{Topic}]{topic}.9:12:71:UI1<I1>",
+                    "historyProvider": "HistDB_Lancaster"
+                },
+                {
+                    "name": "YZ_SAMPLER_OVER_80",
+                    "valueSource": "opc",
+                    "LongID": "",
+                    "Tag_Description": "",
+                    "Safety": "",
+                    "PI_Tag": false,
+                    "DOT": false,
+                    "Units": "",
+                    "opcItemPath": "[{Topic}]{topic}.9:12:72:UI1<I1>",
+                    "historyProvider": "HistDB_Lancaster"
+                },
+                {
+                    "name": "YZ_SAMPLER_NOT_FILLING",
+                    "valueSource": "opc",
+                    "LongID": "",
+                    "Tag_Description": "",
+                    "Safety": "",
+                    "PI_Tag": false,
+                    "DOT": false,
+                    "Units": "",
+                    "opcItemPath": "[{Topic}]{topic}.9:12:73:UI1<I1>",
+                    "historyProvider": "HistDB_Lancaster"
+                },
+                {
+                    "name": "YZ_N2_PSI_BELOW_PIPELINE_PSI",
+                    "valueSource": "opc",
+                    "LongID": "",
+                    "Tag_Description": "",
+                    "Safety": "",
+                    "PI_Tag": false,
+                    "DOT": false,
+                    "Units": "",
+                    "opcItemPath": "[{Topic}]{topic}.9:12:74:UI1<I1>",
+                    "historyProvider": "HistDB_Lancaster"
+                },
+                {
+                    "name": "VOLUME_INFO_FULL_CC",
+                    "valueSource": "opc",
+                    "LongID": "",
+                    "Tag_Description": "",
+                    "Safety": "",
+                    "PI_Tag": false,
+                    "DOT": false,
+                    "Units": "",
+                    "opcItemPath": "[{Topic}]{topic}.9:12:75:R4<I1>",
+                    "historyProvider": "HistDB_Lancaster"
+                },
+                {
+                    "name": "VOLUME_INFO_PERCENT_FULL",
+                    "valueSource": "opc",
+                    "LongID": "",
+                    "Tag_Description": "",
+                    "Safety": "",
+                    "PI_Tag": false,
+                    "DOT": false,
+                    "Units": "",
+                    "opcItemPath": "[{Topic}]{topic}.9:12:76:R4<I1>",
+                    "historyProvider": "HistDB_Lancaster"
+                },
+                {
+                    "name": "VOLUME_INFO_SAMPLER_ACCUMULATOR",
+                    "valueSource": "opc",
+                    "LongID": "",
+                    "Tag_Description": "",
+                    "Safety": "",
+                    "PI_Tag": false,
+                    "DOT": false,
+                    "Units": "",
+                    "opcItemPath": "[{Topic}]{topic}.9:12:77:R4<I1>",
+                    "historyProvider": "HistDB_Lancaster"
+                },
+                {
+                    "name": "VOLUME_INFO_BITE_SIZE",
+                    "valueSource": "opc",
+                    "LongID": "",
+                    "Tag_Description": "",
+                    "Safety": "",
+                    "PI_Tag": false,
+                    "DOT": false,
+                    "Units": "",
+                    "opcItemPath": "[{Topic}]{topic}.9:12:78:R4<I1>",
+                    "historyProvider": "HistDB_Lancaster"
+                },
+                {
+                    "name": "VOLUME_INFO_SAMPLE_RESET_BUTTON",
+                    "valueSource": "opc",
+                    "LongID": "",
+                    "Tag_Description": "",
+                    "Safety": "",
+                    "PI_Tag": false,
+                    "DOT": false,
+                    "Units": "",
+                    "opcItemPath": "[{Topic}]{topic}.9:12:79:UI1<I1>",
+                    "historyProvider": "HistDB_Lancaster"
+                },
+                {
+                    "name": "TROUBLESHOOT_INFO_YZ_SAMPLER_ENABLED",
+                    "valueSource": "opc",
+                    "LongID": "",
+                    "Tag_Description": "",
+                    "Safety": "",
+                    "PI_Tag": false,
+                    "DOT": false,
+                    "Units": "",
+                    "opcItemPath": "[{Topic}]{topic}.9:12:80:UI1<I1>",
+                    "historyProvider": "HistDB_Lancaster"
+                },
+                {
+                    "name": "TROUBLESHOOT_INFO_NITROGEN_AND_CORIOLIS",
+                    "valueSource": "opc",
+                    "LongID": "",
+                    "Tag_Description": "",
+                    "Safety": "",
+                    "PI_Tag": false,
+                    "DOT": false,
+                    "Units": "",
+                    "opcItemPath": "[{Topic}]{topic}.9:12:84:R4<I1>",
+                    "historyProvider": "HistDB_Lancaster"
+                },
+                {
+                    "name": "TROUBLESHOOT_INFO_NITROGEN_PSI_WHEN_SAMP",
+                    "valueSource": "opc",
+                    "LongID": "",
+                    "Tag_Description": "",
+                    "Safety": "",
+                    "PI_Tag": false,
+                    "DOT": false,
+                    "Units": "",
+                    "opcItemPath": "[{Topic}]{topic}.9:12:81:R4<I1>",
+                    "historyProvider": "HistDB_Lancaster"
+                },
+                {
+                    "name": "TROUBLESHOOT_INFO_CURRENT_NITROGEN_PRESS",
+                    "valueSource": "opc",
+                    "LongID": "",
+                    "Tag_Description": "",
+                    "Safety": "",
+                    "PI_Tag": false,
+                    "DOT": false,
+                    "Units": "",
+                    "opcItemPath": "[{Topic}]{topic}.9:12:82:R4<I1>",
+                    "historyProvider": "HistDB_Lancaster"
+                },
+                {
+                    "name": "CURRENT_PIPELINE_PRESSURE",
+                    "valueSource": "opc",
+                    "LongID": "",
+                    "Tag_Description": "",
+                    "Safety": "",
+                    "PI_Tag": false,
+                    "DOT": false,
+                    "Units": "",
+                    "opcItemPath": "[{Topic}]{topic}.9:12:83:R4<I1>",
+                    "historyProvider": "HistDB_Lancaster"
+                },
+                {
+                    "name": "PREV_MONTH_TOTAL",
+                    "valueSource": "opc",
+                    "LongID": "",
+                    "Tag_Description": "",
+                    "Safety": "",
+                    "PI_Tag": false,
+                    "DOT": false,
+                    "Units": "",
+                    "opcItemPath": "[{Topic}]{topic}.9:12:85:R4<I1>",
+                    "historyProvider": "HistDB_Lancaster"
+                },
+                {
+                    "name": "YEST_TOTAL",
+                    "valueSource": "opc",
+                    "LongID": "",
+                    "Tag_Description": "",
+                    "Safety": "",
+                    "PI_Tag": false,
+                    "DOT": false,
+                    "Units": "",
+                    "opcItemPath": "[{Topic}]{topic}.9:12:86:R4<I1>",
+                    "historyProvider": "HistDB_Lancaster"
+                },
+                {
+                    "name": "CURRENT_MONTH_TOTAL",
+                    "valueSource": "opc",
+                    "LongID": "",
+                    "Tag_Description": "",
+                    "Safety": "",
+                    "PI_Tag": false,
+                    "DOT": false,
+                    "Units": "",
+                    "opcItemPath": "[{Topic}]{topic}.9:12:87:R4<I1>",
+                    "historyProvider": "HistDB_Lancaster"
+                },
+                {
+                    "name": "CURRENT_FLOW_RATE",
+                    "valueSource": "opc",
+                    "LongID": "",
+                    "Tag_Description": "",
+                    "Safety": "",
+                    "PI_Tag": false,
+                    "DOT": false,
+                    "Units": "",
+                    "opcItemPath": "[{Topic}]{topic}.9:12:88:R4<I1>",
+                    "historyProvider": "HistDB_Lancaster"
+                },
+                {
+                    "name": "TEST_FIRE_SAMPLER",
+                    "valueSource": "opc",
+                    "LongID": "",
+                    "Tag_Description": "",
+                    "Safety": "",
+                    "PI_Tag": false,
+                    "DOT": false,
+                    "Units": "",
+                    "opcItemPath": "[{Topic}]{topic}.9:12:89:UI1<I1>",
+                    "historyProvider": "HistDB_Lancaster"
+                }
+            ],
+            "parameters": {},
+            "tagType": "UdtType"
+        },
+        {
+            "name": "EMERSONROCL/DEVICE_STD",
+            "typeID": "EMERSONROCL/DEVICE",
+            "tags": [
+                {
+                    "name": "BATTERY_VOLTAGE",
+                    "valueSource": "opc",
+                    "LongID": "",
+                    "Tag_Description": "",
+                    "Safety": "",
+                    "PI_Tag": false,
+                    "DOT": false,
+                    "Units": "",
+                    "opcItemPath": {
+                        "bindType": "parameter",
+                        "binding": "[{Topic}]{_t_BATTERY_VOLTAGE}"
+                    },
+                    "historyProvider": "HistDB_Lancaster"
+                },
+                {
+                    "name": "CURRENT_HOUR",
+                    "valueSource": "opc",
+                    "LongID": "",
+                    "Tag_Description": "",
+                    "Safety": "",
+                    "PI_Tag": false,
+                    "DOT": false,
+                    "Units": "",
+                    "opcItemPath": "[{Topic}]{topic}.12.2.1<TUINT8><I1>",
+                    "historyProvider": "HistDB_Lancaster"
+                },
+                {
+                    "name": "CURRENT_MINUTE",
+                    "valueSource": "opc",
+                    "LongID": "",
+                    "Tag_Description": "",
+                    "Safety": "",
+                    "PI_Tag": false,
+                    "DOT": false,
+                    "Units": "",
+                    "opcItemPath": "[{Topic}]{topic}.12.1.1<TUINT8><I1>",
+                    "historyProvider": "HistDB_Lancaster"
+                },
+                {
+                    "name": "RTU_BOARD_TEMPERATURE",
+                    "valueSource": "opc",
+                    "LongID": "",
+                    "Tag_Description": "",
+                    "Safety": "",
+                    "PI_Tag": false,
+                    "DOT": false,
+                    "Units": "",
+                    "opcItemPath": {
+                        "bindType": "parameter",
+                        "binding": "[{Topic}]{_t_RTU_BOARD_TEMPERATURE}"
+                    },
+                    "historyProvider": "HistDB_Lancaster"
+                },
+                {
+                    "name": "AIR_SUPPLY_PRESSURE_ALARM",
+                    "valueSource": "opc",
+                    "LongID": "",
+                    "Tag_Description": "",
+                    "Safety": "",
+                    "PI_Tag": false,
+                    "DOT": false,
+                    "Units": "",
+                    "opcItemPath": "[{Topic}]{topic}.98.1.3<TBIN><I1>",
+                    "historyProvider": "HistDB_Lancaster"
+                },
+                {
+                    "name": "OIL_TEMP_ALARM",
+                    "valueSource": "opc",
+                    "LongID": "",
+                    "Tag_Description": "",
+                    "Safety": "",
+                    "PI_Tag": false,
+                    "DOT": false,
+                    "Units": "",
+                    "opcItemPath": "[{Topic}]{topic}.98.2.3<TBIN><I1>",
+                    "historyProvider": "HistDB_Lancaster"
+                },
+                {
+                    "name": "PIPELINE_PRESSURE_ALARM",
+                    "valueSource": "opc",
+                    "LongID": "",
+                    "Tag_Description": "",
+                    "Safety": "",
+                    "PI_Tag": false,
+                    "DOT": false,
+                    "Units": "",
+                    "opcItemPath": "[{Topic}]{topic}.98.3.3<TBIN><I1>",
+                    "historyProvider": "HistDB_Lancaster"
+                },
+                {
+                    "name": "MEASUREMENT_SKID_SUMP",
+                    "valueSource": "opc",
+                    "LongID": "",
+                    "Tag_Description": "",
+                    "Safety": "",
+                    "PI_Tag": false,
+                    "DOT": false,
+                    "Units": "",
+                    "opcItemPath": "[{Topic}]{topic}.98.4.3<TBIN><I1>",
+                    "historyProvider": "HistDB_Lancaster"
+                },
+                {
+                    "name": "PRODUCTION_PERMISSIVE",
+                    "valueSource": "opc",
+                    "LongID": "",
+                    "Tag_Description": "",
+                    "Safety": "",
+                    "PI_Tag": false,
+                    "DOT": false,
+                    "Units": "",
+                    "opcItemPath": "[{Topic}]{topic}.98.5.3<TBIN><I1>",
+                    "historyProvider": "HistDB_Lancaster"
+                },
+                {
+                    "name": "ROC_LOW_VOLTAGE_ALARM",
+                    "valueSource": "opc",
+                    "LongID": "",
+                    "Tag_Description": "",
+                    "Safety": "",
+                    "PI_Tag": false,
+                    "DOT": false,
+                    "Units": "",
+                    "opcItemPath": "[{Topic}]{topic}.98.6.3<TBIN><I1>",
+                    "historyProvider": "HistDB_Lancaster"
+                },
+                {
+                    "name": "NO_FLOW_ALARM",
+                    "valueSource": "opc",
+                    "LongID": "",
+                    "Tag_Description": "",
+                    "Safety": "",
+                    "PI_Tag": false,
+                    "DOT": false,
+                    "Units": "",
+                    "opcItemPath": "[{Topic}]{topic}.98.7.3<TBIN><I1>",
+                    "historyProvider": "HistDB_Lancaster"
+                },
+                {
+                    "name": "OIL_DENSITY_ALARM",
+                    "valueSource": "opc",
+                    "LongID": "",
+                    "Tag_Description": "",
+                    "Safety": "",
+                    "PI_Tag": false,
+                    "DOT": false,
+                    "Units": "",
+                    "opcItemPath": "[{Topic}]{topic}.98.8.3<TBIN><I1>",
+                    "historyProvider": "HistDB_Lancaster"
+                },
+                {
+                    "name": "DRIVE_GAIN_ALARM",
+                    "valueSource": "opc",
+                    "LongID": "",
+                    "Tag_Description": "",
+                    "Safety": "",
+                    "PI_Tag": false,
+                    "DOT": false,
+                    "Units": "",
+                    "opcItemPath": "[{Topic}]{topic}.98.9.3<TBIN><I1>",
+                    "historyProvider": "HistDB_Lancaster"
+                },
+                {
+                    "name": "BACK_PRESSURE_ALARM",
+                    "valueSource": "opc",
+                    "LongID": "",
+                    "Tag_Description": "",
+                    "Safety": "",
+                    "PI_Tag": false,
+                    "DOT": false,
+                    "Units": "",
+                    "opcItemPath": "[{Topic}]{topic}.98.10.3<TBIN><I1>",
+                    "historyProvider": "HistDB_Lancaster"
+                },
+                {
+                    "name": "COMM_FAIL_TO_RTU",
+                    "valueSource": "opc",
+                    "LongID": "",
+                    "Tag_Description": "",
+                    "Safety": "",
+                    "PI_Tag": false,
+                    "DOT": false,
+                    "Units": "",
+                    "opcItemPath": "[{Topic}]{topic}.98.11.3<TBIN><I1>",
+                    "historyProvider": "HistDB_Lancaster"
+                },
+                {
+                    "name": "ESD_VALVE_NORMALLY_OPEN",
+                    "valueSource": "opc",
+                    "LongID": "",
+                    "Tag_Description": "",
+                    "Safety": "",
+                    "PI_Tag": false,
+                    "DOT": false,
+                    "Units": "",
+                    "opcItemPath": "[{Topic}]{topic}.98.12.3<TBIN><I1>",
+                    "historyProvider": "HistDB_Lancaster"
+                },
+                {
+                    "name": "ESD_VALVE_NORMALLY_CLOSED",
+                    "valueSource": "opc",
+                    "LongID": "",
+                    "Tag_Description": "",
+                    "Safety": "",
+                    "PI_Tag": false,
+                    "DOT": false,
+                    "Units": "",
+                    "opcItemPath": "[{Topic}]{topic}.98.13.3<TBIN><I1>",
+                    "historyProvider": "HistDB_Lancaster"
+                },
+                {
+                    "name": "BSW_ACCUM_ALARM",
+                    "valueSource": "opc",
+                    "LongID": "",
+                    "Tag_Description": "",
+                    "Safety": "",
+                    "PI_Tag": false,
+                    "DOT": false,
+                    "Units": "",
+                    "opcItemPath": "[{Topic}]{topic}.98.14.3<TBIN><I1>",
+                    "historyProvider": "HistDB_Lancaster"
+                },
+                {
+                    "name": "TEMPERATURE",
+                    "valueSource": "opc",
+                    "LongID": "",
+                    "Tag_Description": "",
+                    "Safety": "",
+                    "PI_Tag": false,
+                    "DOT": false,
+                    "Units": "",
+                    "opcItemPath": "[{Topic}]{topic}.98.3.3<TFLP><I1>",
+                    "historyProvider": "HistDB_Lancaster"
+                }
+            ],
+            "parameters": {
+                "_t_BATTERY_VOLTAGE": {
+                    "dataType": "String",
+                    "value": {
+                        "bindType": "parameter",
+                        "binding": "[{Topic}]_t_BATTERY_VOLTAGE"
+                    }
+                },
+                "_t_RTU_BOARD_TEMPERATURE": {
+                    "dataType": "String",
+                    "value": {
+                        "bindType": "parameter",
+                        "binding": "[{Topic}]_t_RTU_BOARD_TEMPERATURE"
+                    }
+                }
+            },
+            "tagType": "UdtType"
+        },
+        {
+            "name": "EMERSONROCL/METER_GAS_STD",
+            "typeID": "EMERSONROCL/METER_GAS",
+            "tags": [
+                {
+                    "name": "RATE",
+                    "valueSource": "opc",
+                    "LongID": "",
+                    "Tag_Description": "",
+                    "Safety": "",
+                    "PI_Tag": false,
+                    "DOT": false,
+                    "Units": "",
+                    "opcItemPath": {
+                        "bindType": "parameter",
+                        "binding": "[{Topic}]{_t_RATE}"
+                    },
+                    "historyProvider": "HistDB_Lancaster"
+                },
+                {
+                    "name": "ENERGY",
+                    "valueSource": "opc",
+                    "LongID": "",
+                    "Tag_Description": "",
+                    "Safety": "",
+                    "PI_Tag": false,
+                    "DOT": false,
+                    "Units": "",
+                    "opcItemPath": {
+                        "bindType": "parameter",
+                        "binding": "[{Topic}]{_t_ENERGY}"
+                    },
+                    "historyProvider": "HistDB_Lancaster"
+                },
+                {
+                    "name": "ENERGY_TODAY",
+                    "valueSource": "opc",
+                    "LongID": "",
+                    "Tag_Description": "",
+                    "Safety": "",
+                    "PI_Tag": false,
+                    "DOT": false,
+                    "Units": "",
+                    "opcItemPath": {
+                        "bindType": "parameter",
+                        "binding": "[{Topic}]{_t_ENERGY_TODAY}"
+                    },
+                    "historyProvider": "HistDB_Lancaster"
+                },
+                {
+                    "name": "ENERGY_YESTERDAY",
+                    "valueSource": "opc",
+                    "LongID": "",
+                    "Tag_Description": "",
+                    "Safety": "",
+                    "PI_Tag": false,
+                    "DOT": false,
+                    "Units": "",
+                    "opcItemPath": {
+                        "bindType": "parameter",
+                        "binding": "[{Topic}]{_t_ENERGY_YESTERDAY}"
+                    },
+                    "historyProvider": "HistDB_Lancaster"
+                },
+                {
+                    "name": "VOLUME_TODAY",
+                    "valueSource": "opc",
+                    "LongID": "",
+                    "Tag_Description": "",
+                    "Safety": "",
+                    "PI_Tag": false,
+                    "DOT": false,
+                    "Units": "",
+                    "opcItemPath": {
+                        "bindType": "parameter",
+                        "binding": "[{Topic}]{_t_VOLUME_TODAY}"
+                    },
+                    "historyProvider": "HistDB_Lancaster"
+                },
+                {
+                    "name": "VOLUME_YESTERDAY",
+                    "valueSource": "opc",
+                    "LongID": "",
+                    "Tag_Description": "",
+                    "Safety": "",
+                    "PI_Tag": false,
+                    "DOT": false,
+                    "Units": "",
+                    "opcItemPath": {
+                        "bindType": "parameter",
+                        "binding": "[{Topic}]{_t_VOLUME_YESTERDAY}"
+                    },
+                    "historyProvider": "HistDB_Lancaster"
+                },
+                {
+                    "name": "DIFFERENTIAL_PRESSURE",
+                    "valueSource": "opc",
+                    "LongID": "",
+                    "Tag_Description": "",
+                    "Safety": "",
+                    "PI_Tag": false,
+                    "DOT": false,
+                    "Units": "",
+                    "opcItemPath": {
+                        "bindType": "parameter",
+                        "binding": "[{Topic}]{_t_DIFFERENTIAL_PRESSURE}"
+                    },
+                    "historyProvider": "HistDB_Lancaster"
+                },
+                {
+                    "name": "STATIC_PRESSURE",
+                    "valueSource": "opc",
+                    "LongID": "",
+                    "Tag_Description": "",
+                    "Safety": "",
+                    "PI_Tag": false,
+                    "DOT": false,
+                    "Units": "",
+                    "opcItemPath": {
+                        "bindType": "parameter",
+                        "binding": "[{Topic}]{_t_STATIC_PRESSURE}"
+                    },
+                    "historyProvider": "HistDB_Lancaster"
+                },
+                {
+                    "name": "TEMPERATURE",
+                    "valueSource": "opc",
+                    "LongID": "",
+                    "Tag_Description": "",
+                    "Safety": "",
+                    "PI_Tag": false,
+                    "DOT": false,
+                    "Units": "",
+                    "opcItemPath": {
+                        "bindType": "parameter",
+                        "binding": "[{Topic}]{_t_TEMPERATURE}"
+                    },
+                    "historyProvider": "HistDB_Lancaster"
+                },
+                {
+                    "name": "VOLTAGE",
+                    "valueSource": "opc",
+                    "LongID": "",
+                    "Tag_Description": "",
+                    "Safety": "",
+                    "PI_Tag": false,
+                    "DOT": false,
+                    "Units": "",
+                    "opcItemPath": {
+                        "bindType": "parameter",
+                        "binding": "[{Topic}]{_t_VOLTAGE}"
+                    },
+                    "historyProvider": "HistDB_Lancaster"
+                },
+                {
+                    "name": "CURRENT_HOUR",
+                    "valueSource": "opc",
+                    "LongID": "",
+                    "Tag_Description": "",
+                    "Safety": "",
+                    "PI_Tag": false,
+                    "DOT": false,
+                    "Units": "",
+                    "opcItemPath": {
+                        "bindType": "parameter",
+                        "binding": "[{Topic}]{_t_CURRENT_HOUR}"
+                    },
+                    "historyProvider": "HistDB_Lancaster"
+                },
+                {
+                    "name": "CURRENT_MINUTE",
+                    "valueSource": "opc",
+                    "LongID": "",
+                    "Tag_Description": "",
+                    "Safety": "",
+                    "PI_Tag": false,
+                    "DOT": false,
+                    "Units": "",
+                    "opcItemPath": {
+                        "bindType": "parameter",
+                        "binding": "[{Topic}]{_t_CURRENT_MINUTE}"
+                    },
+                    "historyProvider": "HistDB_Lancaster"
+                },
+                {
+                    "name": "VOLUMETRIC_FLOW_RATE_SETPOINT",
+                    "valueSource": "opc",
+                    "LongID": "",
+                    "Tag_Description": "",
+                    "Safety": "",
+                    "PI_Tag": false,
+                    "DOT": false,
+                    "Units": "",
+                    "opcItemPath": {
+                        "bindType": "parameter",
+                        "binding": "[{Topic}]{_t_VOLUMETRIC_FLOW_RATE_SETPOINT}"
+                    },
+                    "historyProvider": "HistDB_Lancaster"
+                },
+                {
+                    "name": "VALVE_POSITION",
+                    "valueSource": "opc",
+                    "LongID": "",
+                    "Tag_Description": "",
+                    "Safety": "",
+                    "PI_Tag": false,
+                    "DOT": false,
+                    "Units": "",
+                    "opcItemPath": {
+                        "bindType": "parameter",
+                        "binding": "[{Topic}]{_t_VALVE_POSITION}"
+                    },
+                    "historyProvider": "HistDB_Lancaster"
+                },
+                {
+                    "name": "BTU",
+                    "valueSource": "opc",
+                    "LongID": "",
+                    "Tag_Description": "",
+                    "Safety": "",
+                    "PI_Tag": false,
+                    "DOT": false,
+                    "Units": "",
+                    "opcItemPath": {
+                        "bindType": "parameter",
+                        "binding": "[{Topic}]{_t_BTU}"
+                    },
+                    "historyProvider": "HistDB_Lancaster"
+                }
+            ],
+            "parameters": {
+                "_t_RATE": {
+                    "dataType": "String",
+                    "value": {
+                        "bindType": "parameter",
+                        "binding": "[{Topic}]_t_RATE"
+                    }
+                },
+                "_t_ENERGY": {
+                    "dataType": "String",
+                    "value": {
+                        "bindType": "parameter",
+                        "binding": "[{Topic}]_t_ENERGY"
+                    }
+                },
+                "_t_ENERGY_TODAY": {
+                    "dataType": "String",
+                    "value": {
+                        "bindType": "parameter",
+                        "binding": "[{Topic}]_t_ENERGY_TODAY"
+                    }
+                },
+                "_t_ENERGY_YESTERDAY": {
+                    "dataType": "String",
+                    "value": {
+                        "bindType": "parameter",
+                        "binding": "[{Topic}]_t_ENERGY_YESTERDAY"
+                    }
+                },
+                "_t_VOLUME_TODAY": {
+                    "dataType": "String",
+                    "value": {
+                        "bindType": "parameter",
+                        "binding": "[{Topic}]_t_VOLUME_TODAY"
+                    }
+                },
+                "_t_VOLUME_YESTERDAY": {
+                    "dataType": "String",
+                    "value": {
+                        "bindType": "parameter",
+                        "binding": "[{Topic}]_t_VOLUME_YESTERDAY"
+                    }
+                },
+                "_t_DIFFERENTIAL_PRESSURE": {
+                    "dataType": "String",
+                    "value": {
+                        "bindType": "parameter",
+                        "binding": "[{Topic}]_t_DIFFERENTIAL_PRESSURE"
+                    }
+                },
+                "_t_STATIC_PRESSURE": {
+                    "dataType": "String",
+                    "value": {
+                        "bindType": "parameter",
+                        "binding": "[{Topic}]_t_STATIC_PRESSURE"
+                    }
+                },
+                "_t_TEMPERATURE": {
+                    "dataType": "String",
+                    "value": {
+                        "bindType": "parameter",
+                        "binding": "[{Topic}]_t_TEMPERATURE"
+                    }
+                },
+                "_t_VOLTAGE": {
+                    "dataType": "String",
+                    "value": {
+                        "bindType": "parameter",
+                        "binding": "[{Topic}]_t_VOLTAGE"
+                    }
+                },
+                "_t_CURRENT_HOUR": {
+                    "dataType": "String",
+                    "value": {
+                        "bindType": "parameter",
+                        "binding": "[{Topic}]_t_CURRENT_HOUR"
+                    }
+                },
+                "_t_CURRENT_MINUTE": {
+                    "dataType": "String",
+                    "value": {
+                        "bindType": "parameter",
+                        "binding": "[{Topic}]_t_CURRENT_MINUTE"
+                    }
+                },
+                "_t_VOLUMETRIC_FLOW_RATE_SETPOINT": {
+                    "dataType": "String",
+                    "value": {
+                        "bindType": "parameter",
+                        "binding": "[{Topic}]_t_VOLUMETRIC_FLOW_RATE_SETPOINT"
+                    }
+                },
+                "_t_VALVE_POSITION": {
+                    "dataType": "String",
+                    "value": {
+                        "bindType": "parameter",
+                        "binding": "[{Topic}]_t_VALVE_POSITION"
+                    }
+                },
+                "_t_BTU": {
+                    "dataType": "String",
+                    "value": {
+                        "bindType": "parameter",
+                        "binding": "[{Topic}]_t_BTU"
+                    }
+                }
+            },
+            "tagType": "UdtType"
+        },
+        {
+            "name": "EMERSONROCL/METER_OIL_ALARM",
+            "typeID": "LONGMONT_REGIONAL_BASE",
+            "tags": [
+                {
+                    "name": "RESET_BSW_OVER_RANGE_ALARM",
+                    "valueSource": "opc",
+                    "LongID": "",
+                    "Tag_Description": "",
+                    "Safety": "",
+                    "PI_Tag": false,
+                    "DOT": false,
+                    "Units": "",
+                    "opcItemPath": "[{Topic}]{topic}.98.14.2<TBIN><I1>",
+                    "historyProvider": "HistDB_Lancaster"
+                },
+                {
+                    "name": "CURRENT_BSW",
+                    "valueSource": "opc",
+                    "LongID": "",
+                    "Tag_Description": "",
+                    "Safety": "",
+                    "PI_Tag": false,
+                    "DOT": false,
+                    "Units": "",
+                    "opcItemPath": "[{Topic}]{topic}.103.21.35<TFLP><I1>",
+                    "historyProvider": "HistDB_Lancaster"
+                },
+                {
+                    "name": "CURRENT_AIR_PSI",
+                    "valueSource": "opc",
+                    "LongID": "",
+                    "Tag_Description": "",
+                    "Safety": "",
+                    "PI_Tag": false,
+                    "DOT": false,
+                    "Units": "",
+                    "opcItemPath": "[{Topic}]{topic}.103.21.41<TFLP><I1>",
+                    "historyProvider": "HistDB_Lancaster"
+                },
+                {
+                    "name": "CURRENT_OIL_TEMP",
+                    "valueSource": "opc",
+                    "LongID": "",
+                    "Tag_Description": "",
+                    "Safety": "",
+                    "PI_Tag": false,
+                    "DOT": false,
+                    "Units": "",
+                    "opcItemPath": "[{Topic}]{topic}.103.21.34<TFLP><I1>",
+                    "historyProvider": "HistDB_Lancaster"
+                },
+                {
+                    "name": "OIL_TEMP_HIHI_SETPOINT",
+                    "valueSource": "opc",
+                    "LongID": "",
+                    "Tag_Description": "",
+                    "Safety": "",
+                    "PI_Tag": false,
+                    "DOT": false,
+                    "Units": "",
+                    "opcItemPath": "[{Topic}]{topic}.98.3.5<TFLP><I1>",
+                    "historyProvider": "HistDB_Lancaster"
+                },
+                {
+                    "name": "CURRENT_PIPELINE_PSI",
+                    "valueSource": "opc",
+                    "LongID": "",
+                    "Tag_Description": "",
+                    "Safety": "",
+                    "PI_Tag": false,
+                    "DOT": false,
+                    "Units": "",
+                    "opcItemPath": "[{Topic}]{topic}.103.21.36<TFLP><I1>",
+                    "historyProvider": "HistDB_Lancaster"
+                },
+                {
+                    "name": "CURRENT_FLOW_RATE",
+                    "valueSource": "opc",
+                    "LongID": "",
+                    "Tag_Description": "",
+                    "Safety": "",
+                    "PI_Tag": false,
+                    "DOT": false,
+                    "Units": "",
+                    "opcItemPath": "[{Topic}]{topic}.204.105.1<TFLP><I1>",
+                    "historyProvider": "HistDB_Lancaster"
+                },
+                {
+                    "name": "SUMP_SWITCH",
+                    "valueSource": "opc",
+                    "LongID": "",
+                    "Tag_Description": "",
+                    "Safety": "",
+                    "PI_Tag": false,
+                    "DOT": false,
+                    "Units": "",
+                    "opcItemPath": "[{Topic}]{topic}.101.15.59<TBIN><I1>",
+                    "historyProvider": "HistDB_Lancaster"
+                },
+                {
+                    "name": "CURRENT_ROC_VOLTAGE",
+                    "valueSource": "opc",
+                    "LongID": "",
+                    "Tag_Description": "",
+                    "Safety": "",
+                    "PI_Tag": false,
+                    "DOT": false,
+                    "Units": "",
+                    "opcItemPath": "[{Topic}]{topic}.109.12.2<TFLP><I1>",
+                    "historyProvider": "HistDB_Lancaster"
+                },
+                {
+                    "name": "CURRENT_HEARTBEAT",
+                    "valueSource": "opc",
+                    "LongID": "",
+                    "Tag_Description": "",
+                    "Safety": "",
+                    "PI_Tag": false,
+                    "DOT": false,
+                    "Units": "",
+                    "opcItemPath": "[{Topic}]{topic}.98.3.8<TFLP><I1>",
+                    "historyProvider": "HistDB_Lancaster"
+                },
+                {
+                    "name": "ESD_VALVE_STATUS",
+                    "valueSource": "opc",
+                    "LongID": "",
+                    "Tag_Description": "",
+                    "Safety": "",
+                    "PI_Tag": false,
+                    "DOT": false,
+                    "Units": "",
+                    "opcItemPath": "[{Topic}]{topic}.102.8.65<TBIN><I1>",
+                    "historyProvider": "HistDB_Lancaster"
+                },
+                {
+                    "name": "MEASUREMENT_PERMISSIVE",
+                    "valueSource": "opc",
+                    "LongID": "",
+                    "Tag_Description": "",
+                    "Safety": "",
+                    "PI_Tag": false,
+                    "DOT": false,
+                    "Units": "",
+                    "opcItemPath": "[{Topic}]{topic}.102.8.68<TBIN><I1>",
+                    "historyProvider": "HistDB_Lancaster"
+                },
+                {
+                    "name": "WES_IOC_LOTO_PERMISSIVE",
+                    "valueSource": "opc",
+                    "LongID": "",
+                    "Tag_Description": "",
+                    "Safety": "",
+                    "PI_Tag": false,
+                    "DOT": false,
+                    "Units": "",
+                    "opcItemPath": "[{Topic}]{topic}.98.1.1<TBIN><I1>",
+                    "historyProvider": "HistDB_Lancaster"
+                },
+                {
+                    "name": "LEL_HI",
+                    "valueSource": "opc",
+                    "LongID": "",
+                    "Tag_Description": "",
+                    "Safety": "",
+                    "PI_Tag": false,
+                    "DOT": false,
+                    "Units": "",
+                    "opcItemPath": "[{Topic}]{topic}.98.17.2<TBIN><I1>",
+                    "historyProvider": "HistDB_Lancaster"
+                },
+                {
+                    "name": "CURRENT_MEASUREMENT_LEL",
+                    "valueSource": "opc",
+                    "LongID": "",
+                    "Tag_Description": "",
+                    "Safety": "",
+                    "PI_Tag": false,
+                    "DOT": false,
+                    "Units": "",
+                    "opcItemPath": "[{Topic}]{topic}.103.21.43<TFLP><I1>",
+                    "historyProvider": "HistDB_Lancaster"
+                },
+                {
+                    "name": "ESD_VALVE_CURRENT_STATE",
+                    "valueSource": "opc",
+                    "LongID": "",
+                    "Tag_Description": "",
+                    "Safety": "",
+                    "PI_Tag": false,
+                    "DOT": false,
+                    "Units": "",
+                    "opcItemPath": "[{Topic}]{topic}.101.3.57<TBIN><I1>",
+                    "historyProvider": "HistDB_Lancaster"
+                },
+                {
+                    "name": "LIVE_BSW_READING_MAIN",
+                    "valueSource": "opc",
+                    "LongID": "",
+                    "Tag_Description": "",
+                    "Safety": "",
+                    "PI_Tag": false,
+                    "DOT": false,
+                    "Units": "",
+                    "opcItemPath": "[{Topic}]{topic}.103.21.35<TFLP><I1>",
+                    "historyProvider": "HistDB_Lancaster"
+                },
+                {
+                    "name": "LIVE_DENSITY_READING",
+                    "valueSource": "opc",
+                    "LongID": "",
+                    "Tag_Description": "",
+                    "Safety": "",
+                    "PI_Tag": false,
+                    "DOT": false,
+                    "Units": "",
+                    "opcItemPath": "[{Topic}]{topic}.202.13.1<TFLP><I1>",
+                    "historyProvider": "HistDB_Lancaster"
+                },
+                {
+                    "name": "PRODUCTION_PERMISSIVE",
+                    "valueSource": "opc",
+                    "LongID": "",
+                    "Tag_Description": "",
+                    "Safety": "",
+                    "PI_Tag": false,
+                    "DOT": false,
+                    "Units": "",
+                    "opcItemPath": "[{Topic}]{topic}.101.3.63<TBIN><I1>",
+                    "historyProvider": "HistDB_Lancaster"
+                },
+                {
+                    "name": "PRODUCTION_LEL",
+                    "valueSource": "opc",
+                    "LongID": "",
+                    "Tag_Description": "",
+                    "Safety": "",
+                    "PI_Tag": false,
+                    "DOT": false,
+                    "Units": "",
+                    "opcItemPath": "[{Topic}]{topic}.103.21.44<TFLP><I1>",
+                    "historyProvider": "HistDB_Lancaster"
+                },
+                {
+                    "name": "MAIN_LACT_RUN_STATUS",
+                    "valueSource": "opc",
+                    "LongID": "",
+                    "Tag_Description": "",
+                    "Safety": "",
+                    "PI_Tag": false,
+                    "DOT": false,
+                    "Units": "",
+                    "opcItemPath": "[{Topic}]{topic}.98.1.3<TBIN><I1>",
+                    "historyProvider": "HistDB_Lancaster"
+                },
+                {
+                    "name": "CORIOLIS_PRESSURE",
+                    "valueSource": "opc",
+                    "LongID": "",
+                    "Tag_Description": "",
+                    "Safety": "",
+                    "PI_Tag": false,
+                    "DOT": false,
+                    "Units": "",
+                    "opcItemPath": "[{Topic}]{topic}.103.21.33<TFLP><I1>",
+                    "historyProvider": "HistDB_Lancaster"
+                },
+                {
+                    "name": "DIVERT_VALVE_STATUS",
+                    "valueSource": "opc",
+                    "LongID": "",
+                    "Tag_Description": "",
+                    "Safety": "",
+                    "PI_Tag": false,
+                    "DOT": false,
+                    "Units": "",
+                    "opcItemPath": "[{Topic}]{topic}.98.1.3<TBIN><I1>",
+                    "historyProvider": "HistDB_Lancaster"
+                },
+                {
+                    "name": "PROD_MAIN_LACT_BSW",
+                    "valueSource": "opc",
+                    "LongID": "",
+                    "Tag_Description": "",
+                    "Safety": "",
+                    "PI_Tag": false,
+                    "DOT": false,
+                    "Units": "",
+                    "opcItemPath": "[{Topic}]{topic}.103.21.35<TFLP><I1>",
+                    "historyProvider": "HistDB_Lancaster"
+                },
+                {
+                    "name": "CYGNET_DISPLAY_TLP",
+                    "valueSource": "opc",
+                    "LongID": "",
+                    "Tag_Description": "",
+                    "Safety": "",
+                    "PI_Tag": false,
+                    "DOT": false,
+                    "Units": "",
+                    "opcItemPath": "[{Topic}]{topic}.98.20.1<TFLP><I1>",
+                    "historyProvider": "HistDB_Lancaster"
+                },
+                {
+                    "name": "BULK_TANK_PRESSURE",
+                    "valueSource": "opc",
+                    "LongID": "",
+                    "Tag_Description": "",
+                    "Safety": "",
+                    "PI_Tag": false,
+                    "DOT": false,
+                    "Units": "",
+                    "opcItemPath": "[{Topic}]{topic}.98.1.8<TFLP><I1>",
+                    "historyProvider": "HistDB_Lancaster"
+                },
+                {
+                    "name": "CURRENT_DRIVE_GAIN",
+                    "valueSource": "opc",
+                    "LongID": "",
+                    "Tag_Description": "",
+                    "Safety": "",
+                    "PI_Tag": false,
+                    "DOT": false,
+                    "Units": "",
+                    "opcItemPath": "[{Topic}]{topic}.98.6.7<TFLP><I1>",
+                    "historyProvider": "HistDB_Lancaster"
+                },
+                {
+                    "name": "BSW_TOTAL",
+                    "valueSource": "opc",
+                    "LongID": "",
+                    "Tag_Description": "",
+                    "Safety": "",
+                    "PI_Tag": false,
+                    "DOT": false,
+                    "Units": "",
+                    "opcItemPath": "[{Topic}]{topic}.96.3.2<TFLP><I1>",
+                    "historyProvider": "HistDB_Lancaster"
+                },
+                {
+                    "name": "LIVE_BSW_READING_TEMP",
+                    "valueSource": "opc",
+                    "LongID": "",
+                    "Tag_Description": "",
+                    "Safety": "",
+                    "PI_Tag": false,
+                    "DOT": false,
+                    "Units": "",
+                    "opcItemPath": "[{Topic}]{topic}.103.21.81<TFLP><I1>",
+                    "historyProvider": "HistDB_Lancaster"
+                },
+                {
+                    "name": "TEMP_LACT_PERMISSIVE",
+                    "valueSource": "opc",
+                    "LongID": "",
+                    "Tag_Description": "",
+                    "Safety": "",
+                    "PI_Tag": false,
+                    "DOT": false,
+                    "Units": "",
+                    "opcItemPath": "[{Topic}]{topic}.101.3.63<TBIN><I1>",
+                    "historyProvider": "HistDB_Lancaster"
+                },
+                {
+                    "name": "PRODUCTION_TEMP_LEL",
+                    "valueSource": "opc",
+                    "LongID": "",
+                    "Tag_Description": "",
+                    "Safety": "",
+                    "PI_Tag": false,
+                    "DOT": false,
+                    "Units": "",
+                    "opcItemPath": "[{Topic}]{topic}.103.21.82<TFLP><I1>",
+                    "historyProvider": "HistDB_Lancaster"
+                },
+                {
+                    "name": "TEMP_LACT_RUN_STATUS",
+                    "valueSource": "opc",
+                    "LongID": "",
+                    "Tag_Description": "",
+                    "Safety": "",
+                    "PI_Tag": false,
+                    "DOT": false,
+                    "Units": "",
+                    "opcItemPath": "[{Topic}]{topic}.98.2.3<TBIN><I1>",
+                    "historyProvider": "HistDB_Lancaster"
+                },
+                {
+                    "name": "TEMP_LACT_DIVERT_STATUS",
+                    "valueSource": "opc",
+                    "LongID": "",
+                    "Tag_Description": "",
+                    "Safety": "",
+                    "PI_Tag": false,
+                    "DOT": false,
+                    "Units": "",
+                    "opcItemPath": "[{Topic}]{topic}.98.2.3<TBIN><I1>",
+                    "historyProvider": "HistDB_Lancaster"
+                },
+                {
+                    "name": "TEMP_LACT_BSW",
+                    "valueSource": "opc",
+                    "LongID": "",
+                    "Tag_Description": "",
+                    "Safety": "",
+                    "PI_Tag": false,
+                    "DOT": false,
+                    "Units": "",
+                    "opcItemPath": "[{Topic}]{topic}.103.21.81<TFLP><I1>",
+                    "historyProvider": "HistDB_Lancaster"
+                },
+                {
+                    "name": "MAIN_ESD_FTC",
+                    "valueSource": "opc",
+                    "LongID": "",
+                    "Tag_Description": "",
+                    "Safety": "",
+                    "PI_Tag": false,
+                    "DOT": false,
+                    "Units": "",
+                    "opcItemPath": "[{Topic}]{topic}.101.3.57<TBIN><I1>",
+                    "historyProvider": "HistDB_Lancaster"
+                },
+                {
+                    "name": "TEMP_ESD_FTC",
+                    "valueSource": "opc",
+                    "LongID": "",
+                    "Tag_Description": "",
+                    "Safety": "",
+                    "PI_Tag": false,
+                    "DOT": false,
+                    "Units": "",
+                    "opcItemPath": "[{Topic}]{topic}.101.3.60<TBIN><I1>",
+                    "historyProvider": "HistDB_Lancaster"
+                }
+            ],
+            "parameters": {},
+            "tagType": "UdtType"
+        },
+        {
+            "name": "EMERSONROCL/METER_OIL_STD",
+            "typeID": "EMERSONROCL/METER_OIL",
+            "tags": [
+                {
+                    "name": "DRIVE_GAIN",
+                    "valueSource": "opc",
+                    "LongID": "",
+                    "Tag_Description": "",
+                    "Safety": "",
+                    "PI_Tag": false,
+                    "DOT": false,
+                    "Units": "",
+                    "opcItemPath": {
+                        "bindType": "parameter",
+                        "binding": "[{Topic}]{_t_DRIVE_GAIN}"
+                    },
+                    "historyProvider": "HistDB_Lancaster"
+                },
+                {
+                    "name": "VOLTAGE",
+                    "valueSource": "opc",
+                    "LongID": "",
+                    "Tag_Description": "",
+                    "Safety": "",
+                    "PI_Tag": false,
+                    "DOT": false,
+                    "Units": "",
+                    "opcItemPath": {
+                        "bindType": "parameter",
+                        "binding": "[{Topic}]{_t_VOLTAGE}"
+                    },
+                    "historyProvider": "HistDB_Lancaster"
+                },
+                {
+                    "name": "RATE",
+                    "valueSource": "opc",
+                    "LongID": "",
+                    "Tag_Description": "",
+                    "Safety": "",
+                    "PI_Tag": false,
+                    "DOT": false,
+                    "Units": "",
+                    "opcItemPath": {
+                        "bindType": "parameter",
+                        "binding": "[{Topic}]{_t_RATE}"
+                    },
+                    "historyProvider": "HistDB_Lancaster"
+                },
+                {
+                    "name": "DENSITY",
+                    "valueSource": "opc",
+                    "LongID": "",
+                    "Tag_Description": "",
+                    "Safety": "",
+                    "PI_Tag": false,
+                    "DOT": false,
+                    "Units": "",
+                    "opcItemPath": {
+                        "bindType": "parameter",
+                        "binding": "[{Topic}]{_t_DENSITY}"
+                    },
+                    "historyProvider": "HistDB_Lancaster"
+                },
+                {
+                    "name": "RATE_GSV",
+                    "valueSource": "opc",
+                    "LongID": "",
+                    "Tag_Description": "",
+                    "Safety": "",
+                    "PI_Tag": false,
+                    "DOT": false,
+                    "Units": "",
+                    "opcItemPath": {
+                        "bindType": "parameter",
+                        "binding": "[{Topic}]{_t_RATE_GSV}"
+                    },
+                    "historyProvider": "HistDB_Lancaster"
+                },
+                {
+                    "name": "VOLUME_MONTH_GSV",
+                    "valueSource": "opc",
+                    "LongID": "",
+                    "Tag_Description": "",
+                    "Safety": "",
+                    "PI_Tag": false,
+                    "DOT": false,
+                    "Units": "",
+                    "opcItemPath": {
+                        "bindType": "parameter",
+                        "binding": "[{Topic}]{_t_VOLUME_MONTH_GSV}"
+                    },
+                    "historyProvider": "HistDB_Lancaster"
+                },
+                {
+                    "name": "VOLUME_MONTHP_GSV",
+                    "valueSource": "opc",
+                    "LongID": "",
+                    "Tag_Description": "",
+                    "Safety": "",
+                    "PI_Tag": false,
+                    "DOT": false,
+                    "Units": "",
+                    "opcItemPath": {
+                        "bindType": "parameter",
+                        "binding": "[{Topic}]{_t_VOLUME_MONTHP_GSV}"
+                    },
+                    "historyProvider": "HistDB_Lancaster"
+                },
+                {
+                    "name": "VOLUME_YESTERDAY_GSV",
+                    "valueSource": "opc",
+                    "LongID": "",
+                    "Tag_Description": "",
+                    "Safety": "",
+                    "PI_Tag": false,
+                    "DOT": false,
+                    "Units": "",
+                    "opcItemPath": {
+                        "bindType": "parameter",
+                        "binding": "[{Topic}]{_t_VOLUME_YESTERDAY_GSV}"
+                    },
+                    "historyProvider": "HistDB_Lancaster"
+                },
+                {
+                    "name": "VOLUME_MONTH",
+                    "valueSource": "opc",
+                    "LongID": "",
+                    "Tag_Description": "",
+                    "Safety": "",
+                    "PI_Tag": false,
+                    "DOT": false,
+                    "Units": "",
+                    "opcItemPath": {
+                        "bindType": "parameter",
+                        "binding": "[{Topic}]{_t_VOLUME_MONTH}"
+                    },
+                    "historyProvider": "HistDB_Lancaster"
+                },
+                {
+                    "name": "VOLUME_MONTHP",
+                    "valueSource": "opc",
+                    "LongID": "",
+                    "Tag_Description": "",
+                    "Safety": "",
+                    "PI_Tag": false,
+                    "DOT": false,
+                    "Units": "",
+                    "opcItemPath": {
+                        "bindType": "parameter",
+                        "binding": "[{Topic}]{_t_VOLUME_MONTHP}"
+                    },
+                    "historyProvider": "HistDB_Lancaster"
+                },
+                {
+                    "name": "VOLUME_TODAY",
+                    "valueSource": "opc",
+                    "LongID": "",
+                    "Tag_Description": "",
+                    "Safety": "",
+                    "PI_Tag": false,
+                    "DOT": false,
+                    "Units": "",
+                    "opcItemPath": {
+                        "bindType": "parameter",
+                        "binding": "[{Topic}]{_t_VOLUME_TODAY}"
+                    },
+                    "historyProvider": "HistDB_Lancaster"
+                },
+                {
+                    "name": "VOLUME_YESTERDAY",
+                    "valueSource": "opc",
+                    "LongID": "",
+                    "Tag_Description": "",
+                    "Safety": "",
+                    "PI_Tag": false,
+                    "DOT": false,
+                    "Units": "",
+                    "opcItemPath": {
+                        "bindType": "parameter",
+                        "binding": "[{Topic}]{_t_VOLUME_YESTERDAY}"
+                    },
+                    "historyProvider": "HistDB_Lancaster"
+                },
+                {
+                    "name": "INSTRUMENT_AIR",
+                    "valueSource": "opc",
+                    "LongID": "",
+                    "Tag_Description": "",
+                    "Safety": "",
+                    "PI_Tag": false,
+                    "DOT": false,
+                    "Units": "",
+                    "opcItemPath": {
+                        "bindType": "parameter",
+                        "binding": "[{Topic}]{_t_INSTRUMENT_AIR}"
+                    },
+                    "historyProvider": "HistDB_Lancaster"
+                },
+                {
+                    "name": "DISCHARGE_PRESSURE",
+                    "valueSource": "opc",
+                    "LongID": "",
+                    "Tag_Description": "",
+                    "Safety": "",
+                    "PI_Tag": false,
+                    "DOT": false,
+                    "Units": "",
+                    "opcItemPath": {
+                        "bindType": "parameter",
+                        "binding": "[{Topic}]{_t_DISCHARGE_PRESSURE}"
+                    },
+                    "historyProvider": "HistDB_Lancaster"
+                },
+                {
+                    "name": "PRESSURE",
+                    "valueSource": "opc",
+                    "LongID": "",
+                    "Tag_Description": "",
+                    "Safety": "",
+                    "PI_Tag": false,
+                    "DOT": false,
+                    "Units": "",
+                    "opcItemPath": {
+                        "bindType": "parameter",
+                        "binding": "[{Topic}]{_t_PRESSURE}"
+                    },
+                    "historyProvider": "HistDB_Lancaster"
+                },
+                {
+                    "name": "SUCTION_PRESSURE",
+                    "valueSource": "opc",
+                    "LongID": "",
+                    "Tag_Description": "",
+                    "Safety": "",
+                    "PI_Tag": false,
+                    "DOT": false,
+                    "Units": "",
+                    "opcItemPath": {
+                        "bindType": "parameter",
+                        "binding": "[{Topic}]{_t_SUCTION_PRESSURE}"
+                    },
+                    "historyProvider": "HistDB_Lancaster"
+                },
+                {
+                    "name": "SAMPLER_VOLUME",
+                    "valueSource": "opc",
+                    "LongID": "",
+                    "Tag_Description": "",
+                    "Safety": "",
+                    "PI_Tag": false,
+                    "DOT": false,
+                    "Units": "",
+                    "opcItemPath": {
+                        "bindType": "parameter",
+                        "binding": "[{Topic}]{_t_SAMPLER_VOLUME}"
+                    },
+                    "historyProvider": "HistDB_Lancaster"
+                },
+                {
+                    "name": "TEMPERATURE",
+                    "valueSource": "opc",
+                    "LongID": "",
+                    "Tag_Description": "",
+                    "Safety": "",
+                    "PI_Tag": false,
+                    "DOT": false,
+                    "Units": "",
+                    "opcItemPath": {
+                        "bindType": "parameter",
+                        "binding": "[{Topic}]{_t_TEMPERATURE}"
+                    },
+                    "historyProvider": "HistDB_Lancaster"
+                },
+                {
+                    "name": "PERMISSIVE",
+                    "valueSource": "opc",
+                    "LongID": "",
+                    "Tag_Description": "",
+                    "Safety": "",
+                    "PI_Tag": false,
+                    "DOT": false,
+                    "Units": "",
+                    "opcItemPath": {
+                        "bindType": "parameter",
+                        "binding": "[{Topic}]{_t_PERMISSIVE}"
+                    },
+                    "historyProvider": "HistDB_Lancaster"
+                },
+                {
+                    "name": "VALVE_POSITION",
+                    "valueSource": "opc",
+                    "LongID": "",
+                    "Tag_Description": "",
+                    "Safety": "",
+                    "PI_Tag": false,
+                    "DOT": false,
+                    "Units": "",
+                    "opcItemPath": {
+                        "bindType": "parameter",
+                        "binding": "[{Topic}]{_t_VALVE_POSITION}"
+                    },
+                    "historyProvider": "HistDB_Lancaster"
+                },
+                {
+                    "name": "NGL_RATE",
+                    "valueSource": "opc",
+                    "LongID": "",
+                    "Tag_Description": "",
+                    "Safety": "",
+                    "PI_Tag": false,
+                    "DOT": false,
+                    "Units": "",
+                    "opcItemPath": {
+                        "bindType": "parameter",
+                        "binding": "[{Topic}]{_t_NGL_RATE}"
+                    },
+                    "historyProvider": "HistDB_Lancaster"
+                },
+                {
+                    "name": "CONDENSATE_DRIVE_GAIN",
+                    "valueSource": "opc",
+                    "LongID": "",
+                    "Tag_Description": "",
+                    "Safety": "",
+                    "PI_Tag": false,
+                    "DOT": false,
+                    "Units": "",
+                    "opcItemPath": {
+                        "bindType": "parameter",
+                        "binding": "[{Topic}]{_t_CONDENSATE_DRIVE_GAIN}"
+                    },
+                    "historyProvider": "HistDB_Lancaster"
+                },
+                {
+                    "name": "CONDENSATE_RATE",
+                    "valueSource": "opc",
+                    "LongID": "",
+                    "Tag_Description": "",
+                    "Safety": "",
+                    "PI_Tag": false,
+                    "DOT": false,
+                    "Units": "",
+                    "opcItemPath": {
+                        "bindType": "parameter",
+                        "binding": "[{Topic}]{_t_CONDENSATE_RATE}"
+                    },
+                    "historyProvider": "HistDB_Lancaster"
+                },
+                {
+                    "name": "CONDENSATE_DENSITY",
+                    "valueSource": "opc",
+                    "LongID": "",
+                    "Tag_Description": "",
+                    "Safety": "",
+                    "PI_Tag": false,
+                    "DOT": false,
+                    "Units": "",
+                    "opcItemPath": {
+                        "bindType": "parameter",
+                        "binding": "[{Topic}]{_t_CONDENSATE_DENSITY}"
+                    },
+                    "historyProvider": "HistDB_Lancaster"
+                },
+                {
+                    "name": "MASS_RATE",
+                    "valueSource": "opc",
+                    "LongID": "",
+                    "Tag_Description": "",
+                    "Safety": "",
+                    "PI_Tag": false,
+                    "DOT": false,
+                    "Units": "",
+                    "opcItemPath": {
+                        "bindType": "parameter",
+                        "binding": "[{Topic}]{_t_MASS_RATE}"
+                    },
+                    "historyProvider": "HistDB_Lancaster"
+                },
+                {
+                    "name": "CONDENSATE_VOLUME_MONTH",
+                    "valueSource": "opc",
+                    "LongID": "",
+                    "Tag_Description": "",
+                    "Safety": "",
+                    "PI_Tag": false,
+                    "DOT": false,
+                    "Units": "",
+                    "opcItemPath": {
+                        "bindType": "parameter",
+                        "binding": "[{Topic}]{_t_CONDENSATE_VOLUME_MONTH}"
+                    },
+                    "historyProvider": "HistDB_Lancaster"
+                },
+                {
+                    "name": "CONDENSATE_VOLUME_YESTERDAY",
+                    "valueSource": "opc",
+                    "LongID": "",
+                    "Tag_Description": "",
+                    "Safety": "",
+                    "PI_Tag": false,
+                    "DOT": false,
+                    "Units": "",
+                    "opcItemPath": {
+                        "bindType": "parameter",
+                        "binding": "[{Topic}]{_t_CONDENSATE_VOLUME_YESTERDAY}"
+                    },
+                    "historyProvider": "HistDB_Lancaster"
+                },
+                {
+                    "name": "CONDENSATE_PRESSURE",
+                    "valueSource": "opc",
+                    "LongID": "",
+                    "Tag_Description": "",
+                    "Safety": "",
+                    "PI_Tag": false,
+                    "DOT": false,
+                    "Units": "",
+                    "opcItemPath": {
+                        "bindType": "parameter",
+                        "binding": "[{Topic}]{_t_CONDENSATE_PRESSURE}"
+                    },
+                    "historyProvider": "HistDB_Lancaster"
+                },
+                {
+                    "name": "PIPEPLINE_CONDENSATE_PRESSURE",
+                    "valueSource": "opc",
+                    "LongID": "",
+                    "Tag_Description": "",
+                    "Safety": "",
+                    "PI_Tag": false,
+                    "DOT": false,
+                    "Units": "",
+                    "opcItemPath": {
+                        "bindType": "parameter",
+                        "binding": "[{Topic}]{_t_PIPEPLINE_CONDENSATE_PRESSURE}"
+                    },
+                    "historyProvider": "HistDB_Lancaster"
+                },
+                {
+                    "name": "CONDENSATE_TEMPERATURE",
+                    "valueSource": "opc",
+                    "LongID": "",
+                    "Tag_Description": "",
+                    "Safety": "",
+                    "PI_Tag": false,
+                    "DOT": false,
+                    "Units": "",
+                    "opcItemPath": {
+                        "bindType": "parameter",
+                        "binding": "[{Topic}]{_t_CONDENSATE_TEMPERATURE}"
+                    },
+                    "historyProvider": "HistDB_Lancaster"
+                },
+                {
+                    "name": "VOLUMETRIC_FLOW_RATE_SETPOINT",
+                    "valueSource": "opc",
+                    "LongID": "",
+                    "Tag_Description": "",
+                    "Safety": "",
+                    "PI_Tag": false,
+                    "DOT": false,
+                    "Units": "",
+                    "opcItemPath": {
+                        "bindType": "parameter",
+                        "binding": "[{Topic}]{_t_VOLUMETRIC_FLOW_RATE_SETPOINT}"
+                    },
+                    "historyProvider": "HistDB_Lancaster"
+                },
+                {
+                    "name": "PID_MODE",
+                    "valueSource": "opc",
+                    "LongID": "",
+                    "Tag_Description": "",
+                    "Safety": "",
+                    "PI_Tag": false,
+                    "DOT": false,
+                    "Units": "",
+                    "opcItemPath": {
+                        "bindType": "parameter",
+                        "binding": "[{Topic}]{_t_PID_MODE}"
+                    },
+                    "historyProvider": "HistDB_Lancaster"
+                },
+                {
+                    "name": "ACCUMULATOR_OIL",
+                    "valueSource": "opc",
+                    "LongID": "",
+                    "Tag_Description": "",
+                    "Safety": "",
+                    "PI_Tag": false,
+                    "DOT": false,
+                    "Units": "",
+                    "opcItemPath": {
+                        "bindType": "parameter",
+                        "binding": "[{Topic}]{_t_ACCUMULATOR_OIL}"
+                    },
+                    "historyProvider": "HistDB_Lancaster"
+                },
+                {
+                    "name": "PID_CV_READ",
+                    "valueSource": "opc",
+                    "LongID": "",
+                    "Tag_Description": "",
+                    "Safety": "",
+                    "PI_Tag": false,
+                    "DOT": false,
+                    "Units": "",
+                    "opcItemPath": {
+                        "bindType": "parameter",
+                        "binding": "[{Topic}]{_t_PID_CV_READ}"
+                    },
+                    "historyProvider": "HistDB_Lancaster"
+                },
+                {
+                    "name": "PID_TARGET_SP_PRIMARY",
+                    "valueSource": "opc",
+                    "LongID": "",
+                    "Tag_Description": "",
+                    "Safety": "",
+                    "PI_Tag": false,
+                    "DOT": false,
+                    "Units": "",
+                    "opcItemPath": {
+                        "bindType": "parameter",
+                        "binding": "[{Topic}]{_t_PID_TARGET_SP_PRIMARY}"
+                    },
+                    "historyProvider": "HistDB_Lancaster"
+                },
+                {
+                    "name": "CONDENSATE_VOLUME_MONTHP",
+                    "valueSource": "opc",
+                    "LongID": "",
+                    "Tag_Description": "",
+                    "Safety": "",
+                    "PI_Tag": false,
+                    "DOT": false,
+                    "Units": "",
+                    "opcItemPath": {
+                        "bindType": "parameter",
+                        "binding": "[{Topic}]{_t_CONDENSATE_VOLUME_MONTHP}"
+                    },
+                    "historyProvider": "HistDB_Lancaster"
+                },
+                {
+                    "name": "STATIC_PRESSURE",
+                    "valueSource": "opc",
+                    "LongID": "",
+                    "Tag_Description": "",
+                    "Safety": "",
+                    "PI_Tag": false,
+                    "DOT": false,
+                    "Units": "",
+                    "opcItemPath": {
+                        "bindType": "parameter",
+                        "binding": "[{Topic}]{_t_STATIC_PRESSURE}"
+                    },
+                    "historyProvider": "HistDB_Lancaster"
+                },
+                {
+                    "name": "FLOWING_GAS_TEMPERATURE",
+                    "valueSource": "opc",
+                    "LongID": "",
+                    "Tag_Description": "",
+                    "Safety": "",
+                    "PI_Tag": false,
+                    "DOT": false,
+                    "Units": "",
+                    "opcItemPath": {
+                        "bindType": "parameter",
+                        "binding": "[{Topic}]{_t_FLOWING_GAS_TEMPERATURE}"
+                    },
+                    "historyProvider": "HistDB_Lancaster"
+                }
+            ],
+            "parameters": {
+                "_t_DRIVE_GAIN": {
+                    "dataType": "String",
+                    "value": {
+                        "bindType": "parameter",
+                        "binding": "[{Topic}]_t_DRIVE_GAIN"
+                    }
+                },
+                "_t_VOLTAGE": {
+                    "dataType": "String",
+                    "value": {
+                        "bindType": "parameter",
+                        "binding": "[{Topic}]_t_VOLTAGE"
+                    }
+                },
+                "_t_RATE": {
+                    "dataType": "String",
+                    "value": {
+                        "bindType": "parameter",
+                        "binding": "[{Topic}]_t_RATE"
+                    }
+                },
+                "_t_DENSITY": {
+                    "dataType": "String",
+                    "value": {
+                        "bindType": "parameter",
+                        "binding": "[{Topic}]_t_DENSITY"
+                    }
+                },
+                "_t_RATE_GSV": {
+                    "dataType": "String",
+                    "value": {
+                        "bindType": "parameter",
+                        "binding": "[{Topic}]_t_RATE_GSV"
+                    }
+                },
+                "_t_VOLUME_MONTH_GSV": {
+                    "dataType": "String",
+                    "value": {
+                        "bindType": "parameter",
+                        "binding": "[{Topic}]_t_VOLUME_MONTH_GSV"
+                    }
+                },
+                "_t_VOLUME_MONTHP_GSV": {
+                    "dataType": "String",
+                    "value": {
+                        "bindType": "parameter",
+                        "binding": "[{Topic}]_t_VOLUME_MONTHP_GSV"
+                    }
+                },
+                "_t_VOLUME_YESTERDAY_GSV": {
+                    "dataType": "String",
+                    "value": {
+                        "bindType": "parameter",
+                        "binding": "[{Topic}]_t_VOLUME_YESTERDAY_GSV"
+                    }
+                },
+                "_t_VOLUME_MONTH": {
+                    "dataType": "String",
+                    "value": {
+                        "bindType": "parameter",
+                        "binding": "[{Topic}]_t_VOLUME_MONTH"
+                    }
+                },
+                "_t_VOLUME_MONTHP": {
+                    "dataType": "String",
+                    "value": {
+                        "bindType": "parameter",
+                        "binding": "[{Topic}]_t_VOLUME_MONTHP"
+                    }
+                },
+                "_t_VOLUME_TODAY": {
+                    "dataType": "String",
+                    "value": {
+                        "bindType": "parameter",
+                        "binding": "[{Topic}]_t_VOLUME_TODAY"
+                    }
+                },
+                "_t_VOLUME_YESTERDAY": {
+                    "dataType": "String",
+                    "value": {
+                        "bindType": "parameter",
+                        "binding": "[{Topic}]_t_VOLUME_YESTERDAY"
+                    }
+                },
+                "_t_INSTRUMENT_AIR": {
+                    "dataType": "String",
+                    "value": {
+                        "bindType": "parameter",
+                        "binding": "[{Topic}]_t_INSTRUMENT_AIR"
+                    }
+                },
+                "_t_DISCHARGE_PRESSURE": {
+                    "dataType": "String",
+                    "value": {
+                        "bindType": "parameter",
+                        "binding": "[{Topic}]_t_DISCHARGE_PRESSURE"
+                    }
+                },
+                "_t_PRESSURE": {
+                    "dataType": "String",
+                    "value": {
+                        "bindType": "parameter",
+                        "binding": "[{Topic}]_t_PRESSURE"
+                    }
+                },
+                "_t_SUCTION_PRESSURE": {
+                    "dataType": "String",
+                    "value": {
+                        "bindType": "parameter",
+                        "binding": "[{Topic}]_t_SUCTION_PRESSURE"
+                    }
+                },
+                "_t_SAMPLER_VOLUME": {
+                    "dataType": "String",
+                    "value": {
+                        "bindType": "parameter",
+                        "binding": "[{Topic}]_t_SAMPLER_VOLUME"
+                    }
+                },
+                "_t_TEMPERATURE": {
+                    "dataType": "String",
+                    "value": {
+                        "bindType": "parameter",
+                        "binding": "[{Topic}]_t_TEMPERATURE"
+                    }
+                },
+                "_t_PERMISSIVE": {
+                    "dataType": "String",
+                    "value": {
+                        "bindType": "parameter",
+                        "binding": "[{Topic}]_t_PERMISSIVE"
+                    }
+                },
+                "_t_VALVE_POSITION": {
+                    "dataType": "String",
+                    "value": {
+                        "bindType": "parameter",
+                        "binding": "[{Topic}]_t_VALVE_POSITION"
+                    }
+                },
+                "_t_NGL_RATE": {
+                    "dataType": "String",
+                    "value": {
+                        "bindType": "parameter",
+                        "binding": "[{Topic}]_t_NGL_RATE"
+                    }
+                },
+                "_t_CONDENSATE_DRIVE_GAIN": {
+                    "dataType": "String",
+                    "value": {
+                        "bindType": "parameter",
+                        "binding": "[{Topic}]_t_CONDENSATE_DRIVE_GAIN"
+                    }
+                },
+                "_t_CONDENSATE_RATE": {
+                    "dataType": "String",
+                    "value": {
+                        "bindType": "parameter",
+                        "binding": "[{Topic}]_t_CONDENSATE_RATE"
+                    }
+                },
+                "_t_CONDENSATE_DENSITY": {
+                    "dataType": "String",
+                    "value": {
+                        "bindType": "parameter",
+                        "binding": "[{Topic}]_t_CONDENSATE_DENSITY"
+                    }
+                },
+                "_t_MASS_RATE": {
+                    "dataType": "String",
+                    "value": {
+                        "bindType": "parameter",
+                        "binding": "[{Topic}]_t_MASS_RATE"
+                    }
+                },
+                "_t_CONDENSATE_VOLUME_MONTH": {
+                    "dataType": "String",
+                    "value": {
+                        "bindType": "parameter",
+                        "binding": "[{Topic}]_t_CONDENSATE_VOLUME_MONTH"
+                    }
+                },
+                "_t_CONDENSATE_VOLUME_YESTERDAY": {
+                    "dataType": "String",
+                    "value": {
+                        "bindType": "parameter",
+                        "binding": "[{Topic}]_t_CONDENSATE_VOLUME_YESTERDAY"
+                    }
+                },
+                "_t_CONDENSATE_PRESSURE": {
+                    "dataType": "String",
+                    "value": {
+                        "bindType": "parameter",
+                        "binding": "[{Topic}]_t_CONDENSATE_PRESSURE"
+                    }
+                },
+                "_t_PIPEPLINE_CONDENSATE_PRESSURE": {
+                    "dataType": "String",
+                    "value": {
+                        "bindType": "parameter",
+                        "binding": "[{Topic}]_t_PIPEPLINE_CONDENSATE_PRESSURE"
+                    }
+                },
+                "_t_CONDENSATE_TEMPERATURE": {
+                    "dataType": "String",
+                    "value": {
+                        "bindType": "parameter",
+                        "binding": "[{Topic}]_t_CONDENSATE_TEMPERATURE"
+                    }
+                },
+                "_t_VOLUMETRIC_FLOW_RATE_SETPOINT": {
+                    "dataType": "String",
+                    "value": {
+                        "bindType": "parameter",
+                        "binding": "[{Topic}]_t_VOLUMETRIC_FLOW_RATE_SETPOINT"
+                    }
+                },
+                "_t_PID_MODE": {
+                    "dataType": "String",
+                    "value": {
+                        "bindType": "parameter",
+                        "binding": "[{Topic}]_t_PID_MODE"
+                    }
+                },
+                "_t_ACCUMULATOR_OIL": {
+                    "dataType": "String",
+                    "value": {
+                        "bindType": "parameter",
+                        "binding": "[{Topic}]_t_ACCUMULATOR_OIL"
+                    }
+                },
+                "_t_PID_CV_READ": {
+                    "dataType": "String",
+                    "value": {
+                        "bindType": "parameter",
+                        "binding": "[{Topic}]_t_PID_CV_READ"
+                    }
+                },
+                "_t_PID_TARGET_SP_PRIMARY": {
+                    "dataType": "String",
+                    "value": {
+                        "bindType": "parameter",
+                        "binding": "[{Topic}]_t_PID_TARGET_SP_PRIMARY"
+                    }
+                },
+                "_t_CONDENSATE_VOLUME_MONTHP": {
+                    "dataType": "String",
+                    "value": {
+                        "bindType": "parameter",
+                        "binding": "[{Topic}]_t_CONDENSATE_VOLUME_MONTHP"
+                    }
+                },
+                "_t_STATIC_PRESSURE": {
+                    "dataType": "String",
+                    "value": {
+                        "bindType": "parameter",
+                        "binding": "[{Topic}]_t_STATIC_PRESSURE"
+                    }
+                },
+                "_t_FLOWING_GAS_TEMPERATURE": {
+                    "dataType": "String",
+                    "value": {
+                        "bindType": "parameter",
+                        "binding": "[{Topic}]_t_FLOWING_GAS_TEMPERATURE"
+                    }
+                }
+            },
+            "tagType": "UdtType"
+        },
+        {
+            "name": "EMERSONROCL/METER_OIL_SAMPLER",
+            "typeID": "LONGMONT_REGIONAL_BASE",
+            "tags": [
+                {
+                    "name": "DESIRED_YZ_SAMPLER_FILL",
+                    "valueSource": "opc",
+                    "LongID": "",
+                    "Tag_Description": "",
+                    "Safety": "",
+                    "PI_Tag": false,
+                    "DOT": false,
+                    "Units": "",
+                    "opcItemPath": "[{Topic}]{topic}.98.11.30<TFLP><I1>",
+                    "historyProvider": "HistDB_Lancaster"
+                },
+                {
+                    "name": "BARRELS_PER_DAY",
+                    "valueSource": "opc",
+                    "LongID": "",
+                    "Tag_Description": "",
+                    "Safety": "",
+                    "PI_Tag": false,
+                    "DOT": false,
+                    "Units": "",
+                    "opcItemPath": "[{Topic}]{topic}.98.16.30<TFLP><I1>",
+                    "historyProvider": "HistDB_Lancaster"
+                },
+                {
+                    "name": "NUM_SAMPLING_DAYS_IN_MONTH",
+                    "valueSource": "opc",
+                    "LongID": "",
+                    "Tag_Description": "",
+                    "Safety": "",
+                    "PI_Tag": false,
+                    "DOT": false,
+                    "Units": "",
+                    "opcItemPath": "[{Topic}]{topic}.98.12.30<TUINT8><I1>",
+                    "historyProvider": "HistDB_Lancaster"
+                },
+                {
+                    "name": "BITE_SIZE_PER_PULSE",
+                    "valueSource": "opc",
+                    "LongID": "",
+                    "Tag_Description": "",
+                    "Safety": "",
+                    "PI_Tag": false,
+                    "DOT": false,
+                    "Units": "",
+                    "opcItemPath": "[{Topic}]{topic}.98.3.30<TFLP><I1>",
+                    "historyProvider": "HistDB_Lancaster"
+                },
+                {
+                    "name": "SAMPLE_BITE_DURATION",
+                    "valueSource": "opc",
+                    "LongID": "",
+                    "Tag_Description": "",
+                    "Safety": "",
+                    "PI_Tag": false,
+                    "DOT": false,
+                    "Units": "",
+                    "opcItemPath": "[{Topic}]{topic}.111.5.1<TFLP><I1>",
+                    "historyProvider": "HistDB_Lancaster"
+                },
+                {
+                    "name": "REQUIRED_CC_PER_DAY",
+                    "valueSource": "opc",
+                    "LongID": "",
+                    "Tag_Description": "",
+                    "Safety": "",
+                    "PI_Tag": false,
+                    "DOT": false,
+                    "Units": "",
+                    "opcItemPath": "[{Topic}]{topic}.98.13.30<TFLP><I1>",
+                    "historyProvider": "HistDB_Lancaster"
+                },
+                {
+                    "name": "PUMP_STROKES_PER_DAY",
+                    "valueSource": "opc",
+                    "LongID": "",
+                    "Tag_Description": "",
+                    "Safety": "",
+                    "PI_Tag": false,
+                    "DOT": false,
+                    "Units": "",
+                    "opcItemPath": "[{Topic}]{topic}.98.14.30<TFLP><I1>",
+                    "historyProvider": "HistDB_Lancaster"
+                },
+                {
+                    "name": "SAMPLE_BITE_FREQUENCY",
+                    "valueSource": "opc",
+                    "LongID": "",
+                    "Tag_Description": "",
+                    "Safety": "",
+                    "PI_Tag": false,
+                    "DOT": false,
+                    "Units": "",
+                    "opcItemPath": "[{Topic}]{topic}.111.4.1<TFLP><I1>",
+                    "historyProvider": "HistDB_Lancaster"
+                },
+                {
+                    "name": "YZ_SAMPLER_N2_LEAK",
+                    "valueSource": "opc",
+                    "LongID": "",
+                    "Tag_Description": "",
+                    "Safety": "",
+                    "PI_Tag": false,
+                    "DOT": false,
+                    "Units": "",
+                    "opcItemPath": "[{Topic}]{topic}.98.9.30<TBIN><I1>",
+                    "historyProvider": "HistDB_Lancaster"
+                },
+                {
+                    "name": "YZ_SAMPLER_OVER_50",
+                    "valueSource": "opc",
+                    "LongID": "",
+                    "Tag_Description": "",
+                    "Safety": "",
+                    "PI_Tag": false,
+                    "DOT": false,
+                    "Units": "",
+                    "opcItemPath": "[{Topic}]{topic}.98.7.30<TBIN><I1>",
+                    "historyProvider": "HistDB_Lancaster"
+                },
+                {
+                    "name": "YZ_SAMPLER_OVER_80",
+                    "valueSource": "opc",
+                    "LongID": "",
+                    "Tag_Description": "",
+                    "Safety": "",
+                    "PI_Tag": false,
+                    "DOT": false,
+                    "Units": "",
+                    "opcItemPath": "[{Topic}]{topic}.98.8.30<TBIN><I1>",
+                    "historyProvider": "HistDB_Lancaster"
+                },
+                {
+                    "name": "YZ_SAMPLER_NOT_FILLING",
+                    "valueSource": "opc",
+                    "LongID": "",
+                    "Tag_Description": "",
+                    "Safety": "",
+                    "PI_Tag": false,
+                    "DOT": false,
+                    "Units": "",
+                    "opcItemPath": "[{Topic}]{topic}.98.6.30<TBIN><I1>",
+                    "historyProvider": "HistDB_Lancaster"
+                },
+                {
+                    "name": "YZ_N2_PSI_BELOW_PIPELINE_PSI",
+                    "valueSource": "opc",
+                    "LongID": "",
+                    "Tag_Description": "",
+                    "Safety": "",
+                    "PI_Tag": false,
+                    "DOT": false,
+                    "Units": "",
+                    "opcItemPath": "[{Topic}]{topic}.98.15.30<TBIN><I1>",
+                    "historyProvider": "HistDB_Lancaster"
+                },
+                {
+                    "name": "VOLUME_INFO_FULL_CC",
+                    "valueSource": "opc",
+                    "LongID": "",
+                    "Tag_Description": "",
+                    "Safety": "",
+                    "PI_Tag": false,
+                    "DOT": false,
+                    "Units": "",
+                    "opcItemPath": "[{Topic}]{topic}.98.5.30<TFLP><I1>",
+                    "historyProvider": "HistDB_Lancaster"
+                },
+                {
+                    "name": "VOLUME_INFO_PERCENT_FULL",
+                    "valueSource": "opc",
+                    "LongID": "",
+                    "Tag_Description": "",
+                    "Safety": "",
+                    "PI_Tag": false,
+                    "DOT": false,
+                    "Units": "",
+                    "opcItemPath": "[{Topic}]{topic}.98.4.30<TFLP><I1>",
+                    "historyProvider": "HistDB_Lancaster"
+                },
+                {
+                    "name": "VOLUME_INFO_SAMPLER_ACCUMULATOR",
+                    "valueSource": "opc",
+                    "LongID": "",
+                    "Tag_Description": "",
+                    "Safety": "",
+                    "PI_Tag": false,
+                    "DOT": false,
+                    "Units": "",
+                    "opcItemPath": "[{Topic}]{topic}.102.9.66<TFLP><I1>",
+                    "historyProvider": "HistDB_Lancaster"
+                },
+                {
+                    "name": "VOLUME_INFO_BITE_SIZE",
+                    "valueSource": "opc",
+                    "LongID": "",
+                    "Tag_Description": "",
+                    "Safety": "",
+                    "PI_Tag": false,
+                    "DOT": false,
+                    "Units": "",
+                    "opcItemPath": "[{Topic}]{topic}.98.3.30<TFLP><I1>",
+                    "historyProvider": "HistDB_Lancaster"
+                },
+                {
+                    "name": "VOLUME_INFO_SAMPLE_RESET_BUTTON",
+                    "valueSource": "opc",
+                    "LongID": "",
+                    "Tag_Description": "",
+                    "Safety": "",
+                    "PI_Tag": false,
+                    "DOT": false,
+                    "Units": "",
+                    "opcItemPath": "[{Topic}]{topic}.98.1.30<TBIN><I1>",
+                    "historyProvider": "HistDB_Lancaster"
+                },
+                {
+                    "name": "TROUBLESHOOT_INFO_YZ_SAMPLER_ENABLED",
+                    "valueSource": "opc",
+                    "LongID": "",
+                    "Tag_Description": "",
+                    "Safety": "",
+                    "PI_Tag": false,
+                    "DOT": false,
+                    "Units": "",
+                    "opcItemPath": "[{Topic}]{topic}.111.0.1<TBIN><I1>",
+                    "historyProvider": "HistDB_Lancaster"
+                },
+                {
+                    "name": "TROUBLESHOOT_INFO_NITROGEN_AND_CORIOLIS",
+                    "valueSource": "opc",
+                    "LongID": "",
+                    "Tag_Description": "",
+                    "Safety": "",
+                    "PI_Tag": false,
+                    "DOT": false,
+                    "Units": "",
+                    "opcItemPath": "[{Topic}]{topic}.98.10.30<TFLP><I1>",
+                    "historyProvider": "HistDB_Lancaster"
+                },
+                {
+                    "name": "TROUBLESHOOT_INFO_NITROGEN_PSI_WHEN_SAMP",
+                    "valueSource": "opc",
+                    "LongID": "",
+                    "Tag_Description": "",
+                    "Safety": "",
+                    "PI_Tag": false,
+                    "DOT": false,
+                    "Units": "",
+                    "opcItemPath": "[{Topic}]{topic}.96.2.6<TFLP><I1>",
+                    "historyProvider": "HistDB_Lancaster"
+                },
+                {
+                    "name": "TROUBLESHOOT_INFO_CURRENT_NITROGEN_PRESS",
+                    "valueSource": "opc",
+                    "LongID": "",
+                    "Tag_Description": "",
+                    "Safety": "",
+                    "PI_Tag": false,
+                    "DOT": false,
+                    "Units": "",
+                    "opcItemPath": "[{Topic}]{topic}.103.21.42<TFLP><I1>",
+                    "historyProvider": "HistDB_Lancaster"
+                },
+                {
+                    "name": "CURRENT_PIPELINE_PRESSURE",
+                    "valueSource": "opc",
+                    "LongID": "",
+                    "Tag_Description": "",
+                    "Safety": "",
+                    "PI_Tag": false,
+                    "DOT": false,
+                    "Units": "",
+                    "opcItemPath": "[{Topic}]{topic}.103.21.33<TFLP><I1>",
+                    "historyProvider": "HistDB_Lancaster"
+                },
+                {
+                    "name": "PREV_MONTH_TOTAL",
+                    "valueSource": "opc",
+                    "LongID": "",
+                    "Tag_Description": "",
+                    "Safety": "",
+                    "PI_Tag": false,
+                    "DOT": false,
+                    "Units": "",
+                    "opcItemPath": "[{Topic}]{topic}.204.141.1<TFLP><I1>",
+                    "historyProvider": "HistDB_Lancaster"
+                },
+                {
+                    "name": "YEST_TOTAL",
+                    "valueSource": "opc",
+                    "LongID": "",
+                    "Tag_Description": "",
+                    "Safety": "",
+                    "PI_Tag": false,
+                    "DOT": false,
+                    "Units": "",
+                    "opcItemPath": "[{Topic}]{topic}.204.129.1<TFLP><I1>",
+                    "historyProvider": "HistDB_Lancaster"
+                },
+                {
+                    "name": "CURRENT_MONTH_TOTAL",
+                    "valueSource": "opc",
+                    "LongID": "",
+                    "Tag_Description": "",
+                    "Safety": "",
+                    "PI_Tag": false,
+                    "DOT": false,
+                    "Units": "",
+                    "opcItemPath": "[{Topic}]{topic}.204.135.1<TFLP><I1>",
+                    "historyProvider": "HistDB_Lancaster"
+                },
+                {
+                    "name": "CURRENT_FLOW_RATE",
+                    "valueSource": "opc",
+                    "LongID": "",
+                    "Tag_Description": "",
+                    "Safety": "",
+                    "PI_Tag": false,
+                    "DOT": false,
+                    "Units": "",
+                    "opcItemPath": "[{Topic}]{topic}.204.105.1<TFLP><I1>",
+                    "historyProvider": "HistDB_Lancaster"
+                },
+                {
+                    "name": "TEST_FIRE_SAMPLER",
+                    "valueSource": "opc",
+                    "LongID": "",
+                    "Tag_Description": "",
+                    "Safety": "",
+                    "PI_Tag": false,
+                    "DOT": false,
+                    "Units": "",
+                    "opcItemPath": "[{Topic}]{topic}.102.10.66<TBIN><I1>",
+                    "historyProvider": "HistDB_Lancaster"
+                },
+                {
+                    "name": "TROUBLESHOOT_INFO_YZ_SAMPLER_DISABLED",
+                    "valueSource": "opc",
+                    "LongID": "",
+                    "Tag_Description": "",
+                    "Safety": "",
+                    "PI_Tag": false,
+                    "DOT": false,
+                    "Units": "",
+                    "opcItemPath": {
+                        "bindType": "parameter",
+                        "binding": "[{Topic}]{_t_TROUBLESHOOT_INFO_YZ_SAMPLER_DISABLED}"
+                    },
+                    "historyProvider": "HistDB_Lancaster"
+                }
+            ],
+            "parameters": {
+                "_t_TROUBLESHOOT_INFO_YZ_SAMPLER_DISABLED": {
+                    "dataType": "String",
+                    "value": {
+                        "bindType": "parameter",
+                        "binding": "[{Topic}]_t_TROUBLESHOOT_INFO_YZ_SAMPLER_DISABLED"
+                    }
+                }
+            },
+            "tagType": "UdtType"
+        },
+        {
+            "name": "EMERSONROCL/METER_O2",
+            "typeID": "LONGMONT_REGIONAL_BASE",
+            "tags": [
+                {
+                    "name": "VOLUME_YESTERDAY",
+                    "valueSource": "opc",
+                    "LongID": "",
+                    "Tag_Description": "",
+                    "Safety": "",
+                    "PI_Tag": false,
+                    "DOT": false,
+                    "Units": "",
+                    "opcItemPath": {
+                        "bindType": "parameter",
+                        "binding": "[{Topic}]{_t_VOLUME_YESTERDAY}"
+                    },
+                    "historyProvider": "HistDB_Lancaster"
+                },
+                {
+                    "name": "LIQUID_DETECTED",
+                    "valueSource": "opc",
+                    "LongID": "",
+                    "Tag_Description": "",
+                    "Safety": "",
+                    "PI_Tag": false,
+                    "DOT": false,
+                    "Units": "",
+                    "opcItemPath": {
+                        "bindType": "parameter",
+                        "binding": "[{Topic}]{_t_LIQUID_DETECTED}"
+                    },
+                    "historyProvider": "HistDB_Lancaster"
+                },
+                {
+                    "name": "O2_PPM",
+                    "valueSource": "opc",
+                    "LongID": "",
+                    "Tag_Description": "",
+                    "Safety": "",
+                    "PI_Tag": false,
+                    "DOT": false,
+                    "Units": "",
+                    "opcItemPath": {
+                        "bindType": "parameter",
+                        "binding": "[{Topic}]{_t_O2_PPM}"
+                    },
+                    "historyProvider": "HistDB_Lancaster"
+                },
+                {
+                    "name": "PRESSURE",
+                    "valueSource": "opc",
+                    "LongID": "",
+                    "Tag_Description": "",
+                    "Safety": "",
+                    "PI_Tag": false,
+                    "DOT": false,
+                    "Units": "",
+                    "opcItemPath": {
+                        "bindType": "parameter",
+                        "binding": "[{Topic}]{_t_PRESSURE}"
+                    },
+                    "historyProvider": "HistDB_Lancaster"
+                }
+            ],
+            "parameters": {
+                "_t_VOLUME_YESTERDAY": {
+                    "dataType": "String",
+                    "value": {
+                        "bindType": "parameter",
+                        "binding": "[{Topic}]_t_VOLUME_YESTERDAY"
+                    }
+                },
+                "_t_LIQUID_DETECTED": {
+                    "dataType": "String",
+                    "value": {
+                        "bindType": "parameter",
+                        "binding": "[{Topic}]_t_LIQUID_DETECTED"
+                    }
+                },
+                "_t_O2_PPM": {
+                    "dataType": "String",
+                    "value": {
+                        "bindType": "parameter",
+                        "binding": "[{Topic}]_t_O2_PPM"
+                    }
+                },
+                "_t_PRESSURE": {
+                    "dataType": "String",
+                    "value": {
+                        "bindType": "parameter",
+                        "binding": "[{Topic}]_t_PRESSURE"
+                    }
+                }
+            },
+            "tagType": "UdtType"
+        },
+        {
+            "name": "EMERSONROCL/VALVE",
+            "typeID": "LONGMONT_REGIONAL_BASE",
+            "tags": [
+                {
+                    "name": "REVERSE_FLOW",
+                    "valueSource": "opc",
+                    "LongID": "",
+                    "Tag_Description": "",
+                    "Safety": "",
+                    "PI_Tag": false,
+                    "DOT": false,
+                    "Units": "",
+                    "opcItemPath": "[{Topic}]{topic}.17.15.1<TFLP><I1>",
+                    "historyProvider": "HistDB_Lancaster"
+                },
+                {
+                    "name": "VOLTAGE",
+                    "valueSource": "opc",
+                    "LongID": "",
+                    "Tag_Description": "",
+                    "Safety": "",
+                    "PI_Tag": false,
+                    "DOT": false,
+                    "Units": "",
+                    "opcItemPath": "[{Topic}]{topic}.17.3.2<TFLP><I1>",
+                    "historyProvider": "HistDB_Lancaster"
+                },
+                {
+                    "name": "VALVE_STATUS",
+                    "valueSource": "opc",
+                    "LongID": "",
+                    "Tag_Description": "",
+                    "Safety": "",
+                    "PI_Tag": false,
+                    "DOT": false,
+                    "Units": "",
+                    "opcItemPath": {
+                        "bindType": "parameter",
+                        "binding": "[{Topic}]{_t_VALVE_STATUS}"
+                    },
+                    "historyProvider": "HistDB_Lancaster"
+                }
+            ],
+            "parameters": {
+                "_t_VALVE_STATUS": {
+                    "dataType": "String",
+                    "value": {
+                        "bindType": "parameter",
+                        "binding": "[{Topic}]_t_VALVE_STATUS"
+                    }
+                }
+            },
+            "tagType": "UdtType"
+        },
+        {
+            "name": "EMERSONROCL/SHUTDOWN",
+            "typeID": "LONGMONT_REGIONAL_BASE",
+            "tags": [
+                {
+                    "name": "SHUTDOWN_02",
+                    "valueSource": "opc",
+                    "LongID": "",
+                    "Tag_Description": "",
+                    "Safety": "",
+                    "PI_Tag": false,
+                    "DOT": false,
+                    "Units": "",
+                    "opcItemPath": "[{Topic}]{topic}.17.2.4<TBIN><I1>",
+                    "historyProvider": "HistDB_Lancaster"
+                },
+                {
+                    "name": "SHUTDOWN_03",
+                    "valueSource": "opc",
+                    "LongID": "",
+                    "Tag_Description": "",
+                    "Safety": "",
+                    "PI_Tag": false,
+                    "DOT": false,
+                    "Units": "",
+                    "opcItemPath": "[{Topic}]{topic}.17.4.4<TBIN><I1>",
+                    "historyProvider": "HistDB_Lancaster"
+                },
+                {
+                    "name": "SHUTDOWN_04",
+                    "valueSource": "opc",
+                    "LongID": "",
+                    "Tag_Description": "",
+                    "Safety": "",
+                    "PI_Tag": false,
+                    "DOT": false,
+                    "Units": "",
+                    "opcItemPath": "[{Topic}]{topic}.17.6.4<TBIN><I1>",
+                    "historyProvider": "HistDB_Lancaster"
+                }
+            ],
+            "parameters": {},
+            "tagType": "UdtType"
+        },
+        {
+            "name": "EMERSONROCL/ANALYSIS_STD",
+            "typeID": "EMERSONROCL/ANALYSIS",
+            "tags": [
+                {
+                    "name": "METHANE",
+                    "valueSource": "opc",
+                    "LongID": "",
+                    "Tag_Description": "",
+                    "Safety": "",
+                    "PI_Tag": false,
+                    "DOT": false,
+                    "Units": "",
+                    "opcItemPath": {
+                        "bindType": "parameter",
+                        "binding": "[{Topic}]{_t_METHANE}"
+                    },
+                    "historyProvider": "HistDB_Lancaster"
+                },
+                {
+                    "name": "ETHANE",
+                    "valueSource": "opc",
+                    "LongID": "",
+                    "Tag_Description": "",
+                    "Safety": "",
+                    "PI_Tag": false,
+                    "DOT": false,
+                    "Units": "",
+                    "opcItemPath": {
+                        "bindType": "parameter",
+                        "binding": "[{Topic}]{_t_ETHANE}"
+                    },
+                    "historyProvider": "HistDB_Lancaster"
+                },
+                {
+                    "name": "PROPANE",
+                    "valueSource": "opc",
+                    "LongID": "",
+                    "Tag_Description": "",
+                    "Safety": "",
+                    "PI_Tag": false,
+                    "DOT": false,
+                    "Units": "",
+                    "opcItemPath": {
+                        "bindType": "parameter",
+                        "binding": "[{Topic}]{_t_PROPANE}"
+                    },
+                    "historyProvider": "HistDB_Lancaster"
+                },
+                {
+                    "name": "HEXANE",
+                    "valueSource": "opc",
+                    "LongID": "",
+                    "Tag_Description": "",
+                    "Safety": "",
+                    "PI_Tag": false,
+                    "DOT": false,
+                    "Units": "",
+                    "opcItemPath": {
+                        "bindType": "parameter",
+                        "binding": "[{Topic}]{_t_HEXANE}"
+                    },
+                    "historyProvider": "HistDB_Lancaster"
+                },
+                {
+                    "name": "CARBON_DIOXIDE",
+                    "valueSource": "opc",
+                    "LongID": "",
+                    "Tag_Description": "",
+                    "Safety": "",
+                    "PI_Tag": false,
+                    "DOT": false,
+                    "Units": "",
+                    "opcItemPath": {
+                        "bindType": "parameter",
+                        "binding": "[{Topic}]{_t_CARBON_DIOXIDE}"
+                    },
+                    "historyProvider": "HistDB_Lancaster"
+                },
+                {
+                    "name": "ISO_BUTANE",
+                    "valueSource": "opc",
+                    "LongID": "",
+                    "Tag_Description": "",
+                    "Safety": "",
+                    "PI_Tag": false,
+                    "DOT": false,
+                    "Units": "",
+                    "opcItemPath": {
+                        "bindType": "parameter",
+                        "binding": "[{Topic}]{_t_ISO_BUTANE}"
+                    },
+                    "historyProvider": "HistDB_Lancaster"
+                },
+                {
+                    "name": "ISO_PENTANE",
+                    "valueSource": "opc",
+                    "LongID": "",
+                    "Tag_Description": "",
+                    "Safety": "",
+                    "PI_Tag": false,
+                    "DOT": false,
+                    "Units": "",
+                    "opcItemPath": {
+                        "bindType": "parameter",
+                        "binding": "[{Topic}]{_t_ISO_PENTANE}"
+                    },
+                    "historyProvider": "HistDB_Lancaster"
+                },
+                {
+                    "name": "NITROGEN",
+                    "valueSource": "opc",
+                    "LongID": "",
+                    "Tag_Description": "",
+                    "Safety": "",
+                    "PI_Tag": false,
+                    "DOT": false,
+                    "Units": "",
+                    "opcItemPath": {
+                        "bindType": "parameter",
+                        "binding": "[{Topic}]{_t_NITROGEN}"
+                    },
+                    "historyProvider": "HistDB_Lancaster"
+                },
+                {
+                    "name": "BUTANE",
+                    "valueSource": "opc",
+                    "LongID": "",
+                    "Tag_Description": "",
+                    "Safety": "",
+                    "PI_Tag": false,
+                    "DOT": false,
+                    "Units": "",
+                    "opcItemPath": {
+                        "bindType": "parameter",
+                        "binding": "[{Topic}]{_t_BUTANE}"
+                    },
+                    "historyProvider": "HistDB_Lancaster"
+                },
+                {
+                    "name": "PENTANE",
+                    "valueSource": "opc",
+                    "LongID": "",
+                    "Tag_Description": "",
+                    "Safety": "",
+                    "PI_Tag": false,
+                    "DOT": false,
+                    "Units": "",
+                    "opcItemPath": {
+                        "bindType": "parameter",
+                        "binding": "[{Topic}]{_t_PENTANE}"
+                    },
+                    "historyProvider": "HistDB_Lancaster"
+                },
+                {
+                    "name": "SPECIFIC_GRAVITY",
+                    "valueSource": "opc",
+                    "LongID": "",
+                    "Tag_Description": "",
+                    "Safety": "",
+                    "PI_Tag": false,
+                    "DOT": false,
+                    "Units": "",
+                    "opcItemPath": {
+                        "bindType": "parameter",
+                        "binding": "[{Topic}]{_t_SPECIFIC_GRAVITY}"
+                    },
+                    "historyProvider": "HistDB_Lancaster"
+                },
+                {
+                    "name": "WOBBE_INDEX",
+                    "valueSource": "opc",
+                    "LongID": "",
+                    "Tag_Description": "",
+                    "Safety": "",
+                    "PI_Tag": false,
+                    "DOT": false,
+                    "Units": "",
+                    "opcItemPath": {
+                        "bindType": "parameter",
+                        "binding": "[{Topic}]{_t_WOBBE_INDEX}"
+                    },
+                    "historyProvider": "HistDB_Lancaster"
+                }
+            ],
+            "parameters": {
+                "_t_METHANE": {
+                    "dataType": "String",
+                    "value": {
+                        "bindType": "parameter",
+                        "binding": "[{Topic}]_t_METHANE"
+                    }
+                },
+                "_t_ETHANE": {
+                    "dataType": "String",
+                    "value": {
+                        "bindType": "parameter",
+                        "binding": "[{Topic}]_t_ETHANE"
+                    }
+                },
+                "_t_PROPANE": {
+                    "dataType": "String",
+                    "value": {
+                        "bindType": "parameter",
+                        "binding": "[{Topic}]_t_PROPANE"
+                    }
+                },
+                "_t_HEXANE": {
+                    "dataType": "String",
+                    "value": {
+                        "bindType": "parameter",
+                        "binding": "[{Topic}]_t_HEXANE"
+                    }
+                },
+                "_t_CARBON_DIOXIDE": {
+                    "dataType": "String",
+                    "value": {
+                        "bindType": "parameter",
+                        "binding": "[{Topic}]_t_CARBON_DIOXIDE"
+                    }
+                },
+                "_t_ISO_BUTANE": {
+                    "dataType": "String",
+                    "value": {
+                        "bindType": "parameter",
+                        "binding": "[{Topic}]_t_ISO_BUTANE"
+                    }
+                },
+                "_t_ISO_PENTANE": {
+                    "dataType": "String",
+                    "value": {
+                        "bindType": "parameter",
+                        "binding": "[{Topic}]_t_ISO_PENTANE"
+                    }
+                },
+                "_t_NITROGEN": {
+                    "dataType": "String",
+                    "value": {
+                        "bindType": "parameter",
+                        "binding": "[{Topic}]_t_NITROGEN"
+                    }
+                },
+                "_t_BUTANE": {
+                    "dataType": "String",
+                    "value": {
+                        "bindType": "parameter",
+                        "binding": "[{Topic}]_t_BUTANE"
+                    }
+                },
+                "_t_PENTANE": {
+                    "dataType": "String",
+                    "value": {
+                        "bindType": "parameter",
+                        "binding": "[{Topic}]_t_PENTANE"
+                    }
+                },
+                "_t_SPECIFIC_GRAVITY": {
+                    "dataType": "String",
+                    "value": {
+                        "bindType": "parameter",
+                        "binding": "[{Topic}]_t_SPECIFIC_GRAVITY"
+                    }
+                },
+                "_t_WOBBE_INDEX": {
+                    "dataType": "String",
+                    "value": {
+                        "bindType": "parameter",
+                        "binding": "[{Topic}]_t_WOBBE_INDEX"
+                    }
+                }
+            },
+            "tagType": "UdtType"
+        },
+        {
+            "name": "MODBUS/ICHEM_SOLAR_CHEMICAL_INJECTION",
+            "typeID": "LONGMONT_REGIONAL_BASE",
+            "tags": [
+                {
+                    "name": "VOLTAGE",
+                    "valueSource": "opc",
+                    "LongID": "",
+                    "Tag_Description": "",
+                    "Safety": "",
+                    "PI_Tag": false,
+                    "DOT": false,
+                    "Units": "",
+                    "opcItemPath": "[{Topic}]{topic}.47417<I1>",
+                    "historyProvider": "HistDB_Lancaster"
+                },
+                {
+                    "name": "LEVEL_ALARM_HIGH_HIGH",
+                    "valueSource": "opc",
+                    "LongID": "",
+                    "Tag_Description": "",
+                    "Safety": "",
+                    "PI_Tag": false,
+                    "DOT": false,
+                    "Units": "",
+                    "opcItemPath": "[{Topic}]{topic}.22455<I1>",
+                    "historyProvider": "HistDB_Lancaster"
+                },
+                {
+                    "name": "TANK_LEVEL",
+                    "valueSource": "opc",
+                    "LongID": "",
+                    "Tag_Description": "",
+                    "Safety": "",
+                    "PI_Tag": false,
+                    "DOT": false,
+                    "Units": "",
+                    "opcItemPath": "[{Topic}]{topic}.47416<I1>",
+                    "historyProvider": "HistDB_Lancaster"
+                },
+                {
+                    "name": "PRESSURE",
+                    "valueSource": "opc",
+                    "LongID": "",
+                    "Tag_Description": "",
+                    "Safety": "",
+                    "PI_Tag": false,
+                    "DOT": false,
+                    "Units": "",
+                    "opcItemPath": "[{Topic}]{topic}.47414<I1>",
+                    "historyProvider": "HistDB_Lancaster"
+                },
+                {
+                    "name": "TEMPERATURE",
+                    "valueSource": "opc",
+                    "LongID": "",
+                    "Tag_Description": "",
+                    "Safety": "",
+                    "PI_Tag": false,
+                    "DOT": false,
+                    "Units": "",
+                    "opcItemPath": "[{Topic}]{topic}.47415<I1>",
+                    "historyProvider": "HistDB_Lancaster"
+                }
+            ],
+            "parameters": {},
+            "tagType": "UdtType"
+        },
+        {
+            "name": "TOTALFLOWG4/METER_GAS_STD",
+            "typeID": "TOTALFLOWG4/METER_GAS",
+            "tags": [
+                {
+                    "name": "VOLTAGE",
+                    "valueSource": "opc",
+                    "LongID": "",
+                    "Tag_Description": "",
+                    "Safety": "",
+                    "PI_Tag": false,
+                    "DOT": false,
+                    "Units": "",
+                    "opcItemPath": {
+                        "bindType": "parameter",
+                        "binding": "[{Topic}]{_t_VOLTAGE}"
+                    },
+                    "historyProvider": "HistDB_Lancaster"
+                },
+                {
+                    "name": "STATIC_PRESSURE",
+                    "valueSource": "opc",
+                    "LongID": "",
+                    "Tag_Description": "",
+                    "Safety": "",
+                    "PI_Tag": false,
+                    "DOT": false,
+                    "Units": "",
+                    "opcItemPath": {
+                        "bindType": "parameter",
+                        "binding": "[{Topic}]{_t_STATIC_PRESSURE}"
+                    },
+                    "historyProvider": "HistDB_Lancaster"
+                },
+                {
+                    "name": "TEMPERATURE",
+                    "valueSource": "opc",
+                    "LongID": "",
+                    "Tag_Description": "",
+                    "Safety": "",
+                    "PI_Tag": false,
+                    "DOT": false,
+                    "Units": "",
+                    "opcItemPath": {
+                        "bindType": "parameter",
+                        "binding": "[{Topic}]{_t_TEMPERATURE}"
+                    },
+                    "historyProvider": "HistDB_Lancaster"
+                },
+                {
+                    "name": "RATE",
+                    "valueSource": "opc",
+                    "LongID": "",
+                    "Tag_Description": "",
+                    "Safety": "",
+                    "PI_Tag": false,
+                    "DOT": false,
+                    "Units": "",
+                    "opcItemPath": "[{Topic}]{topic}.4:7:19:R4<I1>",
+                    "historyProvider": "HistDB_Lancaster"
+                },
+                {
+                    "name": "ENERGY",
+                    "valueSource": "opc",
+                    "LongID": "",
+                    "Tag_Description": "",
+                    "Safety": "",
+                    "PI_Tag": false,
+                    "DOT": false,
+                    "Units": "",
+                    "opcItemPath": {
+                        "bindType": "parameter",
+                        "binding": "[{Topic}]{_t_ENERGY}"
+                    },
+                    "historyProvider": "HistDB_Lancaster"
+                },
+                {
+                    "name": "ENERGY_TODAY",
+                    "valueSource": "opc",
+                    "LongID": "",
+                    "Tag_Description": "",
+                    "Safety": "",
+                    "PI_Tag": false,
+                    "DOT": false,
+                    "Units": "",
+                    "opcItemPath": {
+                        "bindType": "parameter",
+                        "binding": "[{Topic}]{_t_ENERGY_TODAY}"
+                    },
+                    "historyProvider": "HistDB_Lancaster"
+                },
+                {
+                    "name": "ENERGY_YESTERDAY",
+                    "valueSource": "opc",
+                    "LongID": "",
+                    "Tag_Description": "",
+                    "Safety": "",
+                    "PI_Tag": false,
+                    "DOT": false,
+                    "Units": "",
+                    "opcItemPath": {
+                        "bindType": "parameter",
+                        "binding": "[{Topic}]{_t_ENERGY_YESTERDAY}"
+                    },
+                    "historyProvider": "HistDB_Lancaster"
+                },
+                {
+                    "name": "VOLUME_TODAY",
+                    "valueSource": "opc",
+                    "LongID": "",
+                    "Tag_Description": "",
+                    "Safety": "",
+                    "PI_Tag": false,
+                    "DOT": false,
+                    "Units": "",
+                    "opcItemPath": "[{Topic}]{topic}.4:7:22:R4<I1>",
+                    "historyProvider": "HistDB_Lancaster"
+                },
+                {
+                    "name": "VOLUME_YESTERDAY",
+                    "valueSource": "opc",
+                    "LongID": "",
+                    "Tag_Description": "",
+                    "Safety": "",
+                    "PI_Tag": false,
+                    "DOT": false,
+                    "Units": "",
+                    "opcItemPath": "[{Topic}]{topic}.4:7:23:R4<I1>",
+                    "historyProvider": "HistDB_Lancaster"
+                },
+                {
+                    "name": "CURRENT_HOUR",
+                    "valueSource": "opc",
+                    "LongID": "",
+                    "Tag_Description": "",
+                    "Safety": "",
+                    "PI_Tag": false,
+                    "DOT": false,
+                    "Units": "",
+                    "opcItemPath": "[{Topic}]{topic}.0:8:4:UI1<I1>",
+                    "historyProvider": "HistDB_Lancaster"
+                },
+                {
+                    "name": "CURRENT_MINUTE",
+                    "valueSource": "opc",
+                    "LongID": "",
+                    "Tag_Description": "",
+                    "Safety": "",
+                    "PI_Tag": false,
+                    "DOT": false,
+                    "Units": "",
+                    "opcItemPath": "[{Topic}]{topic}.0:8:5:UI1<I1>",
+                    "historyProvider": "HistDB_Lancaster"
+                },
+                {
+                    "name": "DIFFERENTIAL_PRESSURE",
+                    "valueSource": "opc",
+                    "LongID": "",
+                    "Tag_Description": "",
+                    "Safety": "",
+                    "PI_Tag": false,
+                    "DOT": false,
+                    "Units": "",
+                    "opcItemPath": "[{Topic}]{topic}.4:7:0:R4<I1>",
+                    "historyProvider": "HistDB_Lancaster"
+                }
+            ],
+            "parameters": {
+                "_t_VOLTAGE": {
+                    "dataType": "String",
+                    "value": {
+                        "bindType": "parameter",
+                        "binding": "[{Topic}]_t_VOLTAGE"
+                    }
+                },
+                "_t_STATIC_PRESSURE": {
+                    "dataType": "String",
+                    "value": {
+                        "bindType": "parameter",
+                        "binding": "[{Topic}]_t_STATIC_PRESSURE"
+                    }
+                },
+                "_t_TEMPERATURE": {
+                    "dataType": "String",
+                    "value": {
+                        "bindType": "parameter",
+                        "binding": "[{Topic}]_t_TEMPERATURE"
+                    }
+                },
+                "_t_ENERGY": {
+                    "dataType": "String",
+                    "value": {
+                        "bindType": "parameter",
+                        "binding": "[{Topic}]_t_ENERGY"
+                    }
+                },
+                "_t_ENERGY_TODAY": {
+                    "dataType": "String",
+                    "value": {
+                        "bindType": "parameter",
+                        "binding": "[{Topic}]_t_ENERGY_TODAY"
+                    }
+                },
+                "_t_ENERGY_YESTERDAY": {
+                    "dataType": "String",
+                    "value": {
+                        "bindType": "parameter",
+                        "binding": "[{Topic}]_t_ENERGY_YESTERDAY"
+                    }
+                }
+            },
+            "tagType": "UdtType"
+        },
+        {
+            "name": "TOTALFLOWG4/VALVE",
+            "typeID": "LONGMONT_REGIONAL_BASE",
+            "tags": [
+                {
+                    "name": "BATTERY_VOLTAGE",
+                    "valueSource": "opc",
+                    "LongID": "",
+                    "Tag_Description": "",
+                    "Safety": "",
+                    "PI_Tag": false,
+                    "DOT": false,
+                    "Units": "",
+                    "opcItemPath": {
+                        "bindType": "parameter",
+                        "binding": "[{Topic}]{_t_BATTERY_VOLTAGE}"
+                    },
+                    "historyProvider": "HistDB_Lancaster"
+                },
+                {
+                    "name": "PRESSURE",
+                    "valueSource": "opc",
+                    "LongID": "",
+                    "Tag_Description": "",
+                    "Safety": "",
+                    "PI_Tag": false,
+                    "DOT": false,
+                    "Units": "",
+                    "opcItemPath": {
+                        "bindType": "parameter",
+                        "binding": "[{Topic}]{_t_PRESSURE}"
+                    },
+                    "historyProvider": "HistDB_Lancaster"
+                },
+                {
+                    "name": "BATTERY_LOW",
+                    "valueSource": "opc",
+                    "LongID": "",
+                    "Tag_Description": "",
+                    "Safety": "",
+                    "PI_Tag": false,
+                    "DOT": false,
+                    "Units": "",
+                    "opcItemPath": {
+                        "bindType": "parameter",
+                        "binding": "[{Topic}]{_t_BATTERY_LOW}"
+                    },
+                    "historyProvider": "HistDB_Lancaster"
+                },
+                {
+                    "name": "VALVE_FAIL_TO_CLOSE",
+                    "valueSource": "opc",
+                    "LongID": "",
+                    "Tag_Description": "",
+                    "Safety": "",
+                    "PI_Tag": false,
+                    "DOT": false,
+                    "Units": "",
+                    "opcItemPath": {
+                        "bindType": "parameter",
+                        "binding": "[{Topic}]{_t_VALVE_FAIL_TO_CLOSE}"
+                    },
+                    "historyProvider": "HistDB_Lancaster"
+                },
+                {
+                    "name": "VALVE_FAIL_TO_OPEN",
+                    "valueSource": "opc",
+                    "LongID": "",
+                    "Tag_Description": "",
+                    "Safety": "",
+                    "PI_Tag": false,
+                    "DOT": false,
+                    "Units": "",
+                    "opcItemPath": {
+                        "bindType": "parameter",
+                        "binding": "[{Topic}]{_t_VALVE_FAIL_TO_OPEN}"
+                    },
+                    "historyProvider": "HistDB_Lancaster"
+                },
+                {
+                    "name": "STATUS",
+                    "valueSource": "opc",
+                    "LongID": "",
+                    "Tag_Description": "",
+                    "Safety": "",
+                    "PI_Tag": false,
+                    "DOT": false,
+                    "Units": "",
+                    "opcItemPath": {
+                        "bindType": "parameter",
+                        "binding": "[{Topic}]{_t_STATUS}"
+                    },
+                    "historyProvider": "HistDB_Lancaster"
+                },
+                {
+                    "name": "VALVE_CLOSED",
+                    "valueSource": "opc",
+                    "LongID": "",
+                    "Tag_Description": "",
+                    "Safety": "",
+                    "PI_Tag": false,
+                    "DOT": false,
+                    "Units": "",
+                    "opcItemPath": {
+                        "bindType": "parameter",
+                        "binding": "[{Topic}]{_t_VALVE_CLOSED}"
+                    },
+                    "historyProvider": "HistDB_Lancaster"
+                },
+                {
+                    "name": "VALVE_OPENED",
+                    "valueSource": "opc",
+                    "LongID": "",
+                    "Tag_Description": "",
+                    "Safety": "",
+                    "PI_Tag": false,
+                    "DOT": false,
+                    "Units": "",
+                    "opcItemPath": {
+                        "bindType": "parameter",
+                        "binding": "[{Topic}]{_t_VALVE_OPENED}"
+                    },
+                    "historyProvider": "HistDB_Lancaster"
+                }
+            ],
+            "parameters": {
+                "_t_BATTERY_VOLTAGE": {
+                    "dataType": "String",
+                    "value": {
+                        "bindType": "parameter",
+                        "binding": "[{Topic}]_t_BATTERY_VOLTAGE"
+                    }
+                },
+                "_t_PRESSURE": {
+                    "dataType": "String",
+                    "value": {
+                        "bindType": "parameter",
+                        "binding": "[{Topic}]_t_PRESSURE"
+                    }
+                },
+                "_t_BATTERY_LOW": {
+                    "dataType": "String",
+                    "value": {
+                        "bindType": "parameter",
+                        "binding": "[{Topic}]_t_BATTERY_LOW"
+                    }
+                },
+                "_t_VALVE_FAIL_TO_CLOSE": {
+                    "dataType": "String",
+                    "value": {
+                        "bindType": "parameter",
+                        "binding": "[{Topic}]_t_VALVE_FAIL_TO_CLOSE"
+                    }
+                },
+                "_t_VALVE_FAIL_TO_OPEN": {
+                    "dataType": "String",
+                    "value": {
+                        "bindType": "parameter",
+                        "binding": "[{Topic}]_t_VALVE_FAIL_TO_OPEN"
+                    }
+                },
+                "_t_STATUS": {
+                    "dataType": "String",
+                    "value": {
+                        "bindType": "parameter",
+                        "binding": "[{Topic}]_t_STATUS"
+                    }
+                },
+                "_t_VALVE_CLOSED": {
+                    "dataType": "String",
+                    "value": {
+                        "bindType": "parameter",
+                        "binding": "[{Topic}]_t_VALVE_CLOSED"
+                    }
+                },
+                "_t_VALVE_OPENED": {
+                    "dataType": "String",
+                    "value": {
+                        "bindType": "parameter",
+                        "binding": "[{Topic}]_t_VALVE_OPENED"
+                    }
+                }
+            },
+            "tagType": "UdtType"
+        },
+        {
+            "name": "ALLEN_BRADLEY/PIG_LAUNCHER_DF1",
+            "typeID": "LONGMONT_REGIONAL_BASE",
+            "tags": [
+                {
+                    "name": "CURRENT_HOUR",
+                    "valueSource": "opc",
+                    "LongID": "",
+                    "Tag_Description": "",
+                    "Safety": "",
+                    "PI_Tag": false,
+                    "DOT": false,
+                    "Units": "",
+                    "opcItemPath": "[{Topic}]{topic}.N7:12<I1>",
+                    "historyProvider": "HistDB_Lancaster"
+                },
+                {
+                    "name": "CURRENT_MINUTE",
+                    "valueSource": "opc",
+                    "LongID": "",
+                    "Tag_Description": "",
+                    "Safety": "",
+                    "PI_Tag": false,
+                    "DOT": false,
+                    "Units": "",
+                    "opcItemPath": "[{Topic}]{topic}.N7:13<I1>",
+                    "historyProvider": "HistDB_Lancaster"
+                },
+                {
+                    "name": "TIMER",
+                    "valueSource": "opc",
+                    "LongID": "",
+                    "Tag_Description": "",
+                    "Safety": "",
+                    "PI_Tag": false,
+                    "DOT": false,
+                    "Units": "",
+                    "opcItemPath": "[{Topic}]{topic}.N7:0<I1>",
+                    "historyProvider": "HistDB_Lancaster"
+                },
+                {
+                    "name": "LONG_TRIGGER_UP_ALARM",
+                    "valueSource": "opc",
+                    "LongID": "",
+                    "Tag_Description": "",
+                    "Safety": "",
+                    "PI_Tag": false,
+                    "DOT": false,
+                    "Units": "",
+                    "opcItemPath": "[{Topic}]{topic}.N7:6/1<I1>",
+                    "historyProvider": "HistDB_Lancaster"
+                },
+                {
+                    "name": "NUM_PIGS_IN_BARREL_SP",
+                    "valueSource": "opc",
+                    "LongID": "",
+                    "Tag_Description": "",
+                    "Safety": "",
+                    "PI_Tag": false,
+                    "DOT": false,
+                    "Units": "",
+                    "opcItemPath": "[{Topic}]{topic}.N7:10<I1>",
+                    "historyProvider": "HistDB_Lancaster"
+                },
+                {
+                    "name": "AUTO_MAN",
+                    "valueSource": "opc",
+                    "LongID": "",
+                    "Tag_Description": "",
+                    "Safety": "",
+                    "PI_Tag": false,
+                    "DOT": false,
+                    "Units": "",
+                    "opcItemPath": "[{Topic}]{topic}.N7:9/0<I1>",
+                    "historyProvider": "HistDB_Lancaster"
+                },
+                {
+                    "name": "LAUNCHER_MODE",
+                    "valueSource": "opc",
+                    "LongID": "",
+                    "Tag_Description": "",
+                    "Safety": "",
+                    "PI_Tag": false,
+                    "DOT": false,
+                    "Units": "",
+                    "opcItemPath": "[{Topic}]{topic}.N7:9/1<I1>",
+                    "historyProvider": "HistDB_Lancaster"
+                },
+                {
+                    "name": "NUM_PIGS_REMAINING",
+                    "valueSource": "opc",
+                    "LongID": "",
+                    "Tag_Description": "",
+                    "Safety": "",
+                    "PI_Tag": false,
+                    "DOT": false,
+                    "Units": "",
+                    "opcItemPath": "[{Topic}]{topic}.N7:8<I1>",
+                    "historyProvider": "HistDB_Lancaster"
+                },
+                {
+                    "name": "PERMISSIVE",
+                    "valueSource": "opc",
+                    "LongID": "",
+                    "Tag_Description": "",
+                    "Safety": "",
+                    "PI_Tag": false,
+                    "DOT": false,
+                    "Units": "",
+                    "opcItemPath": "[{Topic}]{topic}.N7:14/0<I1>",
+                    "historyProvider": "HistDB_Lancaster"
+                },
+                {
+                    "name": "EMPTY_BARREL_SHUTDOWN",
+                    "valueSource": "opc",
+                    "LongID": "",
+                    "Tag_Description": "",
+                    "Safety": "",
+                    "PI_Tag": false,
+                    "DOT": false,
+                    "Units": "",
+                    "opcItemPath": "[{Topic}]{topic}.N7:11/0<I1>",
+                    "historyProvider": "HistDB_Lancaster"
+                },
+                {
+                    "name": "STATUS",
+                    "valueSource": "opc",
+                    "LongID": "",
+                    "Tag_Description": "",
+                    "Safety": "",
+                    "PI_Tag": false,
+                    "DOT": false,
+                    "Units": "",
+                    "opcItemPath": "[{Topic}]{topic}.N7:4<I1>",
+                    "historyProvider": "HistDB_Lancaster"
+                },
+                {
+                    "name": "PIG_SIGNAL_ALARM",
+                    "valueSource": "opc",
+                    "LongID": "",
+                    "Tag_Description": "",
+                    "Safety": "",
+                    "PI_Tag": false,
+                    "DOT": false,
+                    "Units": "",
+                    "opcItemPath": "[{Topic}]{topic}.N7:16/0<I1>",
+                    "historyProvider": "HistDB_Lancaster"
+                },
+                {
+                    "name": "PIG_SIGNAL_COUNTER",
+                    "valueSource": "opc",
+                    "LongID": "",
+                    "Tag_Description": "",
+                    "Safety": "",
+                    "PI_Tag": false,
+                    "DOT": false,
+                    "Units": "",
+                    "opcItemPath": "[{Topic}]{topic}.N7:17<I1>",
+                    "historyProvider": "HistDB_Lancaster"
+                }
+            ],
+            "parameters": {},
+            "tagType": "UdtType"
+        },
+        {
+            "name": "TOTALFLOWG4/METER_O2",
+            "typeID": "LONGMONT_REGIONAL_BASE",
+            "tags": [
+                {
+                    "name": "O2_PPM",
+                    "valueSource": "opc",
+                    "LongID": "",
+                    "Tag_Description": "",
+                    "Safety": "",
+                    "PI_Tag": false,
+                    "DOT": false,
+                    "Units": "",
+                    "opcItemPath": {
+                        "bindType": "parameter",
+                        "binding": "[{Topic}]{_t_O2_PPM}"
+                    },
+                    "historyProvider": "HistDB_Lancaster"
+                },
+                {
+                    "name": "LIQUID_DETECTED",
+                    "valueSource": "opc",
+                    "LongID": "",
+                    "Tag_Description": "",
+                    "Safety": "",
+                    "PI_Tag": false,
+                    "DOT": false,
+                    "Units": "",
+                    "opcItemPath": {
+                        "bindType": "parameter",
+                        "binding": "[{Topic}]{_t_LIQUID_DETECTED}"
+                    },
+                    "historyProvider": "HistDB_Lancaster"
+                },
+                {
+                    "name": "PRESSURE",
+                    "valueSource": "opc",
+                    "LongID": "",
+                    "Tag_Description": "",
+                    "Safety": "",
+                    "PI_Tag": false,
+                    "DOT": false,
+                    "Units": "",
+                    "opcItemPath": {
+                        "bindType": "parameter",
+                        "binding": "[{Topic}]{_t_PRESSURE}"
+                    },
+                    "historyProvider": "HistDB_Lancaster"
+                },
+                {
+                    "name": "RESET",
+                    "valueSource": "opc",
+                    "LongID": "",
+                    "Tag_Description": "",
+                    "Safety": "",
+                    "PI_Tag": false,
+                    "DOT": false,
+                    "Units": "",
+                    "opcItemPath": {
+                        "bindType": "parameter",
+                        "binding": "[{Topic}]{_t_RESET}"
+                    },
+                    "historyProvider": "HistDB_Lancaster"
+                },
+                {
+                    "name": "PERMISSIVE",
+                    "valueSource": "opc",
+                    "LongID": "",
+                    "Tag_Description": "",
+                    "Safety": "",
+                    "PI_Tag": false,
+                    "DOT": false,
+                    "Units": "",
+                    "opcItemPath": {
+                        "bindType": "parameter",
+                        "binding": "[{Topic}]{_t_PERMISSIVE}"
+                    },
+                    "historyProvider": "HistDB_Lancaster"
+                }
+            ],
+            "parameters": {
+                "_t_O2_PPM": {
+                    "dataType": "String",
+                    "value": {
+                        "bindType": "parameter",
+                        "binding": "[{Topic}]_t_O2_PPM"
+                    }
+                },
+                "_t_LIQUID_DETECTED": {
+                    "dataType": "String",
+                    "value": {
+                        "bindType": "parameter",
+                        "binding": "[{Topic}]_t_LIQUID_DETECTED"
+                    }
+                },
+                "_t_PRESSURE": {
+                    "dataType": "String",
+                    "value": {
+                        "bindType": "parameter",
+                        "binding": "[{Topic}]_t_PRESSURE"
+                    }
+                },
+                "_t_RESET": {
+                    "dataType": "String",
+                    "value": {
+                        "bindType": "parameter",
+                        "binding": "[{Topic}]_t_RESET"
+                    }
+                },
+                "_t_PERMISSIVE": {
+                    "dataType": "String",
+                    "value": {
+                        "bindType": "parameter",
+                        "binding": "[{Topic}]_t_PERMISSIVE"
+                    }
+                }
+            },
+            "tagType": "UdtType"
+        }
+    ]
+}

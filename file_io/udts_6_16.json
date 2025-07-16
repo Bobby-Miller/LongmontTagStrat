@@ -1,0 +1,3664 @@
+{
+    "[Longmont]_types_/ALLEN_BRADLEY/": [
+        {
+            "name": "PIG_LAUNCHER_CLX",
+            "typeID": "LONGMONT_REGIONAL_BASE",
+            "tags": [
+                {
+                    "name": "CURRENT_HOUR",
+                    "valueSource": "opc",
+                    "LongID": "",
+                    "Tag_Description": "",
+                    "Safety": "",
+                    "PI_Tag": false,
+                    "DOT": false,
+                    "Units": "",
+                    "opcItemPath": "[{Topic}]AUTO_LAUNCH_HOURS<I1>",
+                    "historyProvider": "HistDB_Longmont"
+                },
+                {
+                    "name": "CURRENT_MINUTE",
+                    "valueSource": "opc",
+                    "LongID": "",
+                    "Tag_Description": "",
+                    "Safety": "",
+                    "PI_Tag": false,
+                    "DOT": false,
+                    "Units": "",
+                    "opcItemPath": "[{Topic}]AUTO_LAUNCH_MINUTES<I1>",
+                    "historyProvider": "HistDB_Longmont"
+                },
+                {
+                    "name": "TIMER",
+                    "valueSource": "opc",
+                    "LongID": "",
+                    "Tag_Description": "",
+                    "Safety": "",
+                    "PI_Tag": false,
+                    "DOT": false,
+                    "Units": "",
+                    "opcItemPath": "[{Topic}]LAUNCH_TIMER_HOURS_HMI<I1>",
+                    "historyProvider": "HistDB_Longmont"
+                },
+                {
+                    "name": "EMPTY_BARREL",
+                    "valueSource": "opc",
+                    "LongID": "",
+                    "Tag_Description": "",
+                    "Safety": "",
+                    "PI_Tag": false,
+                    "DOT": false,
+                    "Units": "",
+                    "opcItemPath": "[{Topic}]NO_PIGS_AD.InAlarm<I1>",
+                    "historyProvider": "HistDB_Longmont"
+                },
+                {
+                    "name": "ESD_SHUTDOWN",
+                    "valueSource": "opc",
+                    "LongID": "",
+                    "Tag_Description": "",
+                    "Safety": "",
+                    "PI_Tag": false,
+                    "DOT": false,
+                    "Units": "",
+                    "opcItemPath": "[{Topic}]MESD_1_AD.InAlarm<I1>",
+                    "historyProvider": "HistDB_Longmont"
+                },
+                {
+                    "name": "NUM_PIGS_IN_BARREL_SP",
+                    "valueSource": "opc",
+                    "LongID": "",
+                    "Tag_Description": "",
+                    "Safety": "",
+                    "PI_Tag": false,
+                    "DOT": false,
+                    "Units": "",
+                    "opcItemPath": "[{Topic}]PIG_COUNT<I1>",
+                    "historyProvider": "HistDB_Longmont"
+                },
+                {
+                    "name": "AUTO_MAN",
+                    "valueSource": "opc",
+                    "LongID": "",
+                    "Tag_Description": "",
+                    "Safety": "",
+                    "PI_Tag": false,
+                    "DOT": false,
+                    "Units": "",
+                    "opcItemPath": "[{Topic}]HMI_AUTO<I1>",
+                    "historyProvider": "HistDB_Longmont"
+                },
+                {
+                    "name": "RESET",
+                    "valueSource": "opc",
+                    "LongID": "",
+                    "Tag_Description": "",
+                    "Safety": "",
+                    "PI_Tag": false,
+                    "DOT": false,
+                    "Units": "",
+                    "opcItemPath": "[{Topic}]HMI_RESET<I1>",
+                    "historyProvider": "HistDB_Longmont"
+                },
+                {
+                    "name": "LAUNCH_FAIL",
+                    "valueSource": "opc",
+                    "LongID": "",
+                    "Tag_Description": "",
+                    "Safety": "",
+                    "PI_Tag": false,
+                    "DOT": false,
+                    "Units": "",
+                    "opcItemPath": "[{Topic}]FAILED_LAUNCH_AD.InAlarm<I1>",
+                    "historyProvider": "HistDB_Longmont"
+                },
+                {
+                    "name": "FLOW_INHIBIT_STATUS",
+                    "valueSource": "opc",
+                    "LongID": "",
+                    "Tag_Description": "",
+                    "Safety": "",
+                    "PI_Tag": false,
+                    "DOT": false,
+                    "Units": "",
+                    "opcItemPath": "[{Topic}]PIG_INHIBIT<I1>",
+                    "historyProvider": "HistDB_Longmont"
+                },
+                {
+                    "name": "NUM_PIGS_REMAINING",
+                    "valueSource": "opc",
+                    "LongID": "",
+                    "Tag_Description": "",
+                    "Safety": "",
+                    "PI_Tag": false,
+                    "DOT": false,
+                    "Units": "",
+                    "opcItemPath": "[{Topic}]PIGS_LAUNCHED<I1>",
+                    "historyProvider": "HistDB_Longmont"
+                },
+                {
+                    "name": "PERMISSIVE",
+                    "valueSource": "opc",
+                    "LongID": "",
+                    "Tag_Description": "",
+                    "Safety": "",
+                    "PI_Tag": false,
+                    "DOT": false,
+                    "Units": "",
+                    "opcItemPath": "[{Topic}]LAUNCHING<I1>",
+                    "historyProvider": "HistDB_Longmont"
+                },
+                {
+                    "name": "STATUS",
+                    "valueSource": "opc",
+                    "LongID": "",
+                    "Tag_Description": "",
+                    "Safety": "",
+                    "PI_Tag": false,
+                    "DOT": false,
+                    "Units": "",
+                    "opcItemPath": "[{Topic}]LAUNCH_READY<I1>",
+                    "historyProvider": "HistDB_Longmont"
+                },
+                {
+                    "name": "VALVE_POSITION",
+                    "valueSource": "opc",
+                    "LongID": "",
+                    "Tag_Description": "",
+                    "Safety": "",
+                    "PI_Tag": false,
+                    "DOT": false,
+                    "Units": "",
+                    "opcItemPath": "[{Topic}]PADDLE_POSITION<I1>",
+                    "historyProvider": "HistDB_Longmont"
+                },
+                {
+                    "name": "INHIBIT",
+                    "valueSource": "opc",
+                    "LongID": "",
+                    "Tag_Description": "",
+                    "Safety": "",
+                    "PI_Tag": false,
+                    "DOT": false,
+                    "Units": "",
+                    "opcItemPath": {
+                        "bindType": "parameter",
+                        "binding": "[{Topic}]{_t_INHIBIT}"
+                    },
+                    "historyProvider": "HistDB_Longmont"
+                },
+                {
+                    "name": "VALVE_STATUS",
+                    "valueSource": "opc",
+                    "LongID": "",
+                    "Tag_Description": "",
+                    "Safety": "",
+                    "PI_Tag": false,
+                    "DOT": false,
+                    "Units": "",
+                    "opcItemPath": {
+                        "bindType": "parameter",
+                        "binding": "[{Topic}]{_t_VALVE_STATUS}"
+                    },
+                    "historyProvider": "HistDB_Longmont"
+                }
+            ],
+            "parameters": {
+                "_t_INHIBIT": {
+                    "dataType": "String",
+                    "value": {
+                        "bindType": "parameter",
+                        "binding": "[{Topic}]_t_INHIBIT"
+                    }
+                },
+                "_t_VALVE_STATUS": {
+                    "dataType": "String",
+                    "value": {
+                        "bindType": "parameter",
+                        "binding": "[{Topic}]_t_VALVE_STATUS"
+                    }
+                }
+            },
+            "tagType": "UdtType"
+        },
+        {
+            "name": "PIG_LAUNCHER_DF1",
+            "typeID": "LONGMONT_REGIONAL_BASE",
+            "tags": [
+                {
+                    "name": "CURRENT_HOUR",
+                    "valueSource": "opc",
+                    "LongID": "",
+                    "Tag_Description": "",
+                    "Safety": "",
+                    "PI_Tag": false,
+                    "DOT": false,
+                    "Units": "",
+                    "opcItemPath": "[{Topic}]N7:12<I1>",
+                    "historyProvider": "HistDB_Longmont"
+                },
+                {
+                    "name": "CURRENT_MINUTE",
+                    "valueSource": "opc",
+                    "LongID": "",
+                    "Tag_Description": "",
+                    "Safety": "",
+                    "PI_Tag": false,
+                    "DOT": false,
+                    "Units": "",
+                    "opcItemPath": "[{Topic}]N7:13<I1>",
+                    "historyProvider": "HistDB_Longmont"
+                },
+                {
+                    "name": "TIMER",
+                    "valueSource": "opc",
+                    "LongID": "",
+                    "Tag_Description": "",
+                    "Safety": "",
+                    "PI_Tag": false,
+                    "DOT": false,
+                    "Units": "",
+                    "opcItemPath": "[{Topic}]N7:0<I1>",
+                    "historyProvider": "HistDB_Longmont"
+                },
+                {
+                    "name": "LONG_TRIGGER_DOWN_ALARM",
+                    "valueSource": "opc",
+                    "LongID": "",
+                    "Tag_Description": "",
+                    "Safety": "",
+                    "PI_Tag": false,
+                    "DOT": false,
+                    "Units": "",
+                    "opcItemPath": {
+                        "bindType": "parameter",
+                        "binding": "[{Topic}]{_t_LONG_TRIGGER_DOWN_ALARM}"
+                    },
+                    "historyProvider": "HistDB_Longmont"
+                },
+                {
+                    "name": "LONG_TRIGGER_UP_ALARM",
+                    "valueSource": "opc",
+                    "LongID": "",
+                    "Tag_Description": "",
+                    "Safety": "",
+                    "PI_Tag": false,
+                    "DOT": false,
+                    "Units": "",
+                    "opcItemPath": "[{Topic}]N7:6/1<I1>",
+                    "historyProvider": "HistDB_Longmont"
+                },
+                {
+                    "name": "NUM_PIGS_IN_BARREL_SP",
+                    "valueSource": "opc",
+                    "LongID": "",
+                    "Tag_Description": "",
+                    "Safety": "",
+                    "PI_Tag": false,
+                    "DOT": false,
+                    "Units": "",
+                    "opcItemPath": "[{Topic}]N7:10<I1>",
+                    "historyProvider": "HistDB_Longmont"
+                },
+                {
+                    "name": "AUTO_MAN",
+                    "valueSource": "opc",
+                    "LongID": "",
+                    "Tag_Description": "",
+                    "Safety": "",
+                    "PI_Tag": false,
+                    "DOT": false,
+                    "Units": "",
+                    "opcItemPath": "[{Topic}]N7:9/0<I1>",
+                    "historyProvider": "HistDB_Longmont"
+                },
+                {
+                    "name": "LAUNCHER_MODE",
+                    "valueSource": "opc",
+                    "LongID": "",
+                    "Tag_Description": "",
+                    "Safety": "",
+                    "PI_Tag": false,
+                    "DOT": false,
+                    "Units": "",
+                    "opcItemPath": "[{Topic}]N7:9/1<I1>",
+                    "historyProvider": "HistDB_Longmont"
+                },
+                {
+                    "name": "NUM_PIGS_REMAINING",
+                    "valueSource": "opc",
+                    "LongID": "",
+                    "Tag_Description": "",
+                    "Safety": "",
+                    "PI_Tag": false,
+                    "DOT": false,
+                    "Units": "",
+                    "opcItemPath": "[{Topic}]N7:8<I1>",
+                    "historyProvider": "HistDB_Longmont"
+                },
+                {
+                    "name": "PERMISSIVE",
+                    "valueSource": "opc",
+                    "LongID": "",
+                    "Tag_Description": "",
+                    "Safety": "",
+                    "PI_Tag": false,
+                    "DOT": false,
+                    "Units": "",
+                    "opcItemPath": "[{Topic}]N7:14/0<I1>",
+                    "historyProvider": "HistDB_Longmont"
+                },
+                {
+                    "name": "EMPTY_BARREL_SHUTDOWN",
+                    "valueSource": "opc",
+                    "LongID": "",
+                    "Tag_Description": "",
+                    "Safety": "",
+                    "PI_Tag": false,
+                    "DOT": false,
+                    "Units": "",
+                    "opcItemPath": "[{Topic}]N7:11/0<I1>",
+                    "historyProvider": "HistDB_Longmont"
+                },
+                {
+                    "name": "STATUS",
+                    "valueSource": "opc",
+                    "LongID": "",
+                    "Tag_Description": "",
+                    "Safety": "",
+                    "PI_Tag": false,
+                    "DOT": false,
+                    "Units": "",
+                    "opcItemPath": "[{Topic}]N7:4<I1>",
+                    "historyProvider": "HistDB_Longmont"
+                },
+                {
+                    "name": "SHORT_TRIGGER_DOWN_ALARM",
+                    "valueSource": "opc",
+                    "LongID": "",
+                    "Tag_Description": "",
+                    "Safety": "",
+                    "PI_Tag": false,
+                    "DOT": false,
+                    "Units": "",
+                    "opcItemPath": {
+                        "bindType": "parameter",
+                        "binding": "[{Topic}]{_t_SHORT_TRIGGER_DOWN_ALARM}"
+                    },
+                    "historyProvider": "HistDB_Longmont"
+                },
+                {
+                    "name": "SHORT_TRIGGER_UP_ALARM",
+                    "valueSource": "opc",
+                    "LongID": "",
+                    "Tag_Description": "",
+                    "Safety": "",
+                    "PI_Tag": false,
+                    "DOT": false,
+                    "Units": "",
+                    "opcItemPath": {
+                        "bindType": "parameter",
+                        "binding": "[{Topic}]{_t_SHORT_TRIGGER_UP_ALARM}"
+                    },
+                    "historyProvider": "HistDB_Longmont"
+                },
+                {
+                    "name": "PIG_SIGNAL_ALARM",
+                    "valueSource": "opc",
+                    "LongID": "",
+                    "Tag_Description": "",
+                    "Safety": "",
+                    "PI_Tag": false,
+                    "DOT": false,
+                    "Units": "",
+                    "opcItemPath": "[{Topic}]N7:16/0<I1>",
+                    "historyProvider": "HistDB_Longmont"
+                },
+                {
+                    "name": "PIG_SIGNAL_COUNTER",
+                    "valueSource": "opc",
+                    "LongID": "",
+                    "Tag_Description": "",
+                    "Safety": "",
+                    "PI_Tag": false,
+                    "DOT": false,
+                    "Units": "",
+                    "opcItemPath": "[{Topic}]N7:17<I1>",
+                    "historyProvider": "HistDB_Longmont"
+                }
+            ],
+            "parameters": {
+                "_t_LONG_TRIGGER_DOWN_ALARM": {
+                    "dataType": "String",
+                    "value": {
+                        "bindType": "parameter",
+                        "binding": "[{Topic}]_t_LONG_TRIGGER_DOWN_ALARM"
+                    }
+                },
+                "_t_SHORT_TRIGGER_DOWN_ALARM": {
+                    "dataType": "String",
+                    "value": {
+                        "bindType": "parameter",
+                        "binding": "[{Topic}]_t_SHORT_TRIGGER_DOWN_ALARM"
+                    }
+                },
+                "_t_SHORT_TRIGGER_UP_ALARM": {
+                    "dataType": "String",
+                    "value": {
+                        "bindType": "parameter",
+                        "binding": "[{Topic}]_t_SHORT_TRIGGER_UP_ALARM"
+                    }
+                }
+            },
+            "tagType": "UdtType"
+        }
+    ],
+    "[Longmont]_types_/EMERSONROCL/": [
+        {
+            "name": "DEVICE_STD",
+            "typeID": "EMERSONROCL/DEVICE",
+            "tags": [
+                {
+                    "name": "BATTERY_VOLTAGE",
+                    "valueSource": "opc",
+                    "LongID": "",
+                    "Tag_Description": "",
+                    "Safety": "",
+                    "PI_Tag": false,
+                    "DOT": false,
+                    "Units": "",
+                    "opcItemPath": {
+                        "bindType": "parameter",
+                        "binding": "[{Topic}]{_t_BATTERY_VOLTAGE}"
+                    },
+                    "historyProvider": "HistDB_Longmont"
+                },
+                {
+                    "name": "CURRENT_HOUR",
+                    "valueSource": "opc",
+                    "LongID": "",
+                    "Tag_Description": "",
+                    "Safety": "",
+                    "PI_Tag": false,
+                    "DOT": false,
+                    "Units": "",
+                    "opcItemPath": "[{Topic}]12.2.1<TUINT8><I1>",
+                    "historyProvider": "HistDB_Longmont"
+                },
+                {
+                    "name": "CURRENT_MINUTE",
+                    "valueSource": "opc",
+                    "LongID": "",
+                    "Tag_Description": "",
+                    "Safety": "",
+                    "PI_Tag": false,
+                    "DOT": false,
+                    "Units": "",
+                    "opcItemPath": "[{Topic}]12.1.1<TUINT8><I1>",
+                    "historyProvider": "HistDB_Longmont"
+                },
+                {
+                    "name": "RTU_BOARD_TEMPERATURE",
+                    "valueSource": "opc",
+                    "LongID": "",
+                    "Tag_Description": "",
+                    "Safety": "",
+                    "PI_Tag": false,
+                    "DOT": false,
+                    "Units": "",
+                    "opcItemPath": {
+                        "bindType": "parameter",
+                        "binding": "[{Topic}]{_t_RTU_BOARD_TEMPERATURE}"
+                    },
+                    "historyProvider": "HistDB_Longmont"
+                },
+                {
+                    "name": "AIR_SUPPLY_PRESSURE_ALARM",
+                    "valueSource": "opc",
+                    "LongID": "",
+                    "Tag_Description": "",
+                    "Safety": "",
+                    "PI_Tag": false,
+                    "DOT": false,
+                    "Units": "",
+                    "opcItemPath": "[{Topic}]98.1.3<TBIN><I1>",
+                    "historyProvider": "HistDB_Longmont"
+                },
+                {
+                    "name": "OIL_TEMP_ALARM",
+                    "valueSource": "opc",
+                    "LongID": "",
+                    "Tag_Description": "",
+                    "Safety": "",
+                    "PI_Tag": false,
+                    "DOT": false,
+                    "Units": "",
+                    "opcItemPath": "[{Topic}]98.2.3<TBIN><I1>",
+                    "historyProvider": "HistDB_Longmont"
+                },
+                {
+                    "name": "PIPELINE_PRESSURE_ALARM",
+                    "valueSource": "opc",
+                    "LongID": "",
+                    "Tag_Description": "",
+                    "Safety": "",
+                    "PI_Tag": false,
+                    "DOT": false,
+                    "Units": "",
+                    "opcItemPath": "[{Topic}]98.3.3<TBIN><I1>",
+                    "historyProvider": "HistDB_Longmont"
+                },
+                {
+                    "name": "MEASUREMENT_SKID_SUMP",
+                    "valueSource": "opc",
+                    "LongID": "",
+                    "Tag_Description": "",
+                    "Safety": "",
+                    "PI_Tag": false,
+                    "DOT": false,
+                    "Units": "",
+                    "opcItemPath": "[{Topic}]98.4.3<TBIN><I1>",
+                    "historyProvider": "HistDB_Longmont"
+                },
+                {
+                    "name": "PRODUCTION_PERMISSIVE",
+                    "valueSource": "opc",
+                    "LongID": "",
+                    "Tag_Description": "",
+                    "Safety": "",
+                    "PI_Tag": false,
+                    "DOT": false,
+                    "Units": "",
+                    "opcItemPath": "[{Topic}]98.5.3<TBIN><I1>",
+                    "historyProvider": "HistDB_Longmont"
+                },
+                {
+                    "name": "ROC_LOW_VOLTAGE_ALARM",
+                    "valueSource": "opc",
+                    "LongID": "",
+                    "Tag_Description": "",
+                    "Safety": "",
+                    "PI_Tag": false,
+                    "DOT": false,
+                    "Units": "",
+                    "opcItemPath": "[{Topic}]98.6.3<TBIN><I1>",
+                    "historyProvider": "HistDB_Longmont"
+                },
+                {
+                    "name": "NO_FLOW_ALARM",
+                    "valueSource": "opc",
+                    "LongID": "",
+                    "Tag_Description": "",
+                    "Safety": "",
+                    "PI_Tag": false,
+                    "DOT": false,
+                    "Units": "",
+                    "opcItemPath": "[{Topic}]98.7.3<TBIN><I1>",
+                    "historyProvider": "HistDB_Longmont"
+                },
+                {
+                    "name": "OIL_DENSITY_ALARM",
+                    "valueSource": "opc",
+                    "LongID": "",
+                    "Tag_Description": "",
+                    "Safety": "",
+                    "PI_Tag": false,
+                    "DOT": false,
+                    "Units": "",
+                    "opcItemPath": "[{Topic}]98.8.3<TBIN><I1>",
+                    "historyProvider": "HistDB_Longmont"
+                },
+                {
+                    "name": "DRIVE_GAIN_ALARM",
+                    "valueSource": "opc",
+                    "LongID": "",
+                    "Tag_Description": "",
+                    "Safety": "",
+                    "PI_Tag": false,
+                    "DOT": false,
+                    "Units": "",
+                    "opcItemPath": "[{Topic}]98.9.3<TBIN><I1>",
+                    "historyProvider": "HistDB_Longmont"
+                },
+                {
+                    "name": "BACK_PRESSURE_ALARM",
+                    "valueSource": "opc",
+                    "LongID": "",
+                    "Tag_Description": "",
+                    "Safety": "",
+                    "PI_Tag": false,
+                    "DOT": false,
+                    "Units": "",
+                    "opcItemPath": "[{Topic}]98.10.3<TBIN><I1>",
+                    "historyProvider": "HistDB_Longmont"
+                },
+                {
+                    "name": "COMM_FAIL_TO_RTU",
+                    "valueSource": "opc",
+                    "LongID": "",
+                    "Tag_Description": "",
+                    "Safety": "",
+                    "PI_Tag": false,
+                    "DOT": false,
+                    "Units": "",
+                    "opcItemPath": "[{Topic}]98.11.3<TBIN><I1>",
+                    "historyProvider": "HistDB_Longmont"
+                },
+                {
+                    "name": "ESD_VALVE_NORMALLY_OPEN",
+                    "valueSource": "opc",
+                    "LongID": "",
+                    "Tag_Description": "",
+                    "Safety": "",
+                    "PI_Tag": false,
+                    "DOT": false,
+                    "Units": "",
+                    "opcItemPath": "[{Topic}]98.12.3<TBIN><I1>",
+                    "historyProvider": "HistDB_Longmont"
+                },
+                {
+                    "name": "ESD_VALVE_NORMALLY_CLOSED",
+                    "valueSource": "opc",
+                    "LongID": "",
+                    "Tag_Description": "",
+                    "Safety": "",
+                    "PI_Tag": false,
+                    "DOT": false,
+                    "Units": "",
+                    "opcItemPath": "[{Topic}]98.13.3<TBIN><I1>",
+                    "historyProvider": "HistDB_Longmont"
+                },
+                {
+                    "name": "BSW_ACCUM_ALARM",
+                    "valueSource": "opc",
+                    "LongID": "",
+                    "Tag_Description": "",
+                    "Safety": "",
+                    "PI_Tag": false,
+                    "DOT": false,
+                    "Units": "",
+                    "opcItemPath": "[{Topic}]98.14.3<TBIN><I1>",
+                    "historyProvider": "HistDB_Longmont"
+                },
+                {
+                    "name": "RTU_BOARD_TEMPERATURE",
+                    "valueSource": "opc",
+                    "LongID": "",
+                    "Tag_Description": "",
+                    "Safety": "",
+                    "PI_Tag": false,
+                    "DOT": false,
+                    "Units": "",
+                    "opcItemPath": {
+                        "bindType": "parameter",
+                        "binding": "[{Topic}]{_t_RTU_BOARD_TEMPERATURE}"
+                    },
+                    "historyProvider": "HistDB_Longmont"
+                }
+            ],
+            "parameters": {
+                "_t_BATTERY_VOLTAGE": {
+                    "dataType": "String",
+                    "value": {
+                        "bindType": "parameter",
+                        "binding": "[{Topic}]_t_BATTERY_VOLTAGE"
+                    }
+                },
+                "_t_RTU_BOARD_TEMPERATURE": {
+                    "dataType": "String",
+                    "value": {
+                        "bindType": "parameter",
+                        "binding": "[{Topic}]_t_RTU_BOARD_TEMPERATURE"
+                    }
+                }
+            },
+            "tagType": "UdtType"
+        },
+        {
+            "name": "METER_GAS_STD",
+            "typeID": "EMERSONROCL/METER_GAS",
+            "tags": [
+                {
+                    "name": "RATE",
+                    "valueSource": "opc",
+                    "LongID": "",
+                    "Tag_Description": "",
+                    "Safety": "",
+                    "PI_Tag": false,
+                    "DOT": false,
+                    "Units": "",
+                    "opcItemPath": {
+                        "bindType": "parameter",
+                        "binding": "[{Topic}]{_t_RATE}"
+                    },
+                    "historyProvider": "HistDB_Longmont"
+                },
+                {
+                    "name": "ENERGY",
+                    "valueSource": "opc",
+                    "LongID": "",
+                    "Tag_Description": "",
+                    "Safety": "",
+                    "PI_Tag": false,
+                    "DOT": false,
+                    "Units": "",
+                    "opcItemPath": {
+                        "bindType": "parameter",
+                        "binding": "[{Topic}]{_t_ENERGY}"
+                    },
+                    "historyProvider": "HistDB_Longmont"
+                },
+                {
+                    "name": "ENERGY_TODAY",
+                    "valueSource": "opc",
+                    "LongID": "",
+                    "Tag_Description": "",
+                    "Safety": "",
+                    "PI_Tag": false,
+                    "DOT": false,
+                    "Units": "",
+                    "opcItemPath": {
+                        "bindType": "parameter",
+                        "binding": "[{Topic}]{_t_ENERGY_TODAY}"
+                    },
+                    "historyProvider": "HistDB_Longmont"
+                },
+                {
+                    "name": "ENERGY_YESTERDAY",
+                    "valueSource": "opc",
+                    "LongID": "",
+                    "Tag_Description": "",
+                    "Safety": "",
+                    "PI_Tag": false,
+                    "DOT": false,
+                    "Units": "",
+                    "opcItemPath": {
+                        "bindType": "parameter",
+                        "binding": "[{Topic}]{_t_ENERGY_YESTERDAY}"
+                    },
+                    "historyProvider": "HistDB_Longmont"
+                },
+                {
+                    "name": "VOLUME_TODAY",
+                    "valueSource": "opc",
+                    "LongID": "",
+                    "Tag_Description": "",
+                    "Safety": "",
+                    "PI_Tag": false,
+                    "DOT": false,
+                    "Units": "",
+                    "opcItemPath": {
+                        "bindType": "parameter",
+                        "binding": "[{Topic}]{_t_VOLUME_TODAY}"
+                    },
+                    "historyProvider": "HistDB_Longmont"
+                },
+                {
+                    "name": "VOLUME_YESTERDAY",
+                    "valueSource": "opc",
+                    "LongID": "",
+                    "Tag_Description": "",
+                    "Safety": "",
+                    "PI_Tag": false,
+                    "DOT": false,
+                    "Units": "",
+                    "opcItemPath": {
+                        "bindType": "parameter",
+                        "binding": "[{Topic}]{_t_VOLUME_YESTERDAY}"
+                    },
+                    "historyProvider": "HistDB_Longmont"
+                },
+                {
+                    "name": "DIFFERENTIAL_PRESSURE",
+                    "valueSource": "opc",
+                    "LongID": "",
+                    "Tag_Description": "",
+                    "Safety": "",
+                    "PI_Tag": false,
+                    "DOT": false,
+                    "Units": "",
+                    "opcItemPath": {
+                        "bindType": "parameter",
+                        "binding": "[{Topic}]{_t_DIFFERENTIAL_PRESSURE}"
+                    },
+                    "historyProvider": "HistDB_Longmont"
+                },
+                {
+                    "name": "STATIC_PRESSURE",
+                    "valueSource": "opc",
+                    "LongID": "",
+                    "Tag_Description": "",
+                    "Safety": "",
+                    "PI_Tag": false,
+                    "DOT": false,
+                    "Units": "",
+                    "opcItemPath": {
+                        "bindType": "parameter",
+                        "binding": "[{Topic}]{_t_STATIC_PRESSURE}"
+                    },
+                    "historyProvider": "HistDB_Longmont"
+                },
+                {
+                    "name": "TEMPERATURE",
+                    "valueSource": "opc",
+                    "LongID": "",
+                    "Tag_Description": "",
+                    "Safety": "",
+                    "PI_Tag": false,
+                    "DOT": false,
+                    "Units": "",
+                    "opcItemPath": {
+                        "bindType": "parameter",
+                        "binding": "[{Topic}]{_t_TEMPERATURE}"
+                    },
+                    "historyProvider": "HistDB_Longmont"
+                },
+                {
+                    "name": "RATE",
+                    "valueSource": "opc",
+                    "LongID": "",
+                    "Tag_Description": "",
+                    "Safety": "",
+                    "PI_Tag": false,
+                    "DOT": false,
+                    "Units": "",
+                    "opcItemPath": {
+                        "bindType": "parameter",
+                        "binding": "[{Topic}]{_t_RATE}"
+                    },
+                    "historyProvider": "HistDB_Longmont"
+                },
+                {
+                    "name": "ENERGY_TODAY",
+                    "valueSource": "opc",
+                    "LongID": "",
+                    "Tag_Description": "",
+                    "Safety": "",
+                    "PI_Tag": false,
+                    "DOT": false,
+                    "Units": "",
+                    "opcItemPath": {
+                        "bindType": "parameter",
+                        "binding": "[{Topic}]{_t_ENERGY_TODAY}"
+                    },
+                    "historyProvider": "HistDB_Longmont"
+                },
+                {
+                    "name": "ENERGY_YESTERDAY",
+                    "valueSource": "opc",
+                    "LongID": "",
+                    "Tag_Description": "",
+                    "Safety": "",
+                    "PI_Tag": false,
+                    "DOT": false,
+                    "Units": "",
+                    "opcItemPath": {
+                        "bindType": "parameter",
+                        "binding": "[{Topic}]{_t_ENERGY_YESTERDAY}"
+                    },
+                    "historyProvider": "HistDB_Longmont"
+                },
+                {
+                    "name": "VOLUME_TODAY",
+                    "valueSource": "opc",
+                    "LongID": "",
+                    "Tag_Description": "",
+                    "Safety": "",
+                    "PI_Tag": false,
+                    "DOT": false,
+                    "Units": "",
+                    "opcItemPath": {
+                        "bindType": "parameter",
+                        "binding": "[{Topic}]{_t_VOLUME_TODAY}"
+                    },
+                    "historyProvider": "HistDB_Longmont"
+                },
+                {
+                    "name": "VOLUME_YESTERDAY",
+                    "valueSource": "opc",
+                    "LongID": "",
+                    "Tag_Description": "",
+                    "Safety": "",
+                    "PI_Tag": false,
+                    "DOT": false,
+                    "Units": "",
+                    "opcItemPath": {
+                        "bindType": "parameter",
+                        "binding": "[{Topic}]{_t_VOLUME_YESTERDAY}"
+                    },
+                    "historyProvider": "HistDB_Longmont"
+                },
+                {
+                    "name": "STATIC_PRESSURE",
+                    "valueSource": "opc",
+                    "LongID": "",
+                    "Tag_Description": "",
+                    "Safety": "",
+                    "PI_Tag": false,
+                    "DOT": false,
+                    "Units": "",
+                    "opcItemPath": {
+                        "bindType": "parameter",
+                        "binding": "[{Topic}]{_t_STATIC_PRESSURE}"
+                    },
+                    "historyProvider": "HistDB_Longmont"
+                },
+                {
+                    "name": "TEMPERATURE",
+                    "valueSource": "opc",
+                    "LongID": "",
+                    "Tag_Description": "",
+                    "Safety": "",
+                    "PI_Tag": false,
+                    "DOT": false,
+                    "Units": "",
+                    "opcItemPath": {
+                        "bindType": "parameter",
+                        "binding": "[{Topic}]{_t_TEMPERATURE}"
+                    },
+                    "historyProvider": "HistDB_Longmont"
+                },
+                {
+                    "name": "VOLTAGE",
+                    "valueSource": "opc",
+                    "LongID": "",
+                    "Tag_Description": "",
+                    "Safety": "",
+                    "PI_Tag": false,
+                    "DOT": false,
+                    "Units": "",
+                    "opcItemPath": {
+                        "bindType": "parameter",
+                        "binding": "[{Topic}]{_t_VOLTAGE}"
+                    },
+                    "historyProvider": "HistDB_Longmont"
+                },
+                {
+                    "name": "CURRENT_HOUR",
+                    "valueSource": "opc",
+                    "LongID": "",
+                    "Tag_Description": "",
+                    "Safety": "",
+                    "PI_Tag": false,
+                    "DOT": false,
+                    "Units": "",
+                    "opcItemPath": {
+                        "bindType": "parameter",
+                        "binding": "[{Topic}]{_t_CURRENT_HOUR}"
+                    },
+                    "historyProvider": "HistDB_Longmont"
+                },
+                {
+                    "name": "CURRENT_MINUTE",
+                    "valueSource": "opc",
+                    "LongID": "",
+                    "Tag_Description": "",
+                    "Safety": "",
+                    "PI_Tag": false,
+                    "DOT": false,
+                    "Units": "",
+                    "opcItemPath": {
+                        "bindType": "parameter",
+                        "binding": "[{Topic}]{_t_CURRENT_MINUTE}"
+                    },
+                    "historyProvider": "HistDB_Longmont"
+                },
+                {
+                    "name": "STATIC_PRESSURE",
+                    "valueSource": "opc",
+                    "LongID": "",
+                    "Tag_Description": "",
+                    "Safety": "",
+                    "PI_Tag": false,
+                    "DOT": false,
+                    "Units": "",
+                    "opcItemPath": {
+                        "bindType": "parameter",
+                        "binding": "[{Topic}]{_t_STATIC_PRESSURE}"
+                    },
+                    "historyProvider": "HistDB_Longmont"
+                },
+                {
+                    "name": "ENERGY",
+                    "valueSource": "opc",
+                    "LongID": "",
+                    "Tag_Description": "",
+                    "Safety": "",
+                    "PI_Tag": false,
+                    "DOT": false,
+                    "Units": "",
+                    "opcItemPath": {
+                        "bindType": "parameter",
+                        "binding": "[{Topic}]{_t_ENERGY}"
+                    },
+                    "historyProvider": "HistDB_Longmont"
+                },
+                {
+                    "name": "CONDENSATE_VOLUME_MONTH",
+                    "valueSource": "opc",
+                    "LongID": "",
+                    "Tag_Description": "",
+                    "Safety": "",
+                    "PI_Tag": false,
+                    "DOT": false,
+                    "Units": "",
+                    "opcItemPath": {
+                        "bindType": "parameter",
+                        "binding": "[{Topic}]{_t_CONDENSATE_VOLUME_MONTH}"
+                    },
+                    "historyProvider": "HistDB_Longmont"
+                },
+                {
+                    "name": "CONDENSATE_VOLUME_MONTHP",
+                    "valueSource": "opc",
+                    "LongID": "",
+                    "Tag_Description": "",
+                    "Safety": "",
+                    "PI_Tag": false,
+                    "DOT": false,
+                    "Units": "",
+                    "opcItemPath": {
+                        "bindType": "parameter",
+                        "binding": "[{Topic}]{_t_CONDENSATE_VOLUME_MONTHP}"
+                    },
+                    "historyProvider": "HistDB_Longmont"
+                },
+                {
+                    "name": "CONDENSATE_VOLUME_YESTERDAY",
+                    "valueSource": "opc",
+                    "LongID": "",
+                    "Tag_Description": "",
+                    "Safety": "",
+                    "PI_Tag": false,
+                    "DOT": false,
+                    "Units": "",
+                    "opcItemPath": {
+                        "bindType": "parameter",
+                        "binding": "[{Topic}]{_t_CONDENSATE_VOLUME_YESTERDAY}"
+                    },
+                    "historyProvider": "HistDB_Longmont"
+                },
+                {
+                    "name": "STATIC_PRESSURE",
+                    "valueSource": "opc",
+                    "LongID": "",
+                    "Tag_Description": "",
+                    "Safety": "",
+                    "PI_Tag": false,
+                    "DOT": false,
+                    "Units": "",
+                    "opcItemPath": {
+                        "bindType": "parameter",
+                        "binding": "[{Topic}]{_t_STATIC_PRESSURE}"
+                    },
+                    "historyProvider": "HistDB_Longmont"
+                },
+                {
+                    "name": "VOLUMETRIC_FLOW_RATE_SETPOINT",
+                    "valueSource": "opc",
+                    "LongID": "",
+                    "Tag_Description": "",
+                    "Safety": "",
+                    "PI_Tag": false,
+                    "DOT": false,
+                    "Units": "",
+                    "opcItemPath": {
+                        "bindType": "parameter",
+                        "binding": "[{Topic}]{_t_VOLUMETRIC_FLOW_RATE_SETPOINT}"
+                    },
+                    "historyProvider": "HistDB_Longmont"
+                },
+                {
+                    "name": "VALVE_POSITION",
+                    "valueSource": "opc",
+                    "LongID": "",
+                    "Tag_Description": "",
+                    "Safety": "",
+                    "PI_Tag": false,
+                    "DOT": false,
+                    "Units": "",
+                    "opcItemPath": {
+                        "bindType": "parameter",
+                        "binding": "[{Topic}]{_t_VALVE_POSITION}"
+                    },
+                    "historyProvider": "HistDB_Longmont"
+                },
+                {
+                    "name": "BTU",
+                    "valueSource": "opc",
+                    "LongID": "",
+                    "Tag_Description": "",
+                    "Safety": "",
+                    "PI_Tag": false,
+                    "DOT": false,
+                    "Units": "",
+                    "opcItemPath": {
+                        "bindType": "parameter",
+                        "binding": "[{Topic}]{_t_BTU}"
+                    },
+                    "historyProvider": "HistDB_Longmont"
+                }
+            ],
+            "parameters": {
+                "_t_RATE": {
+                    "dataType": "String",
+                    "value": {
+                        "bindType": "parameter",
+                        "binding": "[{Topic}]_t_RATE"
+                    }
+                },
+                "_t_ENERGY": {
+                    "dataType": "String",
+                    "value": {
+                        "bindType": "parameter",
+                        "binding": "[{Topic}]_t_ENERGY"
+                    }
+                },
+                "_t_ENERGY_TODAY": {
+                    "dataType": "String",
+                    "value": {
+                        "bindType": "parameter",
+                        "binding": "[{Topic}]_t_ENERGY_TODAY"
+                    }
+                },
+                "_t_ENERGY_YESTERDAY": {
+                    "dataType": "String",
+                    "value": {
+                        "bindType": "parameter",
+                        "binding": "[{Topic}]_t_ENERGY_YESTERDAY"
+                    }
+                },
+                "_t_VOLUME_TODAY": {
+                    "dataType": "String",
+                    "value": {
+                        "bindType": "parameter",
+                        "binding": "[{Topic}]_t_VOLUME_TODAY"
+                    }
+                },
+                "_t_VOLUME_YESTERDAY": {
+                    "dataType": "String",
+                    "value": {
+                        "bindType": "parameter",
+                        "binding": "[{Topic}]_t_VOLUME_YESTERDAY"
+                    }
+                },
+                "_t_DIFFERENTIAL_PRESSURE": {
+                    "dataType": "String",
+                    "value": {
+                        "bindType": "parameter",
+                        "binding": "[{Topic}]_t_DIFFERENTIAL_PRESSURE"
+                    }
+                },
+                "_t_STATIC_PRESSURE": {
+                    "dataType": "String",
+                    "value": {
+                        "bindType": "parameter",
+                        "binding": "[{Topic}]_t_STATIC_PRESSURE"
+                    }
+                },
+                "_t_TEMPERATURE": {
+                    "dataType": "String",
+                    "value": {
+                        "bindType": "parameter",
+                        "binding": "[{Topic}]_t_TEMPERATURE"
+                    }
+                },
+                "_t_VOLTAGE": {
+                    "dataType": "String",
+                    "value": {
+                        "bindType": "parameter",
+                        "binding": "[{Topic}]_t_VOLTAGE"
+                    }
+                },
+                "_t_CURRENT_HOUR": {
+                    "dataType": "String",
+                    "value": {
+                        "bindType": "parameter",
+                        "binding": "[{Topic}]_t_CURRENT_HOUR"
+                    }
+                },
+                "_t_CURRENT_MINUTE": {
+                    "dataType": "String",
+                    "value": {
+                        "bindType": "parameter",
+                        "binding": "[{Topic}]_t_CURRENT_MINUTE"
+                    }
+                },
+                "_t_CONDENSATE_VOLUME_MONTH": {
+                    "dataType": "String",
+                    "value": {
+                        "bindType": "parameter",
+                        "binding": "[{Topic}]_t_CONDENSATE_VOLUME_MONTH"
+                    }
+                },
+                "_t_CONDENSATE_VOLUME_MONTHP": {
+                    "dataType": "String",
+                    "value": {
+                        "bindType": "parameter",
+                        "binding": "[{Topic}]_t_CONDENSATE_VOLUME_MONTHP"
+                    }
+                },
+                "_t_CONDENSATE_VOLUME_YESTERDAY": {
+                    "dataType": "String",
+                    "value": {
+                        "bindType": "parameter",
+                        "binding": "[{Topic}]_t_CONDENSATE_VOLUME_YESTERDAY"
+                    }
+                },
+                "_t_VOLUMETRIC_FLOW_RATE_SETPOINT": {
+                    "dataType": "String",
+                    "value": {
+                        "bindType": "parameter",
+                        "binding": "[{Topic}]_t_VOLUMETRIC_FLOW_RATE_SETPOINT"
+                    }
+                },
+                "_t_VALVE_POSITION": {
+                    "dataType": "String",
+                    "value": {
+                        "bindType": "parameter",
+                        "binding": "[{Topic}]_t_VALVE_POSITION"
+                    }
+                },
+                "_t_BTU": {
+                    "dataType": "String",
+                    "value": {
+                        "bindType": "parameter",
+                        "binding": "[{Topic}]_t_BTU"
+                    }
+                }
+            },
+            "tagType": "UdtType"
+        },
+        {
+            "name": "METER_OIL_ALARM",
+            "typeID": "LONGMONT_REGIONAL_BASE",
+            "tags": [
+                {
+                    "name": "RESET_BSW_OVER_RANGE_ALARM",
+                    "valueSource": "opc",
+                    "LongID": "",
+                    "Tag_Description": "",
+                    "Safety": "",
+                    "PI_Tag": false,
+                    "DOT": false,
+                    "Units": "",
+                    "opcItemPath": "[{Topic}]98.14.2<TBIN><I1>",
+                    "historyProvider": "HistDB_Longmont"
+                },
+                {
+                    "name": "CURRENT_AIR_PSI",
+                    "valueSource": "opc",
+                    "LongID": "",
+                    "Tag_Description": "",
+                    "Safety": "",
+                    "PI_Tag": false,
+                    "DOT": false,
+                    "Units": "",
+                    "opcItemPath": "[{Topic}]103.21.41<TFLP><I1>",
+                    "historyProvider": "HistDB_Longmont"
+                },
+                {
+                    "name": "CURRENT_OIL_TEMP",
+                    "valueSource": "opc",
+                    "LongID": "",
+                    "Tag_Description": "",
+                    "Safety": "",
+                    "PI_Tag": false,
+                    "DOT": false,
+                    "Units": "",
+                    "opcItemPath": "[{Topic}]103.21.34<TFLP><I1>",
+                    "historyProvider": "HistDB_Longmont"
+                },
+                {
+                    "name": "CURRENT_PIPELINE_PSI",
+                    "valueSource": "opc",
+                    "LongID": "",
+                    "Tag_Description": "",
+                    "Safety": "",
+                    "PI_Tag": false,
+                    "DOT": false,
+                    "Units": "",
+                    "opcItemPath": "[{Topic}]103.21.36<TFLP><I1>",
+                    "historyProvider": "HistDB_Longmont"
+                },
+                {
+                    "name": "CURRENT_FLOW_RATE",
+                    "valueSource": "opc",
+                    "LongID": "",
+                    "Tag_Description": "",
+                    "Safety": "",
+                    "PI_Tag": false,
+                    "DOT": false,
+                    "Units": "",
+                    "opcItemPath": "[{Topic}]204.105.1<TFLP><I1>",
+                    "historyProvider": "HistDB_Longmont"
+                },
+                {
+                    "name": "SUMP_SWITCH",
+                    "valueSource": "opc",
+                    "LongID": "",
+                    "Tag_Description": "",
+                    "Safety": "",
+                    "PI_Tag": false,
+                    "DOT": false,
+                    "Units": "",
+                    "opcItemPath": "[{Topic}]101.15.59<TBIN><I1>",
+                    "historyProvider": "HistDB_Longmont"
+                },
+                {
+                    "name": "CURRENT_ROC_VOLTAGE",
+                    "valueSource": "opc",
+                    "LongID": "",
+                    "Tag_Description": "",
+                    "Safety": "",
+                    "PI_Tag": false,
+                    "DOT": false,
+                    "Units": "",
+                    "opcItemPath": "[{Topic}]109.12.2<TFLP><I1>",
+                    "historyProvider": "HistDB_Longmont"
+                },
+                {
+                    "name": "CURRENT_HEARTBEAT",
+                    "valueSource": "opc",
+                    "LongID": "",
+                    "Tag_Description": "",
+                    "Safety": "",
+                    "PI_Tag": false,
+                    "DOT": false,
+                    "Units": "",
+                    "opcItemPath": "[{Topic}]98.3.8<TFLP><I1>",
+                    "historyProvider": "HistDB_Longmont"
+                },
+                {
+                    "name": "ESD_VALVE_STATUS",
+                    "valueSource": "opc",
+                    "LongID": "",
+                    "Tag_Description": "",
+                    "Safety": "",
+                    "PI_Tag": false,
+                    "DOT": false,
+                    "Units": "",
+                    "opcItemPath": "[{Topic}]102.8.65<TBIN><I1>",
+                    "historyProvider": "HistDB_Longmont"
+                },
+                {
+                    "name": "MEASUREMENT_PERMISSIVE",
+                    "valueSource": "opc",
+                    "LongID": "",
+                    "Tag_Description": "",
+                    "Safety": "",
+                    "PI_Tag": false,
+                    "DOT": false,
+                    "Units": "",
+                    "opcItemPath": "[{Topic}]102.8.68<TBIN><I1>",
+                    "historyProvider": "HistDB_Longmont"
+                },
+                {
+                    "name": "WES_IOC_LOTO_PERMISSIVE",
+                    "valueSource": "opc",
+                    "LongID": "",
+                    "Tag_Description": "",
+                    "Safety": "",
+                    "PI_Tag": false,
+                    "DOT": false,
+                    "Units": "",
+                    "opcItemPath": "[{Topic}]98.1.1<TBIN><I1>",
+                    "historyProvider": "HistDB_Longmont"
+                },
+                {
+                    "name": "ESD_VALVE_CURRENT_STATE",
+                    "valueSource": "opc",
+                    "LongID": "",
+                    "Tag_Description": "",
+                    "Safety": "",
+                    "PI_Tag": false,
+                    "DOT": false,
+                    "Units": "",
+                    "opcItemPath": "[{Topic}]101.3.57<TBIN><I1>",
+                    "historyProvider": "HistDB_Longmont"
+                },
+                {
+                    "name": "LIVE_BSW_READING_MAIN",
+                    "valueSource": "opc",
+                    "LongID": "",
+                    "Tag_Description": "",
+                    "Safety": "",
+                    "PI_Tag": false,
+                    "DOT": false,
+                    "Units": "",
+                    "opcItemPath": "[{Topic}]103.21.35<TFLP><I1>",
+                    "historyProvider": "HistDB_Longmont"
+                },
+                {
+                    "name": "LIVE_DENSITY_READING",
+                    "valueSource": "opc",
+                    "LongID": "",
+                    "Tag_Description": "",
+                    "Safety": "",
+                    "PI_Tag": false,
+                    "DOT": false,
+                    "Units": "",
+                    "opcItemPath": "[{Topic}]202.13.1<TFLP><I1>",
+                    "historyProvider": "HistDB_Longmont"
+                },
+                {
+                    "name": "PRODUCTION_PERMISSIVE",
+                    "valueSource": "opc",
+                    "LongID": "",
+                    "Tag_Description": "",
+                    "Safety": "",
+                    "PI_Tag": false,
+                    "DOT": false,
+                    "Units": "",
+                    "opcItemPath": "[{Topic}]101.3.63<TBIN><I1>",
+                    "historyProvider": "HistDB_Longmont"
+                },
+                {
+                    "name": "MAIN_LACT_RUN_STATUS",
+                    "valueSource": "opc",
+                    "LongID": "",
+                    "Tag_Description": "",
+                    "Safety": "",
+                    "PI_Tag": false,
+                    "DOT": false,
+                    "Units": "",
+                    "opcItemPath": "[{Topic}]98.1.3<TBIN><I1>",
+                    "historyProvider": "HistDB_Longmont"
+                },
+                {
+                    "name": "CORIOLIS_PRESSURE",
+                    "valueSource": "opc",
+                    "LongID": "",
+                    "Tag_Description": "",
+                    "Safety": "",
+                    "PI_Tag": false,
+                    "DOT": false,
+                    "Units": "",
+                    "opcItemPath": "[{Topic}]103.21.33<TFLP><I1>",
+                    "historyProvider": "HistDB_Longmont"
+                },
+                {
+                    "name": "DIVERT_VALVE_STATUS",
+                    "valueSource": "opc",
+                    "LongID": "",
+                    "Tag_Description": "",
+                    "Safety": "",
+                    "PI_Tag": false,
+                    "DOT": false,
+                    "Units": "",
+                    "opcItemPath": "[{Topic}]98.1.3<TBIN><I1>",
+                    "historyProvider": "HistDB_Longmont"
+                },
+                {
+                    "name": "PROD_MAIN_LACT_BSW",
+                    "valueSource": "opc",
+                    "LongID": "",
+                    "Tag_Description": "",
+                    "Safety": "",
+                    "PI_Tag": false,
+                    "DOT": false,
+                    "Units": "",
+                    "opcItemPath": "[{Topic}]103.21.35<TFLP><I1>",
+                    "historyProvider": "HistDB_Longmont"
+                },
+                {
+                    "name": "CYGNET_DISPLAY_TLP",
+                    "valueSource": "opc",
+                    "LongID": "",
+                    "Tag_Description": "",
+                    "Safety": "",
+                    "PI_Tag": false,
+                    "DOT": false,
+                    "Units": "",
+                    "opcItemPath": "[{Topic}]98.20.1<TFLP><I1>",
+                    "historyProvider": "HistDB_Longmont"
+                },
+                {
+                    "name": "BULK_TANK_PRESSURE",
+                    "valueSource": "opc",
+                    "LongID": "",
+                    "Tag_Description": "",
+                    "Safety": "",
+                    "PI_Tag": false,
+                    "DOT": false,
+                    "Units": "",
+                    "opcItemPath": "[{Topic}]98.1.8<TFLP><I1>",
+                    "historyProvider": "HistDB_Longmont"
+                },
+                {
+                    "name": "CURRENT_DRIVE_GAIN",
+                    "valueSource": "opc",
+                    "LongID": "",
+                    "Tag_Description": "",
+                    "Safety": "",
+                    "PI_Tag": false,
+                    "DOT": false,
+                    "Units": "",
+                    "opcItemPath": "[{Topic}]98.6.7<TFLP><I1>",
+                    "historyProvider": "HistDB_Longmont"
+                },
+                {
+                    "name": "BSW_TOTAL",
+                    "valueSource": "opc",
+                    "LongID": "",
+                    "Tag_Description": "",
+                    "Safety": "",
+                    "PI_Tag": false,
+                    "DOT": false,
+                    "Units": "",
+                    "opcItemPath": "[{Topic}]96.3.2<TFLP><I1>",
+                    "historyProvider": "HistDB_Longmont"
+                }
+            ],
+            "parameters": {},
+            "tagType": "UdtType"
+        },
+        {
+            "name": "METER_OIL_STD",
+            "typeID": "EMERSONROCL/METER_OIL",
+            "tags": [
+                {
+                    "name": "DRIVE_GAIN",
+                    "valueSource": "opc",
+                    "LongID": "",
+                    "Tag_Description": "",
+                    "Safety": "",
+                    "PI_Tag": false,
+                    "DOT": false,
+                    "Units": "",
+                    "opcItemPath": {
+                        "bindType": "parameter",
+                        "binding": "[{Topic}]{_t_DRIVE_GAIN}"
+                    },
+                    "historyProvider": "HistDB_Longmont"
+                },
+                {
+                    "name": "VOLTAGE",
+                    "valueSource": "opc",
+                    "LongID": "",
+                    "Tag_Description": "",
+                    "Safety": "",
+                    "PI_Tag": false,
+                    "DOT": false,
+                    "Units": "",
+                    "opcItemPath": {
+                        "bindType": "parameter",
+                        "binding": "[{Topic}]{_t_VOLTAGE}"
+                    },
+                    "historyProvider": "HistDB_Longmont"
+                },
+                {
+                    "name": "RATE",
+                    "valueSource": "opc",
+                    "LongID": "",
+                    "Tag_Description": "",
+                    "Safety": "",
+                    "PI_Tag": false,
+                    "DOT": false,
+                    "Units": "",
+                    "opcItemPath": {
+                        "bindType": "parameter",
+                        "binding": "[{Topic}]{_t_RATE}"
+                    },
+                    "historyProvider": "HistDB_Longmont"
+                },
+                {
+                    "name": "DENSITY",
+                    "valueSource": "opc",
+                    "LongID": "",
+                    "Tag_Description": "",
+                    "Safety": "",
+                    "PI_Tag": false,
+                    "DOT": false,
+                    "Units": "",
+                    "opcItemPath": {
+                        "bindType": "parameter",
+                        "binding": "[{Topic}]{_t_DENSITY}"
+                    },
+                    "historyProvider": "HistDB_Longmont"
+                },
+                {
+                    "name": "RATE_GSV",
+                    "valueSource": "opc",
+                    "LongID": "",
+                    "Tag_Description": "",
+                    "Safety": "",
+                    "PI_Tag": false,
+                    "DOT": false,
+                    "Units": "",
+                    "opcItemPath": {
+                        "bindType": "parameter",
+                        "binding": "[{Topic}]{_t_RATE_GSV}"
+                    },
+                    "historyProvider": "HistDB_Longmont"
+                },
+                {
+                    "name": "VOLUME_MONTH_GSV",
+                    "valueSource": "opc",
+                    "LongID": "",
+                    "Tag_Description": "",
+                    "Safety": "",
+                    "PI_Tag": false,
+                    "DOT": false,
+                    "Units": "",
+                    "opcItemPath": {
+                        "bindType": "parameter",
+                        "binding": "[{Topic}]{_t_VOLUME_MONTH_GSV}"
+                    },
+                    "historyProvider": "HistDB_Longmont"
+                },
+                {
+                    "name": "VOLUME_MONTHP_GSV",
+                    "valueSource": "opc",
+                    "LongID": "",
+                    "Tag_Description": "",
+                    "Safety": "",
+                    "PI_Tag": false,
+                    "DOT": false,
+                    "Units": "",
+                    "opcItemPath": {
+                        "bindType": "parameter",
+                        "binding": "[{Topic}]{_t_VOLUME_MONTHP_GSV}"
+                    },
+                    "historyProvider": "HistDB_Longmont"
+                },
+                {
+                    "name": "VOLUME_YESTERDAY_GSV",
+                    "valueSource": "opc",
+                    "LongID": "",
+                    "Tag_Description": "",
+                    "Safety": "",
+                    "PI_Tag": false,
+                    "DOT": false,
+                    "Units": "",
+                    "opcItemPath": {
+                        "bindType": "parameter",
+                        "binding": "[{Topic}]{_t_VOLUME_YESTERDAY_GSV}"
+                    },
+                    "historyProvider": "HistDB_Longmont"
+                },
+                {
+                    "name": "VOLUME_MONTH",
+                    "valueSource": "opc",
+                    "LongID": "",
+                    "Tag_Description": "",
+                    "Safety": "",
+                    "PI_Tag": false,
+                    "DOT": false,
+                    "Units": "",
+                    "opcItemPath": {
+                        "bindType": "parameter",
+                        "binding": "[{Topic}]{_t_VOLUME_MONTH}"
+                    },
+                    "historyProvider": "HistDB_Longmont"
+                },
+                {
+                    "name": "VOLUME_MONTHP",
+                    "valueSource": "opc",
+                    "LongID": "",
+                    "Tag_Description": "",
+                    "Safety": "",
+                    "PI_Tag": false,
+                    "DOT": false,
+                    "Units": "",
+                    "opcItemPath": {
+                        "bindType": "parameter",
+                        "binding": "[{Topic}]{_t_VOLUME_MONTHP}"
+                    },
+                    "historyProvider": "HistDB_Longmont"
+                },
+                {
+                    "name": "VOLUME_TODAY",
+                    "valueSource": "opc",
+                    "LongID": "",
+                    "Tag_Description": "",
+                    "Safety": "",
+                    "PI_Tag": false,
+                    "DOT": false,
+                    "Units": "",
+                    "opcItemPath": {
+                        "bindType": "parameter",
+                        "binding": "[{Topic}]{_t_VOLUME_TODAY}"
+                    },
+                    "historyProvider": "HistDB_Longmont"
+                },
+                {
+                    "name": "VOLUME_YESTERDAY",
+                    "valueSource": "opc",
+                    "LongID": "",
+                    "Tag_Description": "",
+                    "Safety": "",
+                    "PI_Tag": false,
+                    "DOT": false,
+                    "Units": "",
+                    "opcItemPath": {
+                        "bindType": "parameter",
+                        "binding": "[{Topic}]{_t_VOLUME_YESTERDAY}"
+                    },
+                    "historyProvider": "HistDB_Longmont"
+                },
+                {
+                    "name": "INSTRUMENT_AIR",
+                    "valueSource": "opc",
+                    "LongID": "",
+                    "Tag_Description": "",
+                    "Safety": "",
+                    "PI_Tag": false,
+                    "DOT": false,
+                    "Units": "",
+                    "opcItemPath": {
+                        "bindType": "parameter",
+                        "binding": "[{Topic}]{_t_INSTRUMENT_AIR}"
+                    },
+                    "historyProvider": "HistDB_Longmont"
+                },
+                {
+                    "name": "DISCHARGE_PRESSURE",
+                    "valueSource": "opc",
+                    "LongID": "",
+                    "Tag_Description": "",
+                    "Safety": "",
+                    "PI_Tag": false,
+                    "DOT": false,
+                    "Units": "",
+                    "opcItemPath": {
+                        "bindType": "parameter",
+                        "binding": "[{Topic}]{_t_DISCHARGE_PRESSURE}"
+                    },
+                    "historyProvider": "HistDB_Longmont"
+                },
+                {
+                    "name": "PRESSURE",
+                    "valueSource": "opc",
+                    "LongID": "",
+                    "Tag_Description": "",
+                    "Safety": "",
+                    "PI_Tag": false,
+                    "DOT": false,
+                    "Units": "",
+                    "opcItemPath": {
+                        "bindType": "parameter",
+                        "binding": "[{Topic}]{_t_PRESSURE}"
+                    },
+                    "historyProvider": "HistDB_Longmont"
+                },
+                {
+                    "name": "SUCTION_PRESSURE",
+                    "valueSource": "opc",
+                    "LongID": "",
+                    "Tag_Description": "",
+                    "Safety": "",
+                    "PI_Tag": false,
+                    "DOT": false,
+                    "Units": "",
+                    "opcItemPath": {
+                        "bindType": "parameter",
+                        "binding": "[{Topic}]{_t_SUCTION_PRESSURE}"
+                    },
+                    "historyProvider": "HistDB_Longmont"
+                },
+                {
+                    "name": "SAMPLER_VOLUME",
+                    "valueSource": "opc",
+                    "LongID": "",
+                    "Tag_Description": "",
+                    "Safety": "",
+                    "PI_Tag": false,
+                    "DOT": false,
+                    "Units": "",
+                    "opcItemPath": {
+                        "bindType": "parameter",
+                        "binding": "[{Topic}]{_t_SAMPLER_VOLUME}"
+                    },
+                    "historyProvider": "HistDB_Longmont"
+                },
+                {
+                    "name": "TEMPERATURE",
+                    "valueSource": "opc",
+                    "LongID": "",
+                    "Tag_Description": "",
+                    "Safety": "",
+                    "PI_Tag": false,
+                    "DOT": false,
+                    "Units": "",
+                    "opcItemPath": {
+                        "bindType": "parameter",
+                        "binding": "[{Topic}]{_t_TEMPERATURE}"
+                    },
+                    "historyProvider": "HistDB_Longmont"
+                },
+                {
+                    "name": "PERMISSIVE",
+                    "valueSource": "opc",
+                    "LongID": "",
+                    "Tag_Description": "",
+                    "Safety": "",
+                    "PI_Tag": false,
+                    "DOT": false,
+                    "Units": "",
+                    "opcItemPath": {
+                        "bindType": "parameter",
+                        "binding": "[{Topic}]{_t_PERMISSIVE}"
+                    },
+                    "historyProvider": "HistDB_Longmont"
+                },
+                {
+                    "name": "VALVE_POSITION",
+                    "valueSource": "opc",
+                    "LongID": "",
+                    "Tag_Description": "",
+                    "Safety": "",
+                    "PI_Tag": false,
+                    "DOT": false,
+                    "Units": "",
+                    "opcItemPath": {
+                        "bindType": "parameter",
+                        "binding": "[{Topic}]{_t_VALVE_POSITION}"
+                    },
+                    "historyProvider": "HistDB_Longmont"
+                },
+                {
+                    "name": "NGL_RATE",
+                    "valueSource": "opc",
+                    "LongID": "",
+                    "Tag_Description": "",
+                    "Safety": "",
+                    "PI_Tag": false,
+                    "DOT": false,
+                    "Units": "",
+                    "opcItemPath": {
+                        "bindType": "parameter",
+                        "binding": "[{Topic}]{_t_NGL_RATE}"
+                    },
+                    "historyProvider": "HistDB_Longmont"
+                },
+                {
+                    "name": "CONDENSATE_VOLUME_MONTH",
+                    "valueSource": "opc",
+                    "LongID": "",
+                    "Tag_Description": "",
+                    "Safety": "",
+                    "PI_Tag": false,
+                    "DOT": false,
+                    "Units": "",
+                    "opcItemPath": {
+                        "bindType": "parameter",
+                        "binding": "[{Topic}]{_t_CONDENSATE_VOLUME_MONTH}"
+                    },
+                    "historyProvider": "HistDB_Longmont"
+                },
+                {
+                    "name": "CONDENSATE_VOLUME_YESTERDAY",
+                    "valueSource": "opc",
+                    "LongID": "",
+                    "Tag_Description": "",
+                    "Safety": "",
+                    "PI_Tag": false,
+                    "DOT": false,
+                    "Units": "",
+                    "opcItemPath": {
+                        "bindType": "parameter",
+                        "binding": "[{Topic}]{_t_CONDENSATE_VOLUME_YESTERDAY}"
+                    },
+                    "historyProvider": "HistDB_Longmont"
+                },
+                {
+                    "name": "VOLUMETRIC_FLOW_RATE_SETPOINT",
+                    "valueSource": "opc",
+                    "LongID": "",
+                    "Tag_Description": "",
+                    "Safety": "",
+                    "PI_Tag": false,
+                    "DOT": false,
+                    "Units": "",
+                    "opcItemPath": {
+                        "bindType": "parameter",
+                        "binding": "[{Topic}]{_t_VOLUMETRIC_FLOW_RATE_SETPOINT}"
+                    },
+                    "historyProvider": "HistDB_Longmont"
+                },
+                {
+                    "name": "PID_MODE",
+                    "valueSource": "opc",
+                    "LongID": "",
+                    "Tag_Description": "",
+                    "Safety": "",
+                    "PI_Tag": false,
+                    "DOT": false,
+                    "Units": "",
+                    "opcItemPath": {
+                        "bindType": "parameter",
+                        "binding": "[{Topic}]{_t_PID_MODE}"
+                    },
+                    "historyProvider": "HistDB_Longmont"
+                },
+                {
+                    "name": "VALVE_POSITION",
+                    "valueSource": "opc",
+                    "LongID": "",
+                    "Tag_Description": "",
+                    "Safety": "",
+                    "PI_Tag": false,
+                    "DOT": false,
+                    "Units": "",
+                    "opcItemPath": {
+                        "bindType": "parameter",
+                        "binding": "[{Topic}]{_t_VALVE_POSITION}"
+                    },
+                    "historyProvider": "HistDB_Longmont"
+                },
+                {
+                    "name": "MASS_RATE",
+                    "valueSource": "opc",
+                    "LongID": "",
+                    "Tag_Description": "",
+                    "Safety": "",
+                    "PI_Tag": false,
+                    "DOT": false,
+                    "Units": "",
+                    "opcItemPath": {
+                        "bindType": "parameter",
+                        "binding": "[{Topic}]{_t_MASS_RATE}"
+                    },
+                    "historyProvider": "HistDB_Longmont"
+                },
+                {
+                    "name": "ACCUMULATOR_OIL",
+                    "valueSource": "opc",
+                    "LongID": "",
+                    "Tag_Description": "",
+                    "Safety": "",
+                    "PI_Tag": false,
+                    "DOT": false,
+                    "Units": "",
+                    "opcItemPath": {
+                        "bindType": "parameter",
+                        "binding": "[{Topic}]{_t_ACCUMULATOR_OIL}"
+                    },
+                    "historyProvider": "HistDB_Longmont"
+                },
+                {
+                    "name": "PID_CV_READ",
+                    "valueSource": "opc",
+                    "LongID": "",
+                    "Tag_Description": "",
+                    "Safety": "",
+                    "PI_Tag": false,
+                    "DOT": false,
+                    "Units": "",
+                    "opcItemPath": {
+                        "bindType": "parameter",
+                        "binding": "[{Topic}]{_t_PID_CV_READ}"
+                    },
+                    "historyProvider": "HistDB_Longmont"
+                },
+                {
+                    "name": "PID_TARGET_SP_PRIMARY",
+                    "valueSource": "opc",
+                    "LongID": "",
+                    "Tag_Description": "",
+                    "Safety": "",
+                    "PI_Tag": false,
+                    "DOT": false,
+                    "Units": "",
+                    "opcItemPath": {
+                        "bindType": "parameter",
+                        "binding": "[{Topic}]{_t_PID_TARGET_SP_PRIMARY}"
+                    },
+                    "historyProvider": "HistDB_Longmont"
+                },
+                {
+                    "name": "CONDENSATE_RATE",
+                    "valueSource": "opc",
+                    "LongID": "",
+                    "Tag_Description": "",
+                    "Safety": "",
+                    "PI_Tag": false,
+                    "DOT": false,
+                    "Units": "",
+                    "opcItemPath": {
+                        "bindType": "parameter",
+                        "binding": "[{Topic}]{_t_CONDENSATE_RATE}"
+                    },
+                    "historyProvider": "HistDB_Longmont"
+                },
+                {
+                    "name": "CONDENSATE_VOLUME_MONTHP",
+                    "valueSource": "opc",
+                    "LongID": "",
+                    "Tag_Description": "",
+                    "Safety": "",
+                    "PI_Tag": false,
+                    "DOT": false,
+                    "Units": "",
+                    "opcItemPath": {
+                        "bindType": "parameter",
+                        "binding": "[{Topic}]{_t_CONDENSATE_VOLUME_MONTHP}"
+                    },
+                    "historyProvider": "HistDB_Longmont"
+                },
+                {
+                    "name": "STATIC_PRESSURE",
+                    "valueSource": "opc",
+                    "LongID": "",
+                    "Tag_Description": "",
+                    "Safety": "",
+                    "PI_Tag": false,
+                    "DOT": false,
+                    "Units": "",
+                    "opcItemPath": {
+                        "bindType": "parameter",
+                        "binding": "[{Topic}]{_t_STATIC_PRESSURE}"
+                    },
+                    "historyProvider": "HistDB_Longmont"
+                },
+                {
+                    "name": "FLOWING_GAS_TEMPERATURE",
+                    "valueSource": "opc",
+                    "LongID": "",
+                    "Tag_Description": "",
+                    "Safety": "",
+                    "PI_Tag": false,
+                    "DOT": false,
+                    "Units": "",
+                    "opcItemPath": {
+                        "bindType": "parameter",
+                        "binding": "[{Topic}]{_t_FLOWING_GAS_TEMPERATURE}"
+                    },
+                    "historyProvider": "HistDB_Longmont"
+                }
+            ],
+            "parameters": {
+                "_t_DRIVE_GAIN": {
+                    "dataType": "String",
+                    "value": {
+                        "bindType": "parameter",
+                        "binding": "[{Topic}]_t_DRIVE_GAIN"
+                    }
+                },
+                "_t_VOLTAGE": {
+                    "dataType": "String",
+                    "value": {
+                        "bindType": "parameter",
+                        "binding": "[{Topic}]_t_VOLTAGE"
+                    }
+                },
+                "_t_RATE": {
+                    "dataType": "String",
+                    "value": {
+                        "bindType": "parameter",
+                        "binding": "[{Topic}]_t_RATE"
+                    }
+                },
+                "_t_DENSITY": {
+                    "dataType": "String",
+                    "value": {
+                        "bindType": "parameter",
+                        "binding": "[{Topic}]_t_DENSITY"
+                    }
+                },
+                "_t_RATE_GSV": {
+                    "dataType": "String",
+                    "value": {
+                        "bindType": "parameter",
+                        "binding": "[{Topic}]_t_RATE_GSV"
+                    }
+                },
+                "_t_VOLUME_MONTH_GSV": {
+                    "dataType": "String",
+                    "value": {
+                        "bindType": "parameter",
+                        "binding": "[{Topic}]_t_VOLUME_MONTH_GSV"
+                    }
+                },
+                "_t_VOLUME_MONTHP_GSV": {
+                    "dataType": "String",
+                    "value": {
+                        "bindType": "parameter",
+                        "binding": "[{Topic}]_t_VOLUME_MONTHP_GSV"
+                    }
+                },
+                "_t_VOLUME_YESTERDAY_GSV": {
+                    "dataType": "String",
+                    "value": {
+                        "bindType": "parameter",
+                        "binding": "[{Topic}]_t_VOLUME_YESTERDAY_GSV"
+                    }
+                },
+                "_t_VOLUME_MONTH": {
+                    "dataType": "String",
+                    "value": {
+                        "bindType": "parameter",
+                        "binding": "[{Topic}]_t_VOLUME_MONTH"
+                    }
+                },
+                "_t_VOLUME_MONTHP": {
+                    "dataType": "String",
+                    "value": {
+                        "bindType": "parameter",
+                        "binding": "[{Topic}]_t_VOLUME_MONTHP"
+                    }
+                },
+                "_t_VOLUME_TODAY": {
+                    "dataType": "String",
+                    "value": {
+                        "bindType": "parameter",
+                        "binding": "[{Topic}]_t_VOLUME_TODAY"
+                    }
+                },
+                "_t_VOLUME_YESTERDAY": {
+                    "dataType": "String",
+                    "value": {
+                        "bindType": "parameter",
+                        "binding": "[{Topic}]_t_VOLUME_YESTERDAY"
+                    }
+                },
+                "_t_INSTRUMENT_AIR": {
+                    "dataType": "String",
+                    "value": {
+                        "bindType": "parameter",
+                        "binding": "[{Topic}]_t_INSTRUMENT_AIR"
+                    }
+                },
+                "_t_DISCHARGE_PRESSURE": {
+                    "dataType": "String",
+                    "value": {
+                        "bindType": "parameter",
+                        "binding": "[{Topic}]_t_DISCHARGE_PRESSURE"
+                    }
+                },
+                "_t_PRESSURE": {
+                    "dataType": "String",
+                    "value": {
+                        "bindType": "parameter",
+                        "binding": "[{Topic}]_t_PRESSURE"
+                    }
+                },
+                "_t_SUCTION_PRESSURE": {
+                    "dataType": "String",
+                    "value": {
+                        "bindType": "parameter",
+                        "binding": "[{Topic}]_t_SUCTION_PRESSURE"
+                    }
+                },
+                "_t_SAMPLER_VOLUME": {
+                    "dataType": "String",
+                    "value": {
+                        "bindType": "parameter",
+                        "binding": "[{Topic}]_t_SAMPLER_VOLUME"
+                    }
+                },
+                "_t_TEMPERATURE": {
+                    "dataType": "String",
+                    "value": {
+                        "bindType": "parameter",
+                        "binding": "[{Topic}]_t_TEMPERATURE"
+                    }
+                },
+                "_t_PERMISSIVE": {
+                    "dataType": "String",
+                    "value": {
+                        "bindType": "parameter",
+                        "binding": "[{Topic}]_t_PERMISSIVE"
+                    }
+                },
+                "_t_VALVE_POSITION": {
+                    "dataType": "String",
+                    "value": {
+                        "bindType": "parameter",
+                        "binding": "[{Topic}]_t_VALVE_POSITION"
+                    }
+                },
+                "_t_NGL_RATE": {
+                    "dataType": "String",
+                    "value": {
+                        "bindType": "parameter",
+                        "binding": "[{Topic}]_t_NGL_RATE"
+                    }
+                },
+                "_t_CONDENSATE_VOLUME_MONTH": {
+                    "dataType": "String",
+                    "value": {
+                        "bindType": "parameter",
+                        "binding": "[{Topic}]_t_CONDENSATE_VOLUME_MONTH"
+                    }
+                },
+                "_t_CONDENSATE_VOLUME_YESTERDAY": {
+                    "dataType": "String",
+                    "value": {
+                        "bindType": "parameter",
+                        "binding": "[{Topic}]_t_CONDENSATE_VOLUME_YESTERDAY"
+                    }
+                },
+                "_t_VOLUMETRIC_FLOW_RATE_SETPOINT": {
+                    "dataType": "String",
+                    "value": {
+                        "bindType": "parameter",
+                        "binding": "[{Topic}]_t_VOLUMETRIC_FLOW_RATE_SETPOINT"
+                    }
+                },
+                "_t_PID_MODE": {
+                    "dataType": "String",
+                    "value": {
+                        "bindType": "parameter",
+                        "binding": "[{Topic}]_t_PID_MODE"
+                    }
+                },
+                "_t_MASS_RATE": {
+                    "dataType": "String",
+                    "value": {
+                        "bindType": "parameter",
+                        "binding": "[{Topic}]_t_MASS_RATE"
+                    }
+                },
+                "_t_ACCUMULATOR_OIL": {
+                    "dataType": "String",
+                    "value": {
+                        "bindType": "parameter",
+                        "binding": "[{Topic}]_t_ACCUMULATOR_OIL"
+                    }
+                },
+                "_t_PID_CV_READ": {
+                    "dataType": "String",
+                    "value": {
+                        "bindType": "parameter",
+                        "binding": "[{Topic}]_t_PID_CV_READ"
+                    }
+                },
+                "_t_PID_TARGET_SP_PRIMARY": {
+                    "dataType": "String",
+                    "value": {
+                        "bindType": "parameter",
+                        "binding": "[{Topic}]_t_PID_TARGET_SP_PRIMARY"
+                    }
+                },
+                "_t_CONDENSATE_RATE": {
+                    "dataType": "String",
+                    "value": {
+                        "bindType": "parameter",
+                        "binding": "[{Topic}]_t_CONDENSATE_RATE"
+                    }
+                },
+                "_t_CONDENSATE_VOLUME_MONTHP": {
+                    "dataType": "String",
+                    "value": {
+                        "bindType": "parameter",
+                        "binding": "[{Topic}]_t_CONDENSATE_VOLUME_MONTHP"
+                    }
+                },
+                "_t_STATIC_PRESSURE": {
+                    "dataType": "String",
+                    "value": {
+                        "bindType": "parameter",
+                        "binding": "[{Topic}]_t_STATIC_PRESSURE"
+                    }
+                },
+                "_t_FLOWING_GAS_TEMPERATURE": {
+                    "dataType": "String",
+                    "value": {
+                        "bindType": "parameter",
+                        "binding": "[{Topic}]_t_FLOWING_GAS_TEMPERATURE"
+                    }
+                }
+            },
+            "tagType": "UdtType"
+        },
+        {
+            "name": "METER_OIL_SAMPLER",
+            "typeID": "LONGMONT_REGIONAL_BASE",
+            "tags": [
+                {
+                    "name": "DESIRED_YZ_SAMPLER_FILL",
+                    "valueSource": "opc",
+                    "LongID": "",
+                    "Tag_Description": "",
+                    "Safety": "",
+                    "PI_Tag": false,
+                    "DOT": false,
+                    "Units": "",
+                    "opcItemPath": "[{Topic}]98.11.30<TFLP><I1>",
+                    "historyProvider": "HistDB_Longmont"
+                },
+                {
+                    "name": "BARRELS_PER_DAY",
+                    "valueSource": "opc",
+                    "LongID": "",
+                    "Tag_Description": "",
+                    "Safety": "",
+                    "PI_Tag": false,
+                    "DOT": false,
+                    "Units": "",
+                    "opcItemPath": "[{Topic}]98.16.30<TFLP><I1>",
+                    "historyProvider": "HistDB_Longmont"
+                },
+                {
+                    "name": "NUM_SAMPLING_DAYS_IN_MONTH",
+                    "valueSource": "opc",
+                    "LongID": "",
+                    "Tag_Description": "",
+                    "Safety": "",
+                    "PI_Tag": false,
+                    "DOT": false,
+                    "Units": "",
+                    "opcItemPath": "[{Topic}]98.12.30<TUINT8><I1>",
+                    "historyProvider": "HistDB_Longmont"
+                },
+                {
+                    "name": "BITE_SIZE_PER_PULSE",
+                    "valueSource": "opc",
+                    "LongID": "",
+                    "Tag_Description": "",
+                    "Safety": "",
+                    "PI_Tag": false,
+                    "DOT": false,
+                    "Units": "",
+                    "opcItemPath": "[{Topic}]98.3.30<TFLP><I1>",
+                    "historyProvider": "HistDB_Longmont"
+                },
+                {
+                    "name": "SAMPLE_BITE_DURATION",
+                    "valueSource": "opc",
+                    "LongID": "",
+                    "Tag_Description": "",
+                    "Safety": "",
+                    "PI_Tag": false,
+                    "DOT": false,
+                    "Units": "",
+                    "opcItemPath": "[{Topic}]111.5.1<TFLP><I1>",
+                    "historyProvider": "HistDB_Longmont"
+                },
+                {
+                    "name": "REQUIRED_CC_PER_DAY",
+                    "valueSource": "opc",
+                    "LongID": "",
+                    "Tag_Description": "",
+                    "Safety": "",
+                    "PI_Tag": false,
+                    "DOT": false,
+                    "Units": "",
+                    "opcItemPath": "[{Topic}]98.13.30<TFLP><I1>",
+                    "historyProvider": "HistDB_Longmont"
+                },
+                {
+                    "name": "PUMP_STROKES_PER_DAY",
+                    "valueSource": "opc",
+                    "LongID": "",
+                    "Tag_Description": "",
+                    "Safety": "",
+                    "PI_Tag": false,
+                    "DOT": false,
+                    "Units": "",
+                    "opcItemPath": "[{Topic}]98.14.30<TFLP><I1>",
+                    "historyProvider": "HistDB_Longmont"
+                },
+                {
+                    "name": "SAMPLE_BITE_FREQUENCY",
+                    "valueSource": "opc",
+                    "LongID": "",
+                    "Tag_Description": "",
+                    "Safety": "",
+                    "PI_Tag": false,
+                    "DOT": false,
+                    "Units": "",
+                    "opcItemPath": "[{Topic}]111.4.1<TFLP><I1>",
+                    "historyProvider": "HistDB_Longmont"
+                },
+                {
+                    "name": "YZ_SAMPLER_N2_LEAK",
+                    "valueSource": "opc",
+                    "LongID": "",
+                    "Tag_Description": "",
+                    "Safety": "",
+                    "PI_Tag": false,
+                    "DOT": false,
+                    "Units": "",
+                    "opcItemPath": "[{Topic}]98.9.30<TBIN><I1>",
+                    "historyProvider": "HistDB_Longmont"
+                },
+                {
+                    "name": "YZ_SAMPLER_OVER_50",
+                    "valueSource": "opc",
+                    "LongID": "",
+                    "Tag_Description": "",
+                    "Safety": "",
+                    "PI_Tag": false,
+                    "DOT": false,
+                    "Units": "",
+                    "opcItemPath": "[{Topic}]98.7.30<TBIN><I1>",
+                    "historyProvider": "HistDB_Longmont"
+                },
+                {
+                    "name": "YZ_SAMPLER_OVER_80",
+                    "valueSource": "opc",
+                    "LongID": "",
+                    "Tag_Description": "",
+                    "Safety": "",
+                    "PI_Tag": false,
+                    "DOT": false,
+                    "Units": "",
+                    "opcItemPath": "[{Topic}]98.8.30<TBIN><I1>",
+                    "historyProvider": "HistDB_Longmont"
+                },
+                {
+                    "name": "YZ_SAMPLER_NOT_FILLING",
+                    "valueSource": "opc",
+                    "LongID": "",
+                    "Tag_Description": "",
+                    "Safety": "",
+                    "PI_Tag": false,
+                    "DOT": false,
+                    "Units": "",
+                    "opcItemPath": "[{Topic}]98.6.30<TBIN><I1>",
+                    "historyProvider": "HistDB_Longmont"
+                },
+                {
+                    "name": "YZ_N2_PSI_BELOW_PIPELINE_PSI",
+                    "valueSource": "opc",
+                    "LongID": "",
+                    "Tag_Description": "",
+                    "Safety": "",
+                    "PI_Tag": false,
+                    "DOT": false,
+                    "Units": "",
+                    "opcItemPath": "[{Topic}]98.15.30<TBIN><I1>",
+                    "historyProvider": "HistDB_Longmont"
+                },
+                {
+                    "name": "VOLUME_INFO_FULL_CC",
+                    "valueSource": "opc",
+                    "LongID": "",
+                    "Tag_Description": "",
+                    "Safety": "",
+                    "PI_Tag": false,
+                    "DOT": false,
+                    "Units": "",
+                    "opcItemPath": "[{Topic}]98.5.30<TFLP><I1>",
+                    "historyProvider": "HistDB_Longmont"
+                },
+                {
+                    "name": "VOLUME_INFO_PERCENT_FULL",
+                    "valueSource": "opc",
+                    "LongID": "",
+                    "Tag_Description": "",
+                    "Safety": "",
+                    "PI_Tag": false,
+                    "DOT": false,
+                    "Units": "",
+                    "opcItemPath": "[{Topic}]98.4.30<TFLP><I1>",
+                    "historyProvider": "HistDB_Longmont"
+                },
+                {
+                    "name": "VOLUME_INFO_BITE_SIZE",
+                    "valueSource": "opc",
+                    "LongID": "",
+                    "Tag_Description": "",
+                    "Safety": "",
+                    "PI_Tag": false,
+                    "DOT": false,
+                    "Units": "",
+                    "opcItemPath": "[{Topic}]98.3.30<TFLP><I1>",
+                    "historyProvider": "HistDB_Longmont"
+                },
+                {
+                    "name": "VOLUME_INFO_SAMPLE_RESET_BUTTON",
+                    "valueSource": "opc",
+                    "LongID": "",
+                    "Tag_Description": "",
+                    "Safety": "",
+                    "PI_Tag": false,
+                    "DOT": false,
+                    "Units": "",
+                    "opcItemPath": "[{Topic}]98.1.30<TBIN><I1>",
+                    "historyProvider": "HistDB_Longmont"
+                },
+                {
+                    "name": "TROUBLESHOOT_INFO_YZ_SAMPLER_ENABLED",
+                    "valueSource": "opc",
+                    "LongID": "",
+                    "Tag_Description": "",
+                    "Safety": "",
+                    "PI_Tag": false,
+                    "DOT": false,
+                    "Units": "",
+                    "opcItemPath": "[{Topic}]111.0.1<TBIN><I1>",
+                    "historyProvider": "HistDB_Longmont"
+                },
+                {
+                    "name": "TROUBLESHOOT_INFO_NITROGEN_AND_CORIOLIS",
+                    "valueSource": "opc",
+                    "LongID": "",
+                    "Tag_Description": "",
+                    "Safety": "",
+                    "PI_Tag": false,
+                    "DOT": false,
+                    "Units": "",
+                    "opcItemPath": "[{Topic}]98.10.30<TFLP><I1>",
+                    "historyProvider": "HistDB_Longmont"
+                },
+                {
+                    "name": "PREV_MONTH_TOTAL",
+                    "valueSource": "opc",
+                    "LongID": "",
+                    "Tag_Description": "",
+                    "Safety": "",
+                    "PI_Tag": false,
+                    "DOT": false,
+                    "Units": "",
+                    "opcItemPath": "[{Topic}]204.141.1<TFLP><I1>",
+                    "historyProvider": "HistDB_Longmont"
+                },
+                {
+                    "name": "YEST_TOTAL",
+                    "valueSource": "opc",
+                    "LongID": "",
+                    "Tag_Description": "",
+                    "Safety": "",
+                    "PI_Tag": false,
+                    "DOT": false,
+                    "Units": "",
+                    "opcItemPath": "[{Topic}]204.129.1<TFLP><I1>",
+                    "historyProvider": "HistDB_Longmont"
+                },
+                {
+                    "name": "CURRENT_MONTH_TOTAL",
+                    "valueSource": "opc",
+                    "LongID": "",
+                    "Tag_Description": "",
+                    "Safety": "",
+                    "PI_Tag": false,
+                    "DOT": false,
+                    "Units": "",
+                    "opcItemPath": "[{Topic}]204.135.1<TFLP><I1>",
+                    "historyProvider": "HistDB_Longmont"
+                },
+                {
+                    "name": "CURRENT_FLOW_RATE",
+                    "valueSource": "opc",
+                    "LongID": "",
+                    "Tag_Description": "",
+                    "Safety": "",
+                    "PI_Tag": false,
+                    "DOT": false,
+                    "Units": "",
+                    "opcItemPath": "[{Topic}]204.105.1<TFLP><I1>",
+                    "historyProvider": "HistDB_Longmont"
+                },
+                {
+                    "name": "TROUBLESHOOT_INFO_YZ_SAMPLER_ENABLED",
+                    "valueSource": "opc",
+                    "LongID": "",
+                    "Tag_Description": "",
+                    "Safety": "",
+                    "PI_Tag": false,
+                    "DOT": false,
+                    "Units": "",
+                    "opcItemPath": "[{Topic}]111.0.1<TBIN><I1>",
+                    "historyProvider": "HistDB_Longmont"
+                },
+                {
+                    "name": "TROUBLESHOOT_INFO_YZ_SAMPLER_DISABLED",
+                    "valueSource": "opc",
+                    "LongID": "",
+                    "Tag_Description": "",
+                    "Safety": "",
+                    "PI_Tag": false,
+                    "DOT": false,
+                    "Units": "",
+                    "opcItemPath": {
+                        "bindType": "parameter",
+                        "binding": "[{Topic}]{_t_TROUBLESHOOT_INFO_YZ_SAMPLER_DISABLED}"
+                    },
+                    "historyProvider": "HistDB_Longmont"
+                }
+            ],
+            "parameters": {
+                "_t_TROUBLESHOOT_INFO_YZ_SAMPLER_DISABLED": {
+                    "dataType": "String",
+                    "value": {
+                        "bindType": "parameter",
+                        "binding": "[{Topic}]_t_TROUBLESHOOT_INFO_YZ_SAMPLER_DISABLED"
+                    }
+                }
+            },
+            "tagType": "UdtType"
+        },
+        {
+            "name": "METER_O2",
+            "typeID": "LONGMONT_REGIONAL_BASE",
+            "tags": [
+                {
+                    "name": "VOLUME_YESTERDAY",
+                    "valueSource": "opc",
+                    "LongID": "",
+                    "Tag_Description": "",
+                    "Safety": "",
+                    "PI_Tag": false,
+                    "DOT": false,
+                    "Units": "",
+                    "opcItemPath": {
+                        "bindType": "parameter",
+                        "binding": "[{Topic}]{_t_VOLUME_YESTERDAY}"
+                    },
+                    "historyProvider": "HistDB_Longmont"
+                },
+                {
+                    "name": "VOLUME_YESTERDAY",
+                    "valueSource": "opc",
+                    "LongID": "",
+                    "Tag_Description": "",
+                    "Safety": "",
+                    "PI_Tag": false,
+                    "DOT": false,
+                    "Units": "",
+                    "opcItemPath": {
+                        "bindType": "parameter",
+                        "binding": "[{Topic}]{_t_VOLUME_YESTERDAY}"
+                    },
+                    "historyProvider": "HistDB_Longmont"
+                },
+                {
+                    "name": "O2_PPM",
+                    "valueSource": "opc",
+                    "LongID": "",
+                    "Tag_Description": "",
+                    "Safety": "",
+                    "PI_Tag": false,
+                    "DOT": false,
+                    "Units": "",
+                    "opcItemPath": {
+                        "bindType": "parameter",
+                        "binding": "[{Topic}]{_t_O2_PPM}"
+                    },
+                    "historyProvider": "HistDB_Longmont"
+                }
+            ],
+            "parameters": {
+                "_t_VOLUME_YESTERDAY": {
+                    "dataType": "String",
+                    "value": {
+                        "bindType": "parameter",
+                        "binding": "[{Topic}]_t_VOLUME_YESTERDAY"
+                    }
+                },
+                "_t_O2_PPM": {
+                    "dataType": "String",
+                    "value": {
+                        "bindType": "parameter",
+                        "binding": "[{Topic}]_t_O2_PPM"
+                    }
+                }
+            },
+            "tagType": "UdtType"
+        },
+        {
+            "name": "VALVE",
+            "typeID": "LONGMONT_REGIONAL_BASE",
+            "tags": [
+                {
+                    "name": "REVERSE_FLOW",
+                    "valueSource": "opc",
+                    "LongID": "",
+                    "Tag_Description": "",
+                    "Safety": "",
+                    "PI_Tag": false,
+                    "DOT": false,
+                    "Units": "",
+                    "opcItemPath": "[{Topic}]17.15.1<TFLP><I1>",
+                    "historyProvider": "HistDB_Longmont"
+                },
+                {
+                    "name": "VOLTAGE",
+                    "valueSource": "opc",
+                    "LongID": "",
+                    "Tag_Description": "",
+                    "Safety": "",
+                    "PI_Tag": false,
+                    "DOT": false,
+                    "Units": "",
+                    "opcItemPath": "[{Topic}]17.3.2<TFLP><I1>",
+                    "historyProvider": "HistDB_Longmont"
+                },
+                {
+                    "name": "VALVE_STATUS",
+                    "valueSource": "opc",
+                    "LongID": "",
+                    "Tag_Description": "",
+                    "Safety": "",
+                    "PI_Tag": false,
+                    "DOT": false,
+                    "Units": "",
+                    "opcItemPath": {
+                        "bindType": "parameter",
+                        "binding": "[{Topic}]{_t_VALVE_STATUS}"
+                    },
+                    "historyProvider": "HistDB_Longmont"
+                },
+                {
+                    "name": "VALVE_STATUS",
+                    "valueSource": "opc",
+                    "LongID": "",
+                    "Tag_Description": "",
+                    "Safety": "",
+                    "PI_Tag": false,
+                    "DOT": false,
+                    "Units": "",
+                    "opcItemPath": {
+                        "bindType": "parameter",
+                        "binding": "[{Topic}]{_t_VALVE_STATUS}"
+                    },
+                    "historyProvider": "HistDB_Longmont"
+                }
+            ],
+            "parameters": {
+                "_t_VALVE_STATUS": {
+                    "dataType": "String",
+                    "value": {
+                        "bindType": "parameter",
+                        "binding": "[{Topic}]_t_VALVE_STATUS"
+                    }
+                }
+            },
+            "tagType": "UdtType"
+        },
+        {
+            "name": "ANALYSIS_STD",
+            "typeID": "EMERSONROCL/ANALYSIS",
+            "tags": [
+                {
+                    "name": "BTU",
+                    "valueSource": "opc",
+                    "LongID": "",
+                    "Tag_Description": "",
+                    "Safety": "",
+                    "PI_Tag": false,
+                    "DOT": false,
+                    "Units": "",
+                    "opcItemPath": {
+                        "bindType": "parameter",
+                        "binding": "[{Topic}]{_t_BTU}"
+                    },
+                    "historyProvider": "HistDB_Longmont"
+                },
+                {
+                    "name": "METHANE",
+                    "valueSource": "opc",
+                    "LongID": "",
+                    "Tag_Description": "",
+                    "Safety": "",
+                    "PI_Tag": false,
+                    "DOT": false,
+                    "Units": "",
+                    "opcItemPath": {
+                        "bindType": "parameter",
+                        "binding": "[{Topic}]{_t_METHANE}"
+                    },
+                    "historyProvider": "HistDB_Longmont"
+                },
+                {
+                    "name": "ETHANE",
+                    "valueSource": "opc",
+                    "LongID": "",
+                    "Tag_Description": "",
+                    "Safety": "",
+                    "PI_Tag": false,
+                    "DOT": false,
+                    "Units": "",
+                    "opcItemPath": {
+                        "bindType": "parameter",
+                        "binding": "[{Topic}]{_t_ETHANE}"
+                    },
+                    "historyProvider": "HistDB_Longmont"
+                },
+                {
+                    "name": "PROPANE",
+                    "valueSource": "opc",
+                    "LongID": "",
+                    "Tag_Description": "",
+                    "Safety": "",
+                    "PI_Tag": false,
+                    "DOT": false,
+                    "Units": "",
+                    "opcItemPath": {
+                        "bindType": "parameter",
+                        "binding": "[{Topic}]{_t_PROPANE}"
+                    },
+                    "historyProvider": "HistDB_Longmont"
+                },
+                {
+                    "name": "HEXANE",
+                    "valueSource": "opc",
+                    "LongID": "",
+                    "Tag_Description": "",
+                    "Safety": "",
+                    "PI_Tag": false,
+                    "DOT": false,
+                    "Units": "",
+                    "opcItemPath": {
+                        "bindType": "parameter",
+                        "binding": "[{Topic}]{_t_HEXANE}"
+                    },
+                    "historyProvider": "HistDB_Longmont"
+                },
+                {
+                    "name": "CARBON_DIOXIDE",
+                    "valueSource": "opc",
+                    "LongID": "",
+                    "Tag_Description": "",
+                    "Safety": "",
+                    "PI_Tag": false,
+                    "DOT": false,
+                    "Units": "",
+                    "opcItemPath": {
+                        "bindType": "parameter",
+                        "binding": "[{Topic}]{_t_CARBON_DIOXIDE}"
+                    },
+                    "historyProvider": "HistDB_Longmont"
+                },
+                {
+                    "name": "ISO_BUTANE",
+                    "valueSource": "opc",
+                    "LongID": "",
+                    "Tag_Description": "",
+                    "Safety": "",
+                    "PI_Tag": false,
+                    "DOT": false,
+                    "Units": "",
+                    "opcItemPath": {
+                        "bindType": "parameter",
+                        "binding": "[{Topic}]{_t_ISO_BUTANE}"
+                    },
+                    "historyProvider": "HistDB_Longmont"
+                },
+                {
+                    "name": "ISO_PENTANE",
+                    "valueSource": "opc",
+                    "LongID": "",
+                    "Tag_Description": "",
+                    "Safety": "",
+                    "PI_Tag": false,
+                    "DOT": false,
+                    "Units": "",
+                    "opcItemPath": {
+                        "bindType": "parameter",
+                        "binding": "[{Topic}]{_t_ISO_PENTANE}"
+                    },
+                    "historyProvider": "HistDB_Longmont"
+                },
+                {
+                    "name": "NITROGEN",
+                    "valueSource": "opc",
+                    "LongID": "",
+                    "Tag_Description": "",
+                    "Safety": "",
+                    "PI_Tag": false,
+                    "DOT": false,
+                    "Units": "",
+                    "opcItemPath": {
+                        "bindType": "parameter",
+                        "binding": "[{Topic}]{_t_NITROGEN}"
+                    },
+                    "historyProvider": "HistDB_Longmont"
+                },
+                {
+                    "name": "BUTANE",
+                    "valueSource": "opc",
+                    "LongID": "",
+                    "Tag_Description": "",
+                    "Safety": "",
+                    "PI_Tag": false,
+                    "DOT": false,
+                    "Units": "",
+                    "opcItemPath": {
+                        "bindType": "parameter",
+                        "binding": "[{Topic}]{_t_BUTANE}"
+                    },
+                    "historyProvider": "HistDB_Longmont"
+                },
+                {
+                    "name": "PENTANE",
+                    "valueSource": "opc",
+                    "LongID": "",
+                    "Tag_Description": "",
+                    "Safety": "",
+                    "PI_Tag": false,
+                    "DOT": false,
+                    "Units": "",
+                    "opcItemPath": {
+                        "bindType": "parameter",
+                        "binding": "[{Topic}]{_t_PENTANE}"
+                    },
+                    "historyProvider": "HistDB_Longmont"
+                },
+                {
+                    "name": "SPECIFIC_GRAVITY",
+                    "valueSource": "opc",
+                    "LongID": "",
+                    "Tag_Description": "",
+                    "Safety": "",
+                    "PI_Tag": false,
+                    "DOT": false,
+                    "Units": "",
+                    "opcItemPath": {
+                        "bindType": "parameter",
+                        "binding": "[{Topic}]{_t_SPECIFIC_GRAVITY}"
+                    },
+                    "historyProvider": "HistDB_Longmont"
+                }
+            ],
+            "parameters": {
+                "_t_BTU": {
+                    "dataType": "String",
+                    "value": {
+                        "bindType": "parameter",
+                        "binding": "[{Topic}]_t_BTU"
+                    }
+                },
+                "_t_METHANE": {
+                    "dataType": "String",
+                    "value": {
+                        "bindType": "parameter",
+                        "binding": "[{Topic}]_t_METHANE"
+                    }
+                },
+                "_t_ETHANE": {
+                    "dataType": "String",
+                    "value": {
+                        "bindType": "parameter",
+                        "binding": "[{Topic}]_t_ETHANE"
+                    }
+                },
+                "_t_PROPANE": {
+                    "dataType": "String",
+                    "value": {
+                        "bindType": "parameter",
+                        "binding": "[{Topic}]_t_PROPANE"
+                    }
+                },
+                "_t_HEXANE": {
+                    "dataType": "String",
+                    "value": {
+                        "bindType": "parameter",
+                        "binding": "[{Topic}]_t_HEXANE"
+                    }
+                },
+                "_t_CARBON_DIOXIDE": {
+                    "dataType": "String",
+                    "value": {
+                        "bindType": "parameter",
+                        "binding": "[{Topic}]_t_CARBON_DIOXIDE"
+                    }
+                },
+                "_t_ISO_BUTANE": {
+                    "dataType": "String",
+                    "value": {
+                        "bindType": "parameter",
+                        "binding": "[{Topic}]_t_ISO_BUTANE"
+                    }
+                },
+                "_t_ISO_PENTANE": {
+                    "dataType": "String",
+                    "value": {
+                        "bindType": "parameter",
+                        "binding": "[{Topic}]_t_ISO_PENTANE"
+                    }
+                },
+                "_t_NITROGEN": {
+                    "dataType": "String",
+                    "value": {
+                        "bindType": "parameter",
+                        "binding": "[{Topic}]_t_NITROGEN"
+                    }
+                },
+                "_t_BUTANE": {
+                    "dataType": "String",
+                    "value": {
+                        "bindType": "parameter",
+                        "binding": "[{Topic}]_t_BUTANE"
+                    }
+                },
+                "_t_PENTANE": {
+                    "dataType": "String",
+                    "value": {
+                        "bindType": "parameter",
+                        "binding": "[{Topic}]_t_PENTANE"
+                    }
+                },
+                "_t_SPECIFIC_GRAVITY": {
+                    "dataType": "String",
+                    "value": {
+                        "bindType": "parameter",
+                        "binding": "[{Topic}]_t_SPECIFIC_GRAVITY"
+                    }
+                }
+            },
+            "tagType": "UdtType"
+        }
+    ],
+    "[Longmont]_types_/MODBUS/": [
+        {
+            "name": "ICHEM_SOLAR_CHEMICAL_INJECTION",
+            "typeID": "LONGMONT_REGIONAL_BASE",
+            "tags": [
+                {
+                    "name": "VOLTAGE",
+                    "valueSource": "opc",
+                    "LongID": "",
+                    "Tag_Description": "",
+                    "Safety": "",
+                    "PI_Tag": false,
+                    "DOT": false,
+                    "Units": "",
+                    "opcItemPath": "[{Topic}]47417<I1>",
+                    "historyProvider": "HistDB_Longmont"
+                },
+                {
+                    "name": "LEVEL_ALARM_HIGH_HIGH",
+                    "valueSource": "opc",
+                    "LongID": "",
+                    "Tag_Description": "",
+                    "Safety": "",
+                    "PI_Tag": false,
+                    "DOT": false,
+                    "Units": "",
+                    "opcItemPath": "[{Topic}]22455<I1>",
+                    "historyProvider": "HistDB_Longmont"
+                },
+                {
+                    "name": "TANK_LEVEL",
+                    "valueSource": "opc",
+                    "LongID": "",
+                    "Tag_Description": "",
+                    "Safety": "",
+                    "PI_Tag": false,
+                    "DOT": false,
+                    "Units": "",
+                    "opcItemPath": "[{Topic}]47416<I1>",
+                    "historyProvider": "HistDB_Longmont"
+                },
+                {
+                    "name": "PRESSURE",
+                    "valueSource": "opc",
+                    "LongID": "",
+                    "Tag_Description": "",
+                    "Safety": "",
+                    "PI_Tag": false,
+                    "DOT": false,
+                    "Units": "",
+                    "opcItemPath": "[{Topic}]47414<I1>",
+                    "historyProvider": "HistDB_Longmont"
+                },
+                {
+                    "name": "TEMPERATURE_ALARM_LOW_LOW",
+                    "valueSource": "opc",
+                    "LongID": "",
+                    "Tag_Description": "",
+                    "Safety": "",
+                    "PI_Tag": false,
+                    "DOT": false,
+                    "Units": "",
+                    "opcItemPath": {
+                        "bindType": "parameter",
+                        "binding": "[{Topic}]{_t_TEMPERATURE_ALARM_LOW_LOW}"
+                    },
+                    "historyProvider": "HistDB_Longmont"
+                },
+                {
+                    "name": "TEMPERATURE",
+                    "valueSource": "opc",
+                    "LongID": "",
+                    "Tag_Description": "",
+                    "Safety": "",
+                    "PI_Tag": false,
+                    "DOT": false,
+                    "Units": "",
+                    "opcItemPath": "[{Topic}]47415<I1>",
+                    "historyProvider": "HistDB_Longmont"
+                },
+                {
+                    "name": "TEMPERATURE_ALARM_HIGH_HIGH",
+                    "valueSource": "opc",
+                    "LongID": "",
+                    "Tag_Description": "",
+                    "Safety": "",
+                    "PI_Tag": false,
+                    "DOT": false,
+                    "Units": "",
+                    "opcItemPath": {
+                        "bindType": "parameter",
+                        "binding": "[{Topic}]{_t_TEMPERATURE_ALARM_HIGH_HIGH}"
+                    },
+                    "historyProvider": "HistDB_Longmont"
+                }
+            ],
+            "parameters": {
+                "_t_TEMPERATURE_ALARM_LOW_LOW": {
+                    "dataType": "String",
+                    "value": {
+                        "bindType": "parameter",
+                        "binding": "[{Topic}]_t_TEMPERATURE_ALARM_LOW_LOW"
+                    }
+                },
+                "_t_TEMPERATURE_ALARM_HIGH_HIGH": {
+                    "dataType": "String",
+                    "value": {
+                        "bindType": "parameter",
+                        "binding": "[{Topic}]_t_TEMPERATURE_ALARM_HIGH_HIGH"
+                    }
+                }
+            },
+            "tagType": "UdtType"
+        }
+    ],
+    "[Longmont]_types_/TOTALFLOWG4/": [
+        {
+            "name": "METER_GAS_STD",
+            "typeID": "TOTALFLOWG4/METER_GAS",
+            "tags": [
+                {
+                    "name": "RATE",
+                    "valueSource": "opc",
+                    "LongID": "",
+                    "Tag_Description": "",
+                    "Safety": "",
+                    "PI_Tag": false,
+                    "DOT": false,
+                    "Units": "",
+                    "opcItemPath": "[{Topic}]4:7:19:R4<I1>",
+                    "historyProvider": "HistDB_Longmont"
+                },
+                {
+                    "name": "ENERGY",
+                    "valueSource": "opc",
+                    "LongID": "",
+                    "Tag_Description": "",
+                    "Safety": "",
+                    "PI_Tag": false,
+                    "DOT": false,
+                    "Units": "",
+                    "opcItemPath": {
+                        "bindType": "parameter",
+                        "binding": "[{Topic}]{_t_ENERGY}"
+                    },
+                    "historyProvider": "HistDB_Longmont"
+                },
+                {
+                    "name": "ENERGY_TODAY",
+                    "valueSource": "opc",
+                    "LongID": "",
+                    "Tag_Description": "",
+                    "Safety": "",
+                    "PI_Tag": false,
+                    "DOT": false,
+                    "Units": "",
+                    "opcItemPath": {
+                        "bindType": "parameter",
+                        "binding": "[{Topic}]{_t_ENERGY_TODAY}"
+                    },
+                    "historyProvider": "HistDB_Longmont"
+                },
+                {
+                    "name": "ENERGY_YESTERDAY",
+                    "valueSource": "opc",
+                    "LongID": "",
+                    "Tag_Description": "",
+                    "Safety": "",
+                    "PI_Tag": false,
+                    "DOT": false,
+                    "Units": "",
+                    "opcItemPath": {
+                        "bindType": "parameter",
+                        "binding": "[{Topic}]{_t_ENERGY_YESTERDAY}"
+                    },
+                    "historyProvider": "HistDB_Longmont"
+                },
+                {
+                    "name": "VOLUME_TODAY",
+                    "valueSource": "opc",
+                    "LongID": "",
+                    "Tag_Description": "",
+                    "Safety": "",
+                    "PI_Tag": false,
+                    "DOT": false,
+                    "Units": "",
+                    "opcItemPath": "[{Topic}]4:7:22:R4<I1>",
+                    "historyProvider": "HistDB_Longmont"
+                },
+                {
+                    "name": "VOLUME_YESTERDAY",
+                    "valueSource": "opc",
+                    "LongID": "",
+                    "Tag_Description": "",
+                    "Safety": "",
+                    "PI_Tag": false,
+                    "DOT": false,
+                    "Units": "",
+                    "opcItemPath": "[{Topic}]4:7:23:R4<I1>",
+                    "historyProvider": "HistDB_Longmont"
+                },
+                {
+                    "name": "CURRENT_HOUR",
+                    "valueSource": "opc",
+                    "LongID": "",
+                    "Tag_Description": "",
+                    "Safety": "",
+                    "PI_Tag": false,
+                    "DOT": false,
+                    "Units": "",
+                    "opcItemPath": "[{Topic}]0:8:4:UI1<I1>",
+                    "historyProvider": "HistDB_Longmont"
+                },
+                {
+                    "name": "CURRENT_MINUTE",
+                    "valueSource": "opc",
+                    "LongID": "",
+                    "Tag_Description": "",
+                    "Safety": "",
+                    "PI_Tag": false,
+                    "DOT": false,
+                    "Units": "",
+                    "opcItemPath": "[{Topic}]0:8:5:UI1<I1>",
+                    "historyProvider": "HistDB_Longmont"
+                },
+                {
+                    "name": "DIFFERENTIAL_PRESSURE",
+                    "valueSource": "opc",
+                    "LongID": "",
+                    "Tag_Description": "",
+                    "Safety": "",
+                    "PI_Tag": false,
+                    "DOT": false,
+                    "Units": "",
+                    "opcItemPath": "[{Topic}]4:7:0:R4<I1>",
+                    "historyProvider": "HistDB_Longmont"
+                },
+                {
+                    "name": "STATIC_PRESSURE",
+                    "valueSource": "opc",
+                    "LongID": "",
+                    "Tag_Description": "",
+                    "Safety": "",
+                    "PI_Tag": false,
+                    "DOT": false,
+                    "Units": "",
+                    "opcItemPath": {
+                        "bindType": "parameter",
+                        "binding": "[{Topic}]{_t_STATIC_PRESSURE}"
+                    },
+                    "historyProvider": "HistDB_Longmont"
+                },
+                {
+                    "name": "TEMPERATURE",
+                    "valueSource": "opc",
+                    "LongID": "",
+                    "Tag_Description": "",
+                    "Safety": "",
+                    "PI_Tag": false,
+                    "DOT": false,
+                    "Units": "",
+                    "opcItemPath": {
+                        "bindType": "parameter",
+                        "binding": "[{Topic}]{_t_TEMPERATURE}"
+                    },
+                    "historyProvider": "HistDB_Longmont"
+                }
+            ],
+            "parameters": {
+                "_t_ENERGY": {
+                    "dataType": "String",
+                    "value": {
+                        "bindType": "parameter",
+                        "binding": "[{Topic}]_t_ENERGY"
+                    }
+                },
+                "_t_ENERGY_TODAY": {
+                    "dataType": "String",
+                    "value": {
+                        "bindType": "parameter",
+                        "binding": "[{Topic}]_t_ENERGY_TODAY"
+                    }
+                },
+                "_t_ENERGY_YESTERDAY": {
+                    "dataType": "String",
+                    "value": {
+                        "bindType": "parameter",
+                        "binding": "[{Topic}]_t_ENERGY_YESTERDAY"
+                    }
+                },
+                "_t_STATIC_PRESSURE": {
+                    "dataType": "String",
+                    "value": {
+                        "bindType": "parameter",
+                        "binding": "[{Topic}]_t_STATIC_PRESSURE"
+                    }
+                },
+                "_t_TEMPERATURE": {
+                    "dataType": "String",
+                    "value": {
+                        "bindType": "parameter",
+                        "binding": "[{Topic}]_t_TEMPERATURE"
+                    }
+                }
+            },
+            "tagType": "UdtType"
+        },
+        {
+            "name": "VALVE",
+            "typeID": "LONGMONT_REGIONAL_BASE",
+            "tags": [
+                {
+                    "name": "BATTERY_VOLTAGE",
+                    "valueSource": "opc",
+                    "LongID": "",
+                    "Tag_Description": "",
+                    "Safety": "",
+                    "PI_Tag": false,
+                    "DOT": false,
+                    "Units": "",
+                    "opcItemPath": {
+                        "bindType": "parameter",
+                        "binding": "[{Topic}]{_t_BATTERY_VOLTAGE}"
+                    },
+                    "historyProvider": "HistDB_Longmont"
+                },
+                {
+                    "name": "BATTERY_LOW",
+                    "valueSource": "opc",
+                    "LongID": "",
+                    "Tag_Description": "",
+                    "Safety": "",
+                    "PI_Tag": false,
+                    "DOT": false,
+                    "Units": "",
+                    "opcItemPath": {
+                        "bindType": "parameter",
+                        "binding": "[{Topic}]{_t_BATTERY_LOW}"
+                    },
+                    "historyProvider": "HistDB_Longmont"
+                },
+                {
+                    "name": "VALVE_FAIL_TO_CLOSE",
+                    "valueSource": "opc",
+                    "LongID": "",
+                    "Tag_Description": "",
+                    "Safety": "",
+                    "PI_Tag": false,
+                    "DOT": false,
+                    "Units": "",
+                    "opcItemPath": {
+                        "bindType": "parameter",
+                        "binding": "[{Topic}]{_t_VALVE_FAIL_TO_CLOSE}"
+                    },
+                    "historyProvider": "HistDB_Longmont"
+                },
+                {
+                    "name": "VALVE_FAIL_TO_OPEN",
+                    "valueSource": "opc",
+                    "LongID": "",
+                    "Tag_Description": "",
+                    "Safety": "",
+                    "PI_Tag": false,
+                    "DOT": false,
+                    "Units": "",
+                    "opcItemPath": {
+                        "bindType": "parameter",
+                        "binding": "[{Topic}]{_t_VALVE_FAIL_TO_OPEN}"
+                    },
+                    "historyProvider": "HistDB_Longmont"
+                },
+                {
+                    "name": "STATUS",
+                    "valueSource": "opc",
+                    "LongID": "",
+                    "Tag_Description": "",
+                    "Safety": "",
+                    "PI_Tag": false,
+                    "DOT": false,
+                    "Units": "",
+                    "opcItemPath": {
+                        "bindType": "parameter",
+                        "binding": "[{Topic}]{_t_STATUS}"
+                    },
+                    "historyProvider": "HistDB_Longmont"
+                },
+                {
+                    "name": "VALVE_CLOSED",
+                    "valueSource": "opc",
+                    "LongID": "",
+                    "Tag_Description": "",
+                    "Safety": "",
+                    "PI_Tag": false,
+                    "DOT": false,
+                    "Units": "",
+                    "opcItemPath": {
+                        "bindType": "parameter",
+                        "binding": "[{Topic}]{_t_VALVE_CLOSED}"
+                    },
+                    "historyProvider": "HistDB_Longmont"
+                },
+                {
+                    "name": "VALVE_OPENED",
+                    "valueSource": "opc",
+                    "LongID": "",
+                    "Tag_Description": "",
+                    "Safety": "",
+                    "PI_Tag": false,
+                    "DOT": false,
+                    "Units": "",
+                    "opcItemPath": {
+                        "bindType": "parameter",
+                        "binding": "[{Topic}]{_t_VALVE_OPENED}"
+                    },
+                    "historyProvider": "HistDB_Longmont"
+                },
+                {
+                    "name": "PRESSURE",
+                    "valueSource": "opc",
+                    "LongID": "",
+                    "Tag_Description": "",
+                    "Safety": "",
+                    "PI_Tag": false,
+                    "DOT": false,
+                    "Units": "",
+                    "opcItemPath": {
+                        "bindType": "parameter",
+                        "binding": "[{Topic}]{_t_PRESSURE}"
+                    },
+                    "historyProvider": "HistDB_Longmont"
+                },
+                {
+                    "name": "VALVE_STATUS",
+                    "valueSource": "opc",
+                    "LongID": "",
+                    "Tag_Description": "",
+                    "Safety": "",
+                    "PI_Tag": false,
+                    "DOT": false,
+                    "Units": "",
+                    "opcItemPath": {
+                        "bindType": "parameter",
+                        "binding": "[{Topic}]{_t_VALVE_STATUS}"
+                    },
+                    "historyProvider": "HistDB_Longmont"
+                },
+                {
+                    "name": "VALVE_STATUS",
+                    "valueSource": "opc",
+                    "LongID": "",
+                    "Tag_Description": "",
+                    "Safety": "",
+                    "PI_Tag": false,
+                    "DOT": false,
+                    "Units": "",
+                    "opcItemPath": {
+                        "bindType": "parameter",
+                        "binding": "[{Topic}]{_t_VALVE_STATUS}"
+                    },
+                    "historyProvider": "HistDB_Longmont"
+                }
+            ],
+            "parameters": {
+                "_t_BATTERY_VOLTAGE": {
+                    "dataType": "String",
+                    "value": {
+                        "bindType": "parameter",
+                        "binding": "[{Topic}]_t_BATTERY_VOLTAGE"
+                    }
+                },
+                "_t_BATTERY_LOW": {
+                    "dataType": "String",
+                    "value": {
+                        "bindType": "parameter",
+                        "binding": "[{Topic}]_t_BATTERY_LOW"
+                    }
+                },
+                "_t_VALVE_FAIL_TO_CLOSE": {
+                    "dataType": "String",
+                    "value": {
+                        "bindType": "parameter",
+                        "binding": "[{Topic}]_t_VALVE_FAIL_TO_CLOSE"
+                    }
+                },
+                "_t_VALVE_FAIL_TO_OPEN": {
+                    "dataType": "String",
+                    "value": {
+                        "bindType": "parameter",
+                        "binding": "[{Topic}]_t_VALVE_FAIL_TO_OPEN"
+                    }
+                },
+                "_t_STATUS": {
+                    "dataType": "String",
+                    "value": {
+                        "bindType": "parameter",
+                        "binding": "[{Topic}]_t_STATUS"
+                    }
+                },
+                "_t_VALVE_CLOSED": {
+                    "dataType": "String",
+                    "value": {
+                        "bindType": "parameter",
+                        "binding": "[{Topic}]_t_VALVE_CLOSED"
+                    }
+                },
+                "_t_VALVE_OPENED": {
+                    "dataType": "String",
+                    "value": {
+                        "bindType": "parameter",
+                        "binding": "[{Topic}]_t_VALVE_OPENED"
+                    }
+                },
+                "_t_PRESSURE": {
+                    "dataType": "String",
+                    "value": {
+                        "bindType": "parameter",
+                        "binding": "[{Topic}]_t_PRESSURE"
+                    }
+                },
+                "_t_VALVE_STATUS": {
+                    "dataType": "String",
+                    "value": {
+                        "bindType": "parameter",
+                        "binding": "[{Topic}]_t_VALVE_STATUS"
+                    }
+                }
+            },
+            "tagType": "UdtType"
+        },
+        {
+            "name": "METER_O2",
+            "typeID": "LONGMONT_REGIONAL_BASE",
+            "tags": [
+                {
+                    "name": "O2_PPM",
+                    "valueSource": "opc",
+                    "LongID": "",
+                    "Tag_Description": "",
+                    "Safety": "",
+                    "PI_Tag": false,
+                    "DOT": false,
+                    "Units": "",
+                    "opcItemPath": {
+                        "bindType": "parameter",
+                        "binding": "[{Topic}]{_t_O2_PPM}"
+                    },
+                    "historyProvider": "HistDB_Longmont"
+                },
+                {
+                    "name": "LIQUID_DETECTED",
+                    "valueSource": "opc",
+                    "LongID": "",
+                    "Tag_Description": "",
+                    "Safety": "",
+                    "PI_Tag": false,
+                    "DOT": false,
+                    "Units": "",
+                    "opcItemPath": {
+                        "bindType": "parameter",
+                        "binding": "[{Topic}]{_t_LIQUID_DETECTED}"
+                    },
+                    "historyProvider": "HistDB_Longmont"
+                },
+                {
+                    "name": "PRESSURE",
+                    "valueSource": "opc",
+                    "LongID": "",
+                    "Tag_Description": "",
+                    "Safety": "",
+                    "PI_Tag": false,
+                    "DOT": false,
+                    "Units": "",
+                    "opcItemPath": {
+                        "bindType": "parameter",
+                        "binding": "[{Topic}]{_t_PRESSURE}"
+                    },
+                    "historyProvider": "HistDB_Longmont"
+                },
+                {
+                    "name": "PERMISSIVE",
+                    "valueSource": "opc",
+                    "LongID": "",
+                    "Tag_Description": "",
+                    "Safety": "",
+                    "PI_Tag": false,
+                    "DOT": false,
+                    "Units": "",
+                    "opcItemPath": {
+                        "bindType": "parameter",
+                        "binding": "[{Topic}]{_t_PERMISSIVE}"
+                    },
+                    "historyProvider": "HistDB_Longmont"
+                }
+            ],
+            "parameters": {
+                "_t_O2_PPM": {
+                    "dataType": "String",
+                    "value": {
+                        "bindType": "parameter",
+                        "binding": "[{Topic}]_t_O2_PPM"
+                    }
+                },
+                "_t_LIQUID_DETECTED": {
+                    "dataType": "String",
+                    "value": {
+                        "bindType": "parameter",
+                        "binding": "[{Topic}]_t_LIQUID_DETECTED"
+                    }
+                },
+                "_t_PRESSURE": {
+                    "dataType": "String",
+                    "value": {
+                        "bindType": "parameter",
+                        "binding": "[{Topic}]_t_PRESSURE"
+                    }
+                },
+                "_t_PERMISSIVE": {
+                    "dataType": "String",
+                    "value": {
+                        "bindType": "parameter",
+                        "binding": "[{Topic}]_t_PERMISSIVE"
+                    }
+                }
+            },
+            "tagType": "UdtType"
+        }
+    ]
+}
