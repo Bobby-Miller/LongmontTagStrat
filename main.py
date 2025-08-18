@@ -35,7 +35,7 @@ opc_json_file_name = file_io_path + "tag_dict.json"
 alt_json_file_name = file_io_path + "alt_tag_dict.json"
 strategy_book_file_output = file_io_path + "Longmont Template Strategy out 8_18.xlsx"
 strategy_book_file_input = file_io_path + "Longmont Template Strategy Merge 6_23_B.xlsx"
-udt_file_output = file_io_path + "udts_8_18.json"
+udt_file_output = file_io_path + "udts_8_18_B.json"
 instance_file_output = file_io_path + "instances_8_18.json"
 json_file_name = file_io_path + "longmont_base_udt_atomics.json"
 
@@ -651,7 +651,7 @@ def tag_instance_build(
         if not isinstance(ign_tag_name, str) and not isinstance(ign_tag_name, int):
             continue
         ign_tag_name = str(ign_tag_name)
-        plc_tag = plc_tag.replace("{topic}.", "")
+        # plc_tag = plc_tag.replace("{topic}.", "")
         tag_type = "Float" if tag_type == "Double" else tag_type
         tagname_idx = idx
         ign_atom = ign_atom.replace("\\", "/").replace("\n", "").strip()
@@ -766,9 +766,9 @@ def create_udt_config_json(
         }
         for atomic in data.atomics:
             if isinstance(atomic.opc_path, str):
-                atomic.opc_path = "[{Topic}]" + atomic.opc_path
+                atomic.opc_path = "{Topic}." + atomic.opc_path
             else:
-                atomic.opc_path["binding"] = "[{Topic}]" + atomic.opc_path["binding"]
+                atomic.opc_path["binding"] = "{Topic}." + atomic.opc_path["binding"]
             atomic_dict = {
                 "name": atomic.ign_name,
                 "valueSource": "opc",
@@ -786,7 +786,7 @@ def create_udt_config_json(
                     atomic.opc_path
                 )
                 atomic_dict["opcItemPath"] = binding(
-                    f"[{{Topic}}]{{_t_{atomic.ign_name}}}"
+                    f"{{Topic}}.{{_t_{atomic.ign_name}}}"
                 )
             udt_dict["tags"].append(atomic_dict)
         if base_path not in udt_path_dict.keys():
@@ -916,20 +916,20 @@ if __name__ == "__main__":
     base_tag_dict = base_tag_dict_import()
     # print('generated base tag dict')
     ### SAMPLE BUILD ###
-    sample_dict = generate_udt_atomic_samples(
-        extended_udt_map,
-        base_tag_dict,
-        input_file_path,
-        instance_sheet_name,
-        csv_flag,
-    )
-    make_xl = create_xl_strategy_book(strategy_book_file_output, sample_dict, 4)
+    # sample_dict = generate_udt_atomic_samples(
+    #     extended_udt_map,
+    #     base_tag_dict,
+    #     input_file_path,
+    #     instance_sheet_name,
+    #     csv_flag,
+    # )
+    # make_xl = create_xl_strategy_book(strategy_book_file_output, sample_dict, 4)
     ### STRATEGY IMPORT ###
-    # strategy_sheet = StrategySheet(strategy_book_file_input, 4)
+    strategy_sheet = StrategySheet(strategy_book_file_input, 4)
     ### UDT GENERATION ###
-    # udt_data: UDTData = create_udt_data(strategy_sheet, extended_udt_map)
+    udt_data: UDTData = create_udt_data(strategy_sheet, extended_udt_map)
     ### ATOMIC DATA COLLECTION ###
-    # atomic_check_dict = atomic_check_dict_build(udt_data, strategy_sheet)
+    atomic_check_dict = atomic_check_dict_build(udt_data, strategy_sheet)
     # ### CONFORMANCE CHECK ###
     # conformance = udt_atomic_instance_conformance_check(
     #     atomic_check_dict,
@@ -955,13 +955,13 @@ if __name__ == "__main__":
     # )
     # print(len(instance_dict))
     ### GENERATE UDT JSON ###
-    # udt_config = create_udt_config_json(
-    #     udt_data,
-    #     "[Longmont]_types_/",
-    #     extended_udt_map,
-    # )
-    # with open(udt_file_output, "w") as file:
-    #     json.dump(udt_config, file, indent=4)
+    udt_config = create_udt_config_json(
+        udt_data,
+        "[Longmont]_types_/",
+        extended_udt_map,
+    )
+    with open(udt_file_output, "w") as file:
+        json.dump(udt_config, file, indent=4)
     ### GENERATE INST JSON ###
     # inst_config = create_instance_config_json(
     #     instance_dict,
