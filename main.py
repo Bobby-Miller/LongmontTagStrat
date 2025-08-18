@@ -19,24 +19,24 @@ from tag_strats import (
 )
 
 
-path = str(pathlib.Path(__file__).parent.resolve()) + "\\"
-file_io_path = path + "file_io\\"
-file_log_path = path + "file_log\\"
+path = str(pathlib.Path(__file__).parent.resolve()) + "/"
+file_io_path = path + "file_io/"
+file_log_path = path + "file_log/"
 # Logging Path
-log_file = file_log_path + "process logs 6_20.txt"
+log_file = file_log_path + "process logs 8_18.txt"
 logger = logging.getLogger(__name__)
-# xl_file_path = 'Wes Lancaster Type Definitions.XLSX'
 ### Inputs
-xl_file_path = file_io_path + "longmont_cross_reference_062425.xlsx"
+input_file_path = file_io_path + "longmont_cross_reference_081525.csv"
 instance_sheet_name = file_io_path + "longmont_cross_reference_062425"
+csv_flag = True  # True for csv file type, False for XLSX file type
 # Built from ignition script
 ### Outputs
 opc_json_file_name = file_io_path + "tag_dict.json"
 alt_json_file_name = file_io_path + "alt_tag_dict.json"
-strategy_book_file_output = file_io_path + "Longmont Template Strategy out 6_23_B.xlsx"
+strategy_book_file_output = file_io_path + "Longmont Template Strategy out 8_18.xlsx"
 strategy_book_file_input = file_io_path + "Longmont Template Strategy Merge 6_23_B.xlsx"
-udt_file_output = file_io_path + "udts_6_24.json"
-instance_file_output = file_io_path + "instances_6_24.json"
+udt_file_output = file_io_path + "udts_8_18.json"
+instance_file_output = file_io_path + "instances_8_18.json"
 json_file_name = file_io_path + "longmont_base_udt_atomics.json"
 
 logging.basicConfig(filename=log_file, level=logging.DEBUG)
@@ -69,10 +69,14 @@ type ExtendedUDTDict = dict[ExtendedUDTName, BaseUDTName]
 
 
 def build_extended_udt_map(
-    xl_file_path: str,
+    input_file_path: str,
     instance_sheet_name: str,
+    csv: bool,
 ) -> ExtendedUDTDict:
-    df = pd.read_excel(xl_file_path, sheet_name=instance_sheet_name)
+    if csv:
+        df = pd.read_csv(input_file_path)
+    else:
+        df = pd.read_excel(input_file_path, sheet_name=instance_sheet_name)
     udt_dict = dict(zip(df["extended_udt"], df["base_udt"]))
     filtered_udt_dict = {}
     for key, val in udt_dict.items():
@@ -104,8 +108,9 @@ AtomicDict = Dict[str, Set[AtomicTag]]
 def generate_udt_atomic_samples(
     extended_udt_map: ExtendedUDTDict,
     base_tag_dict: BaseUDTAtomics,
-    xl_file_path: str,
+    input_file_path: str,
     instance_sheet_name: str,
+    csv: bool,
 ) -> SampleDict:
     """
     Process to generate list of samples for strategy generation
@@ -113,7 +118,10 @@ def generate_udt_atomic_samples(
     # Sampling for strategy spread
     template_model_dict: SampleDict = {key: {} for key in extended_udt_map.keys()}
     print("generated template_model_dict")
-    df = pd.read_excel(xl_file_path, sheet_name=instance_sheet_name)
+    if csv:
+        df = pd.read_csv(input_file_path)
+    else:
+        df = pd.read_excel(input_file_path, sheet_name=instance_sheet_name)
     plc_tags = df["opcitempath"]
     plc_tag_types = df["ignition_datatype"]
     udt_defs = df["extended_udt"]
@@ -195,6 +203,7 @@ class ExtendedUDT:
 
 type StratClass = Literal["opc", "waste", "extension"]
 type UDTData = dict[ExtendedUDTName, ExtendedUDT]
+type AtomicStrategyString = str
 
 
 class StrategySheet:
@@ -368,14 +377,18 @@ class UDTAtomicInstanceCheck:
 
 def udt_atomic_instance_conformance_check(
     udt_atomic_map: UDTAtomicTemplateMap,
-    xl_file_path: str,
+    input_file_path: str,
     instance_sheet_name: str,
     max_non_conforming: int,
+    csv: bool,
 ) -> list[UDTAtomicInstanceCheck]:
     conformance_dict = {key: [0, 0, []] for key in udt_atomic_map.keys()}
 
     ### New Approach to reading excel
-    df = pd.read_excel(xl_file_path, sheet_name=instance_sheet_name)
+    if csv:
+        df = pd.read_csv(input_file_path)
+    else:
+        df = pd.read_excel(input_file_path, sheet_name=instance_sheet_name)
     plc_tags = df["opcitempath"]
     plc_tag_types = df["ignition_datatype"]
     udt_defs = df["extended_udt"]
@@ -510,12 +523,16 @@ type InstData = dict[InstanceKey, TagInstance]
 
 def tag_instance_build(
     udt_atomic_map: UDTAtomicTemplateMap,
-    xl_file_path: str,
+    input_file_path: str,
+    csv,
 ) -> InstData:
     instance_dict: InstData = {}
 
     ### New Approach
-    df = pd.read_excel(xl_file_path)
+    if csv:
+        df = pd.read_csv(input_file_path)
+    else:
+        df = pd.read_excel(input_file_path)
     context = "INSTANCES"
     plc_tags = df["opcitempath"]
     plc_tag_types = df["ignition_datatype"]
@@ -890,30 +907,36 @@ if __name__ == "__main__":
     from pprint import pprint
 
     ### RESOURCE IMPORT ###
-    extended_udt_map = build_extended_udt_map(xl_file_path, instance_sheet_name)
+    extended_udt_map = build_extended_udt_map(
+        input_file_path,
+        instance_sheet_name,
+        csv=csv_flag,
+    )
     # print('extended udt map built')
     base_tag_dict = base_tag_dict_import()
     # print('generated base tag dict')
     ### SAMPLE BUILD ###
-    # sample_dict = generate_udt_atomic_samples(
-    #     extended_udt_map,
-    #     base_tag_dict,
-    #     xl_file_path,
-    #     instance_sheet_name,
-    # )
-    # make_xl = create_xl_strategy_book(strategy_book_file_output, sample_dict, 4)
+    sample_dict = generate_udt_atomic_samples(
+        extended_udt_map,
+        base_tag_dict,
+        input_file_path,
+        instance_sheet_name,
+        csv_flag,
+    )
+    make_xl = create_xl_strategy_book(strategy_book_file_output, sample_dict, 4)
     ### STRATEGY IMPORT ###
-    strategy_sheet = StrategySheet(strategy_book_file_input, 4)
+    # strategy_sheet = StrategySheet(strategy_book_file_input, 4)
     ### UDT GENERATION ###
-    udt_data: UDTData = create_udt_data(strategy_sheet, extended_udt_map)
+    # udt_data: UDTData = create_udt_data(strategy_sheet, extended_udt_map)
     ### ATOMIC DATA COLLECTION ###
-    atomic_check_dict = atomic_check_dict_build(udt_data, strategy_sheet)
+    # atomic_check_dict = atomic_check_dict_build(udt_data, strategy_sheet)
     # ### CONFORMANCE CHECK ###
     # conformance = udt_atomic_instance_conformance_check(
     #     atomic_check_dict,
-    #     xl_file_path,
+    #     input_file_path,
     #     instance_sheet_name,
-    #     5
+    #     5,
+    #     csv_flag,
     # )
     # pprint(conformance)
     # create_conformance_book(
@@ -922,37 +945,38 @@ if __name__ == "__main__":
     #     5,
     # )
     ### INSTANCE BUILD ###
-    instance_dict: InstData = tag_instance_build(
-        atomic_check_dict,
-        xl_file_path,
-    )
+    # instance_dict: InstData = tag_instance_build(
+    #     atomic_check_dict,
+    #     input_file_path,
+    #     csv_flag,
+    # )
     # pprint(
     #     instance_dict
     # )
-    print(len(instance_dict))
+    # print(len(instance_dict))
     ### GENERATE UDT JSON ###
-    udt_config = create_udt_config_json(
-        udt_data,
-        "[Longmont]_types_/",
-        extended_udt_map,
-    )
-    with open(udt_file_output, "w") as file:
-        json.dump(udt_config, file, indent=4)
+    # udt_config = create_udt_config_json(
+    #     udt_data,
+    #     "[Longmont]_types_/",
+    #     extended_udt_map,
+    # )
+    # with open(udt_file_output, "w") as file:
+    #     json.dump(udt_config, file, indent=4)
     ### GENERATE INST JSON ###
-    inst_config = create_instance_config_json(
-        instance_dict,
-        "[Longmont]",
-        "",
-    )
-    with open(instance_file_output, "w") as file:
-        json.dump(inst_config, file, indent=4)
+    # inst_config = create_instance_config_json(
+    #     instance_dict,
+    #     "[Longmont]",
+    #     "",
+    # )
+    # with open(instance_file_output, "w") as file:
+    #     json.dump(inst_config, file, indent=4)
     # pprint(inst_config)
     ### UTILITY::: MERGE STRATEGIES TO NEW TEMPLATE
-    # strategy_merge(
-    #     'Longmont Template Strategy Merge 6_23.xlsx',
-    #     'Sheet1',
-    #     'Longmont Template Strategy out 6_23_B.xlsx',
-    #     'Sheet1',
-    #     'Longmont Template Strategy Merge 6_23_B.xlsx',
-    #     4,
-    # )
+    strategy_merge(
+        strategy_book_file_input,
+        "Sheet1",
+        strategy_book_file_output,
+        "Sheet1",
+        "Longmont Template Strategy Merge 8_18.xlsx",
+        4,
+    )
