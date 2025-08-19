@@ -26,7 +26,7 @@ file_log_path = path + "file_log/"
 log_file = file_log_path + "process logs 8_18.txt"
 logger = logging.getLogger(__name__)
 ### Inputs
-input_file_path = file_io_path + "longmont_cross_reference_081525.csv"
+input_file_path = file_io_path + "longmont_cross_reference_081525 1.csv"
 instance_sheet_name = file_io_path + "longmont_cross_reference_062425"
 csv_flag = True  # True for csv file type, False for XLSX file type
 # Built from ignition script
@@ -36,7 +36,7 @@ alt_json_file_name = file_io_path + "alt_tag_dict.json"
 strategy_book_file_output = file_io_path + "Longmont Template Strategy out 8_18.xlsx"
 strategy_book_file_input = file_io_path + "Longmont Template Strategy Merge 6_23_B.xlsx"
 udt_file_output = file_io_path + "udts_8_18_B.json"
-instance_file_output = file_io_path + "instances_8_18.json"
+instance_file_output = file_io_path + "instances_8_19.json"
 json_file_name = file_io_path + "longmont_base_udt_atomics.json"
 
 logging.basicConfig(filename=log_file, level=logging.DEBUG)
@@ -558,6 +558,7 @@ def tag_instance_build(
     dots = df["DOT"]
     order_and_types = df["OrderAndType"]
     delivery_points = df["DeliveryPoint"]
+    equip_ids = df["EquipId"]
     equipment_ids = df["EquipmentID"]
     meter_names = df["MeterName"]
     routes = df["Route"]
@@ -630,6 +631,7 @@ def tag_instance_build(
             if not isinstance(equipment_ids.iloc[idx], float)
             else ""
         )
+        equip_id = int(equip_ids.iloc[idx]) if not np.isnan(equip_ids.iloc[idx]) else ""
         meter_name = (
             meter_names.iloc[idx]
             if not isinstance(meter_names.iloc[idx], float)
@@ -735,6 +737,7 @@ def tag_instance_build(
             "OrderAndType": order_and_type,
             "DeliveryPoint": delivery_point,
             "EquipmentID": equipment_id,
+            "EquipId": equip_id,
             "MeterName": meter_name,
             "Route": route,
             "Area": area,
@@ -945,38 +948,38 @@ if __name__ == "__main__":
     #     5,
     # )
     ### INSTANCE BUILD ###
-    # instance_dict: InstData = tag_instance_build(
-    #     atomic_check_dict,
-    #     input_file_path,
-    #     csv_flag,
-    # )
+    instance_dict: InstData = tag_instance_build(
+        atomic_check_dict,
+        input_file_path,
+        csv_flag,
+    )
     # pprint(
     #     instance_dict
     # )
-    # print(len(instance_dict))
+    print(len(instance_dict))
     ### GENERATE UDT JSON ###
-    udt_config = create_udt_config_json(
-        udt_data,
-        "[Longmont]_types_/",
-        extended_udt_map,
-    )
-    with open(udt_file_output, "w") as file:
-        json.dump(udt_config, file, indent=4)
-    ### GENERATE INST JSON ###
-    # inst_config = create_instance_config_json(
-    #     instance_dict,
-    #     "[Longmont]",
-    #     "",
+    # udt_config = create_udt_config_json(
+    #     udt_data,
+    #     "[Longmont]_types_/",
+    #     extended_udt_map,
     # )
-    # with open(instance_file_output, "w") as file:
-    #     json.dump(inst_config, file, indent=4)
-    # pprint(inst_config)
-    ### UTILITY::: MERGE STRATEGIES TO NEW TEMPLATE
-    strategy_merge(
-        strategy_book_file_input,
-        "Sheet1",
-        strategy_book_file_output,
-        "Sheet1",
-        "Longmont Template Strategy Merge 8_18.xlsx",
-        4,
+    # with open(udt_file_output, "w") as file:
+    #     json.dump(udt_config, file, indent=4)
+    ### GENERATE INST JSON ###
+    inst_config = create_instance_config_json(
+        instance_dict,
+        "[Longmont]",
+        "",
     )
+    with open(instance_file_output, "w") as file:
+        json.dump(inst_config, file, indent=4)
+    pprint(inst_config)
+    ### UTILITY::: MERGE STRATEGIES TO NEW TEMPLATE
+    # strategy_merge(
+    #     strategy_book_file_input,
+    #     "Sheet1",
+    #     strategy_book_file_output,
+    #     "Sheet1",
+    #     "Longmont Template Strategy Merge 8_18.xlsx",
+    #     4,
+    # )
