@@ -18,7 +18,7 @@ from tag_strats import (
     binding,
 )
 
-
+PREPEND_STR = "ns=2;s={Topic}"
 path = str(pathlib.Path(__file__).parent.resolve()) + "/"
 file_io_path = path + "file_io/"
 file_log_path = path + "file_log/"
@@ -769,9 +769,9 @@ def create_udt_config_json(
         }
         for atomic in data.atomics:
             if isinstance(atomic.opc_path, str):
-                atomic.opc_path = "ns=2;s={Topic}." + atomic.opc_path
+                atomic.opc_path = PREPEND_STR + atomic.opc_path
             else:
-                atomic.opc_path["binding"] = "ns=2;s={Topic}." + atomic.opc_path["binding"]
+                atomic.opc_path["binding"] = PREPEND_STR + atomic.opc_path["binding"]
             atomic_dict = {
                 "name": atomic.ign_name,
                 "valueSource": "opc",
