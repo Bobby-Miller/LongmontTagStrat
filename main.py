@@ -706,10 +706,10 @@ def tag_instance_build(
         if strat.break_strat and not template_strategy.overwrite:
             raise ValueError(f"{instance_key=} unauthorized break on value {plc_tag=}")
         if strat.break_strat and instance_key not in instance_dict.keys():
-            instance_dict[instance_key] = {f"{{_t_{ign_tag_name}}}": plc_tag}
+            instance_dict[instance_key] = {f"{PREPEND_STR}{{_t_{ign_tag_name}}}": plc_tag}
             continue
         elif strat.break_strat:
-            instance_dict[instance_key][f"{{_t_{ign_tag_name}}}"] = plc_tag
+            instance_dict[instance_key][f"{PREPEND_STR}{{_t_{ign_tag_name}}}"] = plc_tag
             continue
 
         param_dict = dict(
@@ -789,7 +789,7 @@ def create_udt_config_json(
                     atomic.opc_path
                 )
                 atomic_dict["opcItemPath"] = binding(
-                    f"{{_t_{atomic.ign_name}}}"
+                    f"{PREPEND_STR}{{_t_{atomic.ign_name}}}"
                 )
             udt_dict["tags"].append(atomic_dict)
         if base_path not in udt_path_dict.keys():
