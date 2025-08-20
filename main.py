@@ -144,7 +144,7 @@ def generate_udt_atomic_samples(
         if not isinstance(udt_tag_name, str) and not isinstance(udt_tag_name, int):
             continue
 
-        plc_tag = plc_tag.replace("{topic}.", "")
+        plc_tag = plc_tag.replace("ns=2;s={topic}.", "")
 
         tag_type = "Float" if tag_type == "Double" else tag_type
         udt_tag_name = str(udt_tag_name)
@@ -769,9 +769,9 @@ def create_udt_config_json(
         }
         for atomic in data.atomics:
             if isinstance(atomic.opc_path, str):
-                atomic.opc_path = "{Topic}." + atomic.opc_path
+                atomic.opc_path = "ns=2;s={Topic}." + atomic.opc_path
             else:
-                atomic.opc_path["binding"] = "{Topic}." + atomic.opc_path["binding"]
+                atomic.opc_path["binding"] = "ns=2;s={Topic}." + atomic.opc_path["binding"]
             atomic_dict = {
                 "name": atomic.ign_name,
                 "valueSource": "opc",
@@ -789,7 +789,7 @@ def create_udt_config_json(
                     atomic.opc_path
                 )
                 atomic_dict["opcItemPath"] = binding(
-                    f"{{Topic}}.{{_t_{atomic.ign_name}}}"
+                    f"{{_t_{atomic.ign_name}}}"
                 )
             udt_dict["tags"].append(atomic_dict)
         if base_path not in udt_path_dict.keys():
